@@ -1,99 +1,114 @@
 # bgmeasy
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
+**English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
-**An agent skill for composing, rendering and checking background music locally.**
+### Compose background music with your coding agent.
 
-An LLM agent plans the whole piece and writes a symbolic score. Python renders it to WAV using synthesis or SoundFonts. The same project can mix music into video, duck it around narration, and analyze reference audio with classical signal processing.
+Describe the scene, mood and duration. bgmeasy guides your agent through planning the piece, writing an editable score and rendering the audio locally. Melody, rhythm, instrumentation and structure stay in the score, ready for the next round of changes.
 
-No music-generation model, model-weight download, cloud music API or commercial instrument plugin is required. Your coding agent supplies the composition reasoning.
+Built for background music in short videos, narrated content, games and animation. Use it with a coding agent that can read files and run commands. Rendering and reference analysis need no separate music-generation service.
 
-## What is included
+[Get started](#get-started) · [Sound pack](https://github.com/louchi1984-coder/bgmeasy/releases/latest) · [Composition workflow (中文)](SKILL.md) · [Score format (中文)](references/score-format.md)
 
-- Whole-piece planning, phrase development, harmony, rhythm and orchestration guidance in `SKILL.md` and `references/`.
-- Built-in synthesis and a MIDI → FluidSynth/SF2 → mastering path.
-- Native Python video mixing: narration/original-audio ducking, two-pass loudness normalization and video stream copy. **Windows does not need Git Bash or WSL.**
-- Reference-audio pitch, rhythm, harmony and structure **candidates**, with uncertainty retained; no learned models.
-- Chinese, English, Japanese and Korean instrument search and standard reports: `--lang zh|en|ja|ko`.
-- 96 instrument knowledge profiles. The optional sound pack contains 16 SF2 files and 312 catalog entries, including variants and sampled percussion. A profile is not a separate sound library or a guarantee of realism.
+## Start with the scene
 
-## Setup
+A brief can be as simple as:
 
-Use Python 3.10+ and install native **FFmpeg + FFprobe** and **FluidSynth** on your PATH. Keep the DLLs distributed with Windows FluidSynth beside its executable. macOS users can use `brew install ffmpeg fluid-synth`.
+> Write 30 seconds of warm, quiet music for two people meeting again. There is no dialogue, so the melody can stand out. Give it a settled ending.
 
-Download this repository, or clone it:
+After listening, keep shaping the same piece:
+
+> Keep the main theme. Thin out the accompaniment in the first half, then gradually build the second half without reaching full intensity too early.
+
+The workflow starts with a destination for the whole piece, then develops its phrases, harmony, shared rhythm and instrumental roles. The agent composes and revises; local programs turn the score into sound.
+
+```text
+Scene and brief → Whole-piece plan → Editable score → Local render → Listen and revise
+```
+
+## Compose, revise, and mix with video
+
+| Your task | How bgmeasy helps |
+|---|---|
+| Score a scene | Plan the complete cue before developing melody, harmony, rhythm and orchestration |
+| Revise after listening | Adjust the same score while keeping the structure, settings and reasons for changes |
+| Work from a reference | Examine pitch, rhythm, harmony and structural clues to inform a new composition |
+| Support narration or dialogue | Leave room in the arrangement, then use foreground-driven ducking during mixing |
+| Deliver music with a video | Render a WAV, or mix it into video with loudness normalization and video stream copy |
+
+The working files are an agent-authored JSON score and a rendered WAV. Video mixing is a separate step when needed. Keeping the score and settings makes later revisions, comparisons and reproduction easier.
+
+## Get started
+
+### 1. Download the project
 
 ```text
 git clone https://github.com/louchi1984-coder/bgmeasy.git
 cd bgmeasy
 ```
 
-Create a virtual environment and install the Python dependencies:
+You can also download the source ZIP from GitHub.
+
+### 2. Prepare the environment
+
+You need **Python 3.10+, FFmpeg/FFprobe and FluidSynth**. The full sampled workflow also uses a **169 MB** sound pack. Expand the commands below for setup. Windows runs with native Python and PowerShell; Git Bash and WSL are not required.
+
+### 3. Give the skill to your agent
+
+Point your coding agent at the project directory and ask:
+
+> Read this project's SKILL.md and check the environment. Use bgmeasy to make 30 seconds of warm, calming instrumental background music, with no dialogue. Plan the whole piece before writing and rendering the score. Keep the score and explain the arrangement and output files in English.
+
+Listen to the result, then give the agent specific changes. You can describe duration, purpose, mood, dialogue, instrument preferences and reference audio without filling in every arrangement parameter yourself.
+
+<details>
+<summary><strong>Installation commands and a first render</strong></summary>
+
+Install FFmpeg, FFprobe and FluidSynth on PATH first. Keep the DLLs supplied with Windows FluidSynth beside its executable. On macOS, `brew install ffmpeg fluid-synth` is available.
+
+**Windows PowerShell**
 
 ```powershell
-# Windows PowerShell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -I scripts/download_soundfonts.py
+.\.venv\Scripts\python.exe -I scripts/check_deps.py --lang en
 ```
+
+**macOS / Linux**
 
 ```sh
-# macOS / Linux
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -I scripts/download_soundfonts.py
+.venv/bin/python -I scripts/check_deps.py --lang en
 ```
 
-In the commands below, use that environment's interpreter in place of `python`. Activation is optional.
-
-For the complete sampled workflow, download the **169 MB** separately licensed sound pack:
-
-```text
-python -I scripts/download_soundfonts.py
-python -I scripts/check_deps.py --lang en
-```
-
-The installer verifies SHA-256, rejects unsafe paths and refuses to overwrite different existing files. For offline setup, download [`bgmeasy-soundfonts.zip`](https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.1.0/bgmeasy-soundfonts.zip) and pass `--archive path/to/bgmeasy-soundfonts.zip`. Sound binaries are Release assets, not part of Git history. **DSK Asian DreamZ is excluded.** See [third-party licenses](THIRD_PARTY.md).
-
-## Use with an agent
-
-Point an agent with file and command execution access at [`SKILL.md`](SKILL.md). For example:
-
-> Use this skill to make 30 seconds of warm, calm background music. No dialogue. Plan the complete piece first, write a coherent theme, and render with the standard workflow. Give me an English report.
-
-The main skill and detailed reference material are currently written primarily in Chinese. The README, instrument aliases and standard report UI support the four languages above; original quotations and user-authored text are preserved.
-
-## CLI examples
+For the following commands, use that virtual environment's interpreter in place of `python`. Try the included 15-second example:
 
 ```text
 python -c "from pathlib import Path; Path('outputs').mkdir(exist_ok=True)"
 python -I scripts/render_score_sf2.py examples/western-15s.score.json outputs/western.wav --duration 15 --lang en
 python -I scripts/verify.py outputs/western.wav --lang en
-python -I scripts/soundfonts.py search "ピアノ" --lang ja
-python -I scripts/instruments.py search "얼후" --lang ko
 ```
 
-The raw WAV check may flag loudness; video mixing performs the final two-pass normalization.
+The raw WAV check may flag loudness. Final two-pass loudness normalization happens during video mixing.
 
-With your own reference audio or video:
+The sound pack installer verifies SHA-256. If direct downloading is inconvenient, get the ZIP from [Releases](https://github.com/louchi1984-coder/bgmeasy/releases/latest) and install it with `--archive path/to/bgmeasy-soundfonts.zip`.
 
-```text
-python -I scripts/analyze_reference.py reference.wav outputs/reference --seconds 30 --lang en
-python -I scripts/mix.py --video input.mp4 --bgm outputs/western.wav --out outputs/mixed.mp4 --lang en
-```
+</details>
 
-Add `--vo narration.wav` or `--keep-audio` to make foreground audio trigger BGM ducking. Mixing keeps the established defaults: −14 LUFS, −2 dBTP, two-pass `loudnorm`, and no extra fade unless requested. For sampled-layer contributions, render with `--report-levels`.
+## Documentation
 
-Report language changes presentation, not the score or audio processing. JSON/CSV keys, technical enums, timestamps and numeric analysis remain stable. Charts use local fonts; if required glyphs are unavailable, chart labels fall back to English while HTML text keeps the requested language. [Language details](references/languages.md).
+- **Choose instruments and check their capabilities:** [performance and backend guide](references/instrument-performance.md), [sound catalog](references/soundfonts.md). The knowledge base covers 96 instrument profiles; the release sound pack provides 16 SF2 files and 312 catalog entries, including variants and sampled percussion.
+- **Study a reference:** [analysis methods and outputs](references/reference-analysis.md). Pitch, chord and structure estimates remain clues to review, rather than a verified score.
+- **Mix with video:** use `scripts/mix.py`; `--vo` adds narration and `--keep-audio` retains the original audio. Mixing defaults to two-pass normalization at −14 LUFS and −2 dBTP.
+- **Choose a report language:** [Chinese, English, Japanese and Korean support](references/languages.md), via `--lang zh|en|ja|ko`. The main skill and detailed reference material are currently written primarily in Chinese.
 
-## Tests and limits
+## Compatibility and licensing
 
-```text
-python -I -B -m unittest discover -s tests -v
-```
+Validated on macOS and native Windows 10 x64; Linux has not yet been tested on a real machine. The public package has 121 tests: 118 pass and 3 explicitly skip the DSK font, which is not redistributed.
 
-Install the sound pack and external tools before running the full suite. Three tests requiring the excluded, locally licensed DSK font are explicitly skipped. Do not download that font merely to remove the skips.
+Project source is [MIT licensed](LICENSE). Sound assets retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md). DSK Asian DreamZ is not distributed with the project.
 
-The development workflow has been tested on macOS and native Windows 10 x64 / Python 3.10, including default CP936 encoding and PowerShell. Linux is not yet validated on a real machine. Tests check score parsing, routing, DSP fixtures, language consistency and mixing behavior; they do not certify musical quality. Listening is still required. Reference-analysis results are not a verified transcription or instrument separation. Some instrument evidence is conditional or unverified; small sample sets do not provide true legato or a natural full range.
-
-## License
-
-Project code and documentation: [MIT](LICENSE), except explicitly licensed files. Sound assets and dependencies retain their own licenses, including CC0 and the custom GeneralUser GS license. Read [THIRD_PARTY.md](THIRD_PARTY.md) before redistribution.
+The final musical result still needs listening. Instrument techniques and reference-analysis estimates should be checked against the actual sources and sound.
