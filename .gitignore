@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.DS_Store
+work/
+outputs/
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mid
+soundfonts/**/*.sf2
+soundfonts/*.sf2
+soundfonts/capability-probes.json
+*.zip

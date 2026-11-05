@@ -1,0 +1,41 @@
+{
+  "bpm": 80,
+  "seed": 7,
+  "humanize_ms": 0,
+  "tracks": {
+    "erhu": {
+      "inst": "erhu",
+      "gain": 0.7,
+      "pan": 0,
+      "params": {
+        "bend": 0,
+        "vibrato": 0
+      },
+      "preset": "ethnic-light/erhu-practice:0:0"
+    }
+  },
+  "sections": {
+    "TEST": {
+      "erhu": [
+        "C5:2@.7 A4:1@.7 r:1",
+        "C5:2@.7 r:2",
+        "A4:1@.7 C5:1@.7 A4:.5@.7 C5:1@.7 r:.5"
+      ]
+    }
+  },
+  "arrangement": [
+    "TEST"
+  ],
+  "design": {
+    "need": "原始录音音色筛选；纯独奏、无对白；9.8秒；非BGM作品。",
+    "purpose": "只使用从CC0练习录音取出的原音高A4/C5，不移调，不复制原录音旋律；按有限样本时长安排长短音与间隙。",
+    "performance": {
+      "erhu": {
+        "instrument": "erhu",
+        "implementation": "触发原始单音，保留录音表情；无额外揉弦、滤波、降噪或循环。",
+        "limitations": "公开有损试听源，两个音高，不是完整独立多采样库；A4约1.015秒，C5约2.05秒，故演奏长度受限。",
+        "audition": "user_accepted_timbre_trial_2026-11-05"
+      }
+    }
+  }
+}

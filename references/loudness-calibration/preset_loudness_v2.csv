@@ -1,0 +1,308 @@
+id,name,kind,lo,hi,n_in,peak,rms1,sus,rel_rms1_vs_piano,rel_peak_vs_piano
+dsk-asian-dreamz:0:0,PIPA,melodic,24,96,25,-7.4,-22.2,-28.3,4.8,6.5
+dsk-asian-dreamz:0:1,PIPA TREM,melodic,24,96,25,-7.6,-20.2,-19.4,6.8,6.3
+dsk-asian-dreamz:0:2,LUAN,melodic,24,96,25,-7.8,-21.7,-28.2,5.3,6.1
+dsk-asian-dreamz:0:3,GUZHEN,melodic,24,96,25,-8.1,-23.2,-33.0,3.8,5.8
+dsk-asian-dreamz:0:4,ERHU,melodic,24,96,25,-7.8,-16.2,-16.4,10.8,6.1
+dsk-asian-dreamz:0:5,BAN-DI,melodic,24,96,25,-15.4,-23.7,-22.8,3.3,-1.5
+dsk-asian-dreamz:0:6,Chinese Percussion,melodic,54,69,4,-3.3,-25.0,-120.1,2.0,10.6
+generaluser-gs:0:0,Grand Piano,melodic,24,96,25,-13.9,-27.0,-29.2,0.0,0.0
+generaluser-gs:0:1,Bright Grand Piano,melodic,24,96,25,-13.8,-27.4,-30.1,-0.4,0.1
+generaluser-gs:0:2,Electric Grand Piano,melodic,24,96,25,-14.5,-27.5,-31.0,-0.5,-0.6
+generaluser-gs:0:3,Honky-Tonk Piano,melodic,24,96,25,-13.9,-27.7,-30.2,-0.7,0.0
+generaluser-gs:0:4,Tine Electric Piano,melodic,24,96,25,-16.1,-23.2,-23.7,3.8,-2.2
+generaluser-gs:0:5,FM Electric Piano,melodic,24,96,25,-16.8,-26.6,-28.0,0.4,-2.9
+generaluser-gs:0:6,Harpsichord,melodic,24,96,25,-14.9,-29.0,-31.8,-2.0,-1.0
+generaluser-gs:0:7,Clavinet,melodic,24,96,25,-12.8,-26.8,-29.8,0.2,1.1
+generaluser-gs:0:8,Celeste,melodic,24,96,25,-12.3,-22.4,-26.6,4.6,1.6
+generaluser-gs:0:9,Glockenspiel,melodic,24,96,25,-9.8,-28.9,-38.3,-1.9,4.1
+generaluser-gs:0:10,Music Box,melodic,24,96,25,-16.3,-30.6,-39.0,-3.6,-2.4
+generaluser-gs:0:11,Vibraphone,melodic,24,96,25,-10.4,-21.3,-23.0,5.7,3.5
+generaluser-gs:0:12,Marimba,melodic,24,96,25,-12.4,-24.0,-31.9,3.0,1.5
+generaluser-gs:0:13,Xylophone,melodic,24,96,25,-10.6,-29.6,-52.5,-2.6,3.3
+generaluser-gs:0:14,Tubular Bells,melodic,24,96,25,-12.6,-25.4,-27.4,1.6,1.3
+generaluser-gs:0:15,Dulcimer,melodic,24,96,25,-13.8,-29.2,-33.3,-2.2,0.1
+generaluser-gs:0:16,Tonewheel Organ,melodic,24,96,25,-14.7,-21.7,-21.7,5.3,-0.8
+generaluser-gs:0:17,Percussive Organ,melodic,24,96,25,-10.5,-22.2,-22.9,4.8,3.4
+generaluser-gs:0:18,Rock Organ,melodic,24,96,25,-10.9,-21.5,-21.6,5.5,3.0
+generaluser-gs:0:19,Pipe Organ,melodic,24,96,25,-12.6,-22.9,-21.5,4.1,1.3
+generaluser-gs:0:20,Reed Organ,melodic,24,96,25,-14.6,-23.8,-23.6,3.2,-0.7
+generaluser-gs:0:21,Accordion,melodic,24,96,25,-15.2,-26.4,-25.9,0.6,-1.3
+generaluser-gs:0:22,Harmonica,melodic,24,96,25,-13.4,-24.0,-23.4,3.0,0.5
+generaluser-gs:0:23,Bandoneon,melodic,24,96,25,-14.7,-25.0,-25.0,2.0,-0.8
+generaluser-gs:0:24,Nylon Guitar,melodic,24,96,25,-10.6,-25.8,-32.4,1.2,3.3
+generaluser-gs:0:25,Steel Guitar,melodic,24,96,25,-13.5,-27.8,-32.2,-0.8,0.4
+generaluser-gs:0:26,Jazz Guitar,melodic,24,96,25,-10.3,-24.4,-29.4,2.6,3.6
+generaluser-gs:0:27,Clean Guitar,melodic,24,96,25,-10.3,-26.9,-31.7,0.1,3.6
+generaluser-gs:0:28,Muted Guitar,melodic,24,96,25,-7.6,-33.4,-61.7,-6.4,6.3
+generaluser-gs:0:29,Overdrive Guitar,melodic,24,96,25,-11.3,-22.3,-23.1,4.7,2.6
+generaluser-gs:0:30,Distortion Guitar,melodic,24,96,25,-12.0,-23.5,-23.7,3.5,1.9
+generaluser-gs:0:31,Guitar Harmonics,melodic,24,96,25,-12.6,-23.9,-25.1,3.1,1.3
+generaluser-gs:0:32,Acoustic Bass,melodic,24,96,25,-8.8,-26.5,-39.2,0.5,5.1
+generaluser-gs:0:33,Finger Bass,melodic,24,96,25,-10.4,-22.6,-25.3,4.4,3.5
+generaluser-gs:0:34,Pick Bass,melodic,24,96,25,-12.9,-27.4,-30.6,-0.4,1.0
+generaluser-gs:0:35,Fretless Bass,melodic,24,96,25,-9.6,-20.4,-25.7,6.6,4.3
+generaluser-gs:0:36,Slap Bass 1,melodic,24,96,25,-12.0,-26.3,-28.6,0.7,1.9
+generaluser-gs:0:37,Slap Bass 2,melodic,24,96,25,-13.1,-30.0,-32.9,-3.0,0.8
+generaluser-gs:0:38,Synth Bass 1,melodic,24,96,25,-11.4,-20.6,-22.7,6.4,2.5
+generaluser-gs:0:39,Synth Bass 2,melodic,24,96,25,-9.9,-25.9,-37.5,1.1,4.0
+generaluser-gs:0:40,Violin,melodic,24,96,25,-10.9,-21.5,-20.5,5.5,3.0
+generaluser-gs:0:41,Viola,melodic,24,96,25,-11.2,-24.0,-24.4,3.0,2.7
+generaluser-gs:0:42,Cello,melodic,24,96,25,-9.6,-19.5,-18.3,7.5,4.3
+generaluser-gs:0:43,Double Bass,melodic,24,96,25,-13.8,-23.9,-22.9,3.1,0.1
+generaluser-gs:0:44,Tremolo Strings,melodic,24,96,25,-13.8,-26.3,-25.5,0.7,0.1
+generaluser-gs:0:45,Pizzicato Strings,melodic,24,96,25,-13.0,-29.1,-57.5,-2.1,0.9
+generaluser-gs:0:46,Orchestral Harp,melodic,24,96,25,-13.2,-23.4,-26.3,3.6,0.7
+generaluser-gs:0:47,Timpani,melodic,24,96,25,-8.6,-27.2,-34.2,-0.2,5.3
+generaluser-gs:0:48,Fast Strings,melodic,24,96,25,-12.9,-24.1,-23.7,2.9,1.0
+generaluser-gs:0:49,Slow Strings,melodic,24,96,25,-13.1,-24.7,-23.7,2.3,0.8
+generaluser-gs:0:50,Synth Strings 1,melodic,24,96,25,-15.4,-24.8,-24.1,2.2,-1.5
+generaluser-gs:0:51,Synth Strings 2,melodic,24,96,25,-19.4,-31.0,-29.8,-4.0,-5.5
+generaluser-gs:0:52,Concert Choir,melodic,24,96,25,-13.5,-25.4,-24.5,1.6,0.4
+generaluser-gs:0:53,Voice Oohs,melodic,24,96,25,-14.1,-22.1,-22.7,4.9,-0.2
+generaluser-gs:0:54,Synth Voice,melodic,24,96,25,-16.1,-24.1,-24.3,2.9,-2.2
+generaluser-gs:0:55,Orchestra Hit,melodic,24,96,25,-10.2,-24.0,-32.0,3.0,3.7
+generaluser-gs:0:56,Trumpet,melodic,24,96,25,-10.3,-23.9,-23.4,3.1,3.6
+generaluser-gs:0:57,Trombone,melodic,24,96,25,-11.1,-22.6,-22.7,4.4,2.8
+generaluser-gs:0:58,Tuba,melodic,24,96,25,-9.9,-21.4,-21.3,5.6,4.0
+generaluser-gs:0:59,Muted Trumpet,melodic,24,96,25,-14.5,-28.2,-28.4,-1.2,-0.6
+generaluser-gs:0:60,French Horns,melodic,24,96,25,-10.5,-19.7,-20.3,7.3,3.4
+generaluser-gs:0:61,Brass Section,melodic,24,96,25,-8.6,-23.2,-23.8,3.8,5.3
+generaluser-gs:0:62,Synth Brass 1,melodic,24,96,25,-11.5,-25.0,-27.0,2.0,2.4
+generaluser-gs:0:63,Synth Brass 2,melodic,24,96,25,-12.0,-23.7,-24.1,3.3,1.9
+generaluser-gs:0:64,Soprano Sax,melodic,24,96,25,-12.5,-23.4,-24.5,3.6,1.4
+generaluser-gs:0:65,Alto Sax,melodic,24,96,25,-10.5,-23.8,-24.0,3.2,3.4
+generaluser-gs:0:66,Tenor Sax,melodic,24,96,25,-11.4,-25.0,-26.4,2.0,2.5
+generaluser-gs:0:67,Baritone Sax,melodic,24,96,25,-12.4,-25.3,-27.5,1.7,1.5
+generaluser-gs:0:68,Oboe,melodic,24,96,25,-11.0,-21.5,-20.4,5.5,2.9
+generaluser-gs:0:69,English Horn,melodic,24,96,25,-15.1,-22.6,-22.0,4.4,-1.2
+generaluser-gs:0:70,Bassoon,melodic,24,96,25,-11.8,-21.5,-21.4,5.5,2.1
+generaluser-gs:0:71,Clarinet,melodic,24,96,25,-12.2,-20.3,-20.0,6.7,1.7
+generaluser-gs:0:72,Piccolo,melodic,24,96,25,-12.2,-17.6,-17.0,9.4,1.7
+generaluser-gs:0:73,Flute,melodic,24,96,25,-11.5,-21.7,-20.7,5.3,2.4
+generaluser-gs:0:74,Recorder,melodic,24,96,25,-14.5,-20.2,-19.6,6.8,-0.6
+generaluser-gs:0:75,Pan Flute,melodic,24,96,25,-14.0,-21.6,-20.6,5.4,-0.1
+generaluser-gs:0:76,Bottle Blow,melodic,24,96,25,-15.5,-21.7,-22.0,5.3,-1.6
+generaluser-gs:0:77,Shakuhachi,melodic,24,96,25,-9.8,-22.0,-23.8,5.0,4.1
+generaluser-gs:0:78,Whistle,melodic,24,96,25,-8.9,-12.8,-12.4,14.2,5.0
+generaluser-gs:0:79,Ocarina,melodic,24,96,25,-10.4,-15.3,-15.1,11.7,3.5
+generaluser-gs:0:80,Square Lead,melodic,24,96,25,-14.0,-22.7,-24.7,4.3,-0.1
+generaluser-gs:0:81,Saw Lead,melodic,24,96,25,-11.7,-22.6,-22.7,4.4,2.2
+generaluser-gs:0:82,Synth Calliope,melodic,24,96,25,-8.5,-16.4,-16.8,10.6,5.4
+generaluser-gs:0:83,Chiffer Lead,melodic,24,96,25,-12.8,-22.9,-23.4,4.1,1.1
+generaluser-gs:0:84,Charang,melodic,24,96,25,-13.5,-29.3,-31.6,-2.3,0.4
+generaluser-gs:0:85,Solo Vox,melodic,24,96,25,-8.9,-19.4,-18.9,7.6,5.0
+generaluser-gs:0:86,5th Saw Wave,melodic,24,96,25,-8.5,-24.4,-29.4,2.6,5.4
+generaluser-gs:0:87,Bass & Lead,melodic,24,96,25,-9.8,-20.5,-21.6,6.5,4.1
+generaluser-gs:0:88,Fantasia,melodic,24,96,25,-11.3,-21.8,-22.7,5.2,2.6
+generaluser-gs:0:89,Warm Pad,melodic,24,96,25,-13.7,-25.5,-23.8,1.5,0.2
+generaluser-gs:0:90,Polysynth,melodic,24,96,25,-13.6,-25.7,-27.6,1.3,0.3
+generaluser-gs:0:91,Space Voice,melodic,24,96,25,-12.7,-25.2,-29.1,1.8,1.2
+generaluser-gs:0:92,Bowed Glass,melodic,24,96,25,-16.6,-28.6,-28.1,-1.6,-2.7
+generaluser-gs:0:93,Metal Pad,melodic,24,96,25,-15.8,-27.6,-29.4,-0.6,-1.9
+generaluser-gs:0:94,Halo Pad,melodic,24,96,25,-15.4,-25.2,-25.2,1.8,-1.5
+generaluser-gs:0:95,Sweep Pad,melodic,24,96,25,-15.3,-26.7,-25.4,0.3,-1.4
+generaluser-gs:0:96,Ice Rain,melodic,24,96,25,-10.1,-24.7,-28.2,2.3,3.8
+generaluser-gs:0:97,Soundtrack,melodic,24,87,22,-11.9,-24.1,-22.6,2.9,2.0
+generaluser-gs:0:98,Crystal,melodic,24,96,25,-9.3,-24.9,-30.2,2.1,4.6
+generaluser-gs:0:99,Atmosphere,melodic,24,96,25,-13.1,-24.2,-25.3,2.8,0.8
+generaluser-gs:0:100,Brightness,melodic,24,96,25,-11.7,-23.6,-25.3,3.4,2.2
+generaluser-gs:0:101,Goblin,melodic,24,96,25,-15.3,-26.3,-24.0,0.7,-1.4
+generaluser-gs:0:102,Echo Drops,melodic,24,96,25,-11.2,-22.1,-22.8,4.9,2.7
+generaluser-gs:0:103,Star Theme,melodic,24,96,25,-11.3,-22.8,-22.3,4.2,2.6
+generaluser-gs:0:104,Sitar,melodic,24,96,25,-11.4,-26.5,-36.8,0.5,2.5
+generaluser-gs:0:105,Banjo,melodic,24,96,25,-6.9,-27.9,-40.6,-0.9,7.0
+generaluser-gs:0:106,Shamisen,melodic,24,96,25,-9.0,-34.1,-56.0,-7.1,4.9
+generaluser-gs:0:107,Koto,melodic,24,96,25,-7.2,-28.5,-38.7,-1.5,6.7
+generaluser-gs:0:108,Kalimba,melodic,24,96,25,-9.9,-25.8,-41.4,1.2,4.0
+generaluser-gs:0:109,Bagpipes,melodic,24,96,25,-10.3,-21.2,-21.0,5.8,3.6
+generaluser-gs:0:110,Fiddle,melodic,24,96,25,-10.9,-21.5,-20.5,5.5,3.0
+generaluser-gs:0:111,Shenai,melodic,24,96,25,-10.3,-20.9,-20.9,6.1,3.6
+generaluser-gs:0:112,Tinker Bell,melodic,24,96,25,-10.4,-25.5,-35.1,1.5,3.5
+generaluser-gs:0:113,Agogo,melodic,24,96,25,-9.3,-30.9,-66.7,-3.9,4.6
+generaluser-gs:0:114,Steel Drums,melodic,24,96,25,-11.1,-26.0,-41.1,1.0,2.8
+generaluser-gs:0:115,Wood Block,melodic,24,96,25,-7.6,-33.4,-68.8,-6.4,6.3
+generaluser-gs:0:116,Taiko Drum,melodic,24,96,25,-9.7,-22.4,-31.2,4.6,4.2
+generaluser-gs:0:117,Melodic Tom,melodic,24,96,25,-12.4,-28.1,-54.2,-1.1,1.5
+generaluser-gs:0:118,Synth Drum,melodic,24,96,25,-10.4,-27.7,-65.9,-0.7,3.5
+generaluser-gs:0:119,Reverse Cymbal,melodic,24,96,25,-13.7,-34.5,-33.9,-7.5,0.2
+generaluser-gs:0:120,Fret Noise,melodic,24,96,25,-16.8,-37.7,-71.2,-10.7,-2.9
+generaluser-gs:0:121,Breath Noise,melodic,45,96,16,-20.8,-47.5,-83.4,-20.5,-6.9
+generaluser-gs:0:122,Seashore,melodic,24,96,25,-14.7,-31.2,-29.8,-4.2,-0.8
+generaluser-gs:0:123,Birds,melodic,24,96,25,-13.5,-28.3,-29.6,-1.3,0.4
+generaluser-gs:0:124,Telephone 1,melodic,24,96,25,-13.7,-26.1,-26.2,0.9,0.2
+generaluser-gs:0:125,Helicopter,melodic,24,96,25,-23.0,-42.6,-40.6,-15.6,-9.1
+generaluser-gs:0:126,Applause,melodic,24,96,25,-13.9,-32.0,-30.3,-5.0,0.0
+generaluser-gs:0:127,Gun Shot,melodic,24,96,25,-9.4,-29.2,-61.1,-2.2,4.5
+generaluser-gs:1:38,Synth Bass 101,melodic,24,96,25,-7.8,-15.6,-16.8,11.4,6.1
+generaluser-gs:1:44,Tremolo Strings Mono,melodic,24,96,25,-11.7,-24.3,-24.1,2.7,2.2
+generaluser-gs:1:48,Fast Strings Mono,melodic,24,96,25,-11.5,-22.2,-22.1,4.8,2.4
+generaluser-gs:1:49,Slow Strings Mono,melodic,24,96,25,-11.7,-22.7,-22.1,4.3,2.2
+generaluser-gs:1:52,Concert Choir Mono,melodic,24,96,25,-12.4,-24.0,-23.1,3.0,1.5
+generaluser-gs:1:56,Trumpet 2,melodic,24,96,25,-10.9,-24.8,-24.4,2.2,3.0
+generaluser-gs:1:57,Trombone 2,melodic,24,96,25,-12.2,-24.0,-24.6,3.0,1.7
+generaluser-gs:1:60,Solo French Horn,melodic,24,96,25,-10.4,-19.6,-18.7,7.4,3.5
+generaluser-gs:1:61,Brass Section Mono,melodic,24,96,25,-8.6,-22.9,-23.3,4.1,5.3
+generaluser-gs:1:80,Square Wave,melodic,24,96,25,-17.1,-23.9,-25.9,3.1,-3.2
+generaluser-gs:1:81,Saw Wave,melodic,24,96,25,-16.6,-27.6,-29.7,-0.6,-2.7
+generaluser-gs:1:98,Synth Mallet,melodic,24,96,25,-11.0,-24.5,-32.3,2.5,2.9
+generaluser-gs:1:120,Cut Noise,melodic,24,96,25,-15.5,-41.0,-78.4,-14.0,-1.6
+generaluser-gs:1:121,Fl. Key Click,melodic,24,96,25,-13.3,-49.3,-88.5,-22.3,0.6
+generaluser-gs:1:122,Rain,melodic,24,96,25,-27.0,-47.2,-45.8,-20.2,-13.1
+generaluser-gs:1:123,Dog,melodic,24,96,25,-10.4,-29.4,-63.8,-2.4,3.5
+generaluser-gs:1:124,Telephone 2,melodic,24,96,25,-14.3,-23.4,-23.3,3.6,-0.4
+generaluser-gs:1:125,Car-Engine,melodic,24,96,25,-13.7,-28.1,-28.4,-1.1,0.2
+generaluser-gs:1:126,Laughing,melodic,24,96,25,-10.9,-31.5,-33.1,-4.5,3.0
+generaluser-gs:1:127,Machine Gun,melodic,24,96,25,-11.7,-22.8,-22.9,4.2,2.2
+generaluser-gs:2:102,Echo Pan,melodic,24,96,25,-12.4,-22.1,-24.2,4.9,1.5
+generaluser-gs:2:120,String Slap,melodic,24,96,25,-12.8,-36.9,-75.7,-9.9,1.1
+generaluser-gs:2:122,Thunder,melodic,24,96,25,-13.6,-28.7,-30.2,-1.7,0.3
+generaluser-gs:2:123,Horse Gallop,melodic,24,96,25,-24.7,-46.1,-44.4,-19.1,-10.8
+generaluser-gs:2:124,Door Creaking,melodic,24,96,25,-15.5,-30.8,-33.7,-3.8,-1.6
+generaluser-gs:2:125,Car-Stop,melodic,24,96,25,-10.2,-25.1,-29.1,1.9,3.7
+generaluser-gs:2:126,Scream,melodic,24,96,25,-10.5,-23.3,-23.8,3.7,3.4
+generaluser-gs:2:127,Lasergun,melodic,24,96,25,-12.0,-30.9,-69.8,-3.9,1.9
+generaluser-gs:3:122,Wind,melodic,24,96,25,-13.4,-28.3,-25.9,-1.3,0.5
+generaluser-gs:3:123,Bird 2,melodic,24,96,25,-15.5,-37.2,-73.0,-10.2,-1.6
+generaluser-gs:3:124,Door,melodic,24,96,25,-10.7,-31.7,-68.4,-4.7,3.2
+generaluser-gs:3:125,Car-Pass,melodic,24,96,25,-17.5,-27.8,-28.6,-0.8,-3.6
+generaluser-gs:3:126,Punch,melodic,24,96,25,-11.3,-33.1,-70.5,-6.1,2.6
+generaluser-gs:3:127,Explosion,melodic,24,96,25,-10.8,-25.6,-28.7,1.4,3.1
+generaluser-gs:4:122,Stream,melodic,24,96,25,-19.1,-41.7,-40.0,-14.7,-5.2
+generaluser-gs:4:124,Scratch,melodic,24,96,25,-12.2,-31.0,-68.1,-4.0,1.7
+generaluser-gs:4:125,Car-Crash,melodic,24,96,25,-9.8,-25.0,-32.9,2.0,4.1
+generaluser-gs:4:126,Heart Beat,melodic,24,96,25,-10.6,-26.6,-47.4,0.4,3.3
+generaluser-gs:5:122,Bubbles,melodic,24,96,25,-9.2,-24.4,-23.9,2.6,4.7
+generaluser-gs:5:124,Windchime,melodic,24,96,25,-10.8,-23.7,-23.7,3.3,3.1
+generaluser-gs:5:125,Siren,melodic,24,96,25,-16.2,-27.8,-26.7,-0.8,-2.3
+generaluser-gs:5:126,Footsteps,melodic,24,96,25,-15.8,-42.4,-80.0,-15.4,-1.9
+generaluser-gs:6:125,Train,melodic,24,96,25,-30.8,-49.2,-47.2,-22.2,-16.9
+generaluser-gs:7:125,Jet Plane,melodic,24,96,25,-15.2,-26.6,-25.3,0.4,-1.3
+generaluser-gs:8:4,Chorused Tine EP,melodic,24,96,25,-14.9,-24.9,-26.6,2.1,-1.0
+generaluser-gs:8:5,Chorused FM EP,melodic,24,96,25,-14.1,-26.3,-28.4,0.7,-0.2
+generaluser-gs:8:6,Coupled Harpsichord,melodic,24,96,25,-14.1,-27.6,-30.8,-0.6,-0.2
+generaluser-gs:8:14,Church Bells,melodic,24,96,25,-12.9,-24.1,-26.0,2.9,1.0
+generaluser-gs:8:16,Detuned Tnwl. Organ,melodic,24,96,25,-11.6,-21.4,-21.5,5.6,2.3
+generaluser-gs:8:17,Detuned Perc. Organ,melodic,24,96,25,-9.2,-22.0,-23.5,5.0,4.7
+generaluser-gs:8:19,Pipe Organ 2,melodic,24,96,25,-11.9,-22.6,-21.4,4.4,2.0
+generaluser-gs:8:21,Italian Accordion,melodic,24,96,25,-14.9,-25.4,-24.6,1.6,-1.0
+generaluser-gs:8:24,Ukulele,melodic,24,96,25,-12.3,-27.5,-37.1,-0.5,1.6
+generaluser-gs:8:25,12-String Guitar,melodic,24,96,25,-13.2,-27.9,-32.0,-0.9,0.7
+generaluser-gs:8:26,Hawaiian Guitar,melodic,24,96,25,-12.4,-21.4,-22.7,5.6,1.5
+generaluser-gs:8:27,Chorused Clean Gt.,melodic,24,96,25,-12.0,-29.2,-33.4,-2.2,1.9
+generaluser-gs:8:28,Funk Guitar,melodic,24,96,25,-14.9,-29.5,-33.9,-2.5,-1.0
+generaluser-gs:8:30,Feedback Guitar,melodic,24,96,25,-11.8,-24.0,-24.4,3.0,2.1
+generaluser-gs:8:31,Guitar Feedback,melodic,24,96,25,-21.4,-31.5,-29.1,-4.5,-7.5
+generaluser-gs:8:38,Acid Bass,melodic,24,96,25,-8.2,-23.8,-26.0,3.2,5.7
+generaluser-gs:8:39,Beef FM Bass,melodic,24,96,25,-11.6,-30.8,-35.0,-3.8,2.3
+generaluser-gs:8:48,Orchestra Pad,melodic,24,96,25,-12.3,-23.6,-23.9,3.4,1.6
+generaluser-gs:8:50,Synth Strings 3,melodic,24,96,25,-14.9,-24.3,-23.8,2.7,-1.0
+generaluser-gs:8:61,Brass Section 2,melodic,24,96,25,-12.1,-25.6,-25.5,1.4,1.8
+generaluser-gs:8:62,Synth Brass 3,melodic,24,96,25,-14.8,-22.8,-22.9,4.2,-0.9
+generaluser-gs:8:63,Synth Brass 4,melodic,24,96,25,-15.4,-25.1,-25.4,1.9,-1.5
+generaluser-gs:8:80,Sine Wave,melodic,24,96,25,-14.0,-17.0,-17.0,10.0,-0.1
+generaluser-gs:8:81,Doctor Solo,melodic,24,96,25,-11.8,-20.1,-21.1,6.9,2.1
+generaluser-gs:8:107,Taisho Koto,melodic,24,96,25,-10.1,-29.4,-35.9,-2.4,3.8
+generaluser-gs:8:115,Castanets,melodic,24,96,25,-14.3,-48.5,-87.7,-21.5,-0.4
+generaluser-gs:8:116,Concert Bass Drum,melodic,24,96,25,-9.2,-22.5,-28.9,4.5,4.7
+generaluser-gs:8:117,Melodic Tom 2,melodic,24,96,25,-10.3,-28.9,-51.4,-1.9,3.6
+generaluser-gs:8:118,808 Tom,melodic,24,96,25,-7.1,-26.3,-115.2,0.7,6.8
+generaluser-gs:8:125,Starship,melodic,24,96,25,-21.1,-33.7,-32.6,-6.7,-7.2
+generaluser-gs:9:14,Carillon,melodic,24,96,25,-12.5,-23.6,-25.5,3.4,1.4
+generaluser-gs:9:125,Burst Noise,melodic,24,96,25,-18.1,-27.7,-27.6,-0.7,-4.2
+generaluser-gs:11:0,Piano & Str.-Fade,melodic,24,96,25,-13.8,-26.2,-28.4,0.8,0.1
+generaluser-gs:11:1,Piano & Str.-Sus,melodic,24,96,25,-13.7,-26.2,-28.4,0.8,0.2
+generaluser-gs:11:4,Tine & FM EPs,melodic,24,96,25,-14.8,-23.7,-24.9,3.3,-0.9
+generaluser-gs:11:5,Piano & FM EP,melodic,24,96,25,-12.7,-24.0,-25.9,3.0,1.2
+generaluser-gs:11:6,Harpsichord noVel,melodic,24,96,25,-16.2,-30.3,-33.0,-3.3,-2.3
+generaluser-gs:11:8,Tinkling Bells,melodic,24,96,25,-18.0,-32.7,-45.8,-5.7,-4.1
+generaluser-gs:11:11,Vibraphone No Trem.,melodic,24,96,25,-11.9,-21.5,-23.0,5.5,2.0
+generaluser-gs:11:14,Bell Tower,melodic,24,96,25,-11.8,-25.0,-27.2,2.0,2.1
+generaluser-gs:11:16,Tonewheel Org noVel,melodic,24,96,25,-15.4,-22.3,-22.2,4.7,-1.5
+generaluser-gs:11:17,Percussive Org noVel,melodic,24,96,25,-14.1,-25.9,-26.6,1.1,-0.2
+generaluser-gs:11:18,Rock Organ noVel,melodic,24,96,25,-11.5,-22.2,-22.1,4.8,2.4
+generaluser-gs:11:19,Pipe Organ noVel,melodic,24,96,25,-13.5,-23.6,-22.2,3.4,0.4
+generaluser-gs:11:20,Reed Organ noVel,melodic,24,96,25,-14.9,-24.1,-23.9,2.9,-1.0
+generaluser-gs:11:29,Wah Guitar (CC21),melodic,24,96,25,-19.3,-27.4,-28.3,-0.4,-5.4
+generaluser-gs:11:38,Techno Bass,melodic,24,96,25,-8.7,-25.1,-25.8,1.9,5.2
+generaluser-gs:11:39,Pulse Bass,melodic,24,90,23,-11.9,-27.8,-32.3,-0.8,2.0
+generaluser-gs:11:49,Velo Strings,melodic,24,96,25,-12.9,-24.3,-23.7,2.7,1.0
+generaluser-gs:11:50,Synth Strings 4,melodic,24,96,25,-20.7,-31.8,-30.6,-4.8,-6.8
+generaluser-gs:11:51,Synth Strings 5,melodic,24,96,25,-21.9,-37.0,-34.8,-10.0,-8.0
+generaluser-gs:11:61,Brass Section 3,melodic,24,96,25,-14.2,-27.0,-28.0,0.0,-0.3
+generaluser-gs:11:78,Whistlin',melodic,24,96,25,-14.7,-19.0,-18.6,8.0,-0.8
+generaluser-gs:11:81,Sawtooth Stab,melodic,24,96,25,-13.3,-34.4,-93.5,-7.4,0.6
+generaluser-gs:11:88,Harpsi Pad,melodic,24,96,25,-19.5,-29.8,-30.3,-2.8,-5.6
+generaluser-gs:11:89,Solar Wind,melodic,24,96,25,-20.9,-34.0,-32.6,-7.0,-7.0
+generaluser-gs:11:96,Mystery Pad,melodic,24,96,25,-19.3,-31.5,-36.2,-4.5,-5.4
+generaluser-gs:11:98,Synth Chime,melodic,24,96,25,-15.0,-27.7,-33.1,-0.7,-1.1
+generaluser-gs:11:100,Bright Saw Stack,melodic,24,96,25,-18.0,-28.1,-30.3,-1.1,-4.1
+generaluser-gs:11:119,Cymbal Crash,melodic,24,96,25,-14.8,-32.2,-40.8,-5.2,-0.9
+generaluser-gs:11:121,Filter Snap,melodic,24,96,25,-15.2,-33.5,-180.0,-6.5,-1.3
+generaluser-gs:11:122,Howling Winds,melodic,24,96,25,-30.6,-46.9,-45.0,-19.9,-16.7
+generaluser-gs:11:127,Interference,melodic,24,96,25,-18.9,-37.1,-37.1,-10.1,-5.0
+generaluser-gs:12:0,Bell Piano,melodic,24,96,25,-13.5,-26.7,-29.2,0.3,0.4
+generaluser-gs:12:4,Bell Tine EP,melodic,24,96,25,-17.4,-25.2,-25.9,1.8,-3.5
+generaluser-gs:12:6,Coupled Harpsi noVel,melodic,24,96,25,-15.4,-28.9,-32.1,-1.9,-1.5
+generaluser-gs:12:10,Christmas Bells,melodic,24,96,25,-14.8,-30.5,-42.1,-3.5,-0.9
+generaluser-gs:12:16,Detun Tnwl Org noVel,melodic,24,96,25,-12.4,-22.1,-22.2,4.9,1.5
+generaluser-gs:12:17,Detun Perc Org noVel,melodic,24,96,25,-9.9,-22.8,-24.3,4.2,4.0
+generaluser-gs:12:19,Pipe Organ 2 noVel,melodic,24,96,25,-12.6,-23.2,-22.1,3.8,1.3
+generaluser-gs:12:27,Clean Guitar 2,melodic,24,96,25,-12.9,-28.7,-33.4,-1.7,1.0
+generaluser-gs:12:38,Mean Saw Bass,melodic,24,96,25,-14.5,-27.8,-38.9,-0.8,-0.6
+generaluser-gs:12:48,Full Orchestra,melodic,24,96,25,-8.7,-18.2,-17.6,8.8,5.2
+generaluser-gs:12:49,Velo Strings Mono,melodic,24,96,25,-13.0,-23.7,-23.5,3.3,0.9
+generaluser-gs:12:80,Square Lead 2,melodic,24,96,25,-16.5,-22.8,-25.3,4.2,-2.6
+generaluser-gs:12:81,Saw Lead 2,melodic,24,96,25,-15.6,-26.9,-27.4,0.1,-1.7
+generaluser-gs:12:88,Fantasia 2,melodic,24,96,25,-16.8,-27.7,-29.0,-0.7,-2.9
+generaluser-gs:12:89,Solar Wind 2,melodic,24,96,25,-20.6,-33.8,-31.8,-6.8,-6.7
+generaluser-gs:12:119,Tambourine,melodic,24,96,25,-15.7,-38.7,-65.3,-11.7,-1.8
+generaluser-gs:12:122,White Noise Wave,melodic,24,96,25,-18.7,-30.3,-29.9,-3.3,-4.8
+generaluser-gs:12:127,Shooting Star,melodic,24,96,25,-20.0,-35.2,-46.6,-8.2,-6.1
+generaluser-gs:13:48,Woodwind Choir,melodic,24,96,25,-11.6,-20.0,-19.5,7.0,2.3
+generaluser-gs:13:80,Square Lead 3,melodic,24,96,25,-15.1,-21.6,-21.7,5.4,-1.2
+generaluser-gs:13:81,Saw Lead 3,melodic,24,96,25,-14.2,-26.5,-30.0,0.5,-0.3
+generaluser-gs:13:88,Night Vision,melodic,24,96,25,-20.7,-30.2,-31.1,-3.2,-6.8
+generaluser-gs:16:25,Mandolin,melodic,24,96,25,-13.3,-29.0,-34.5,-2.0,0.6
+generaluser-gs:24:75,Tin Whistle,melodic,24,96,25,-13.1,-24.0,-26.0,3.0,0.8
+generaluser-gs:25:75,Tin Whistle Nm,melodic,24,96,25,-13.1,-24.0,-26.0,3.0,0.8
+generaluser-gs:26:75,Tin Whistle Or,melodic,24,96,25,-13.1,-24.0,-26.0,3.0,0.8
+generaluser-gs:120:0,Standard 1 Kit,melodic,27,87,21,-12.8,-33.5,-67.8,-6.5,1.1
+generaluser-gs:120:1,Standard 2 Kit,melodic,27,87,21,-12.8,-33.5,-67.9,-6.5,1.1
+generaluser-gs:120:2,Standard 3 Kit,melodic,27,87,21,-12.8,-33.5,-67.9,-6.5,1.1
+generaluser-gs:120:8,Room Kit,melodic,27,87,20,-12.0,-32.8,-67.2,-5.8,1.9
+generaluser-gs:120:16,Power Kit,melodic,27,87,21,-12.8,-33.5,-63.2,-6.5,1.1
+generaluser-gs:120:24,Electronic Kit,melodic,24,87,21,-11.2,-31.3,-67.9,-4.3,2.7
+generaluser-gs:120:25,808/909 Kit,melodic,24,87,22,-11.9,-33.4,-68.3,-6.4,2.0
+generaluser-gs:120:26,Dance Kit,melodic,24,87,22,-12.0,-31.5,-67.0,-4.5,1.9
+generaluser-gs:120:32,Jazz Kit,melodic,24,87,22,-13.2,-33.6,-63.6,-6.6,0.7
+generaluser-gs:120:40,Brush Kit,melodic,27,87,21,-12.8,-33.5,-64.8,-6.5,1.1
+generaluser-gs:120:48,Orchestral Kit,melodic,27,87,21,-11.2,-32.0,-55.2,-5.0,2.7
+generaluser-gs:120:56,SFX Kit,melodic,39,84,16,-12.2,-29.5,-53.7,-2.5,1.7
+generaluser-gs:120:127,CM-64/32L Kit,melodic,36,96,20,-11.0,-29.6,-67.8,-2.6,2.9
+generaluser-gs:128:0,Standard 1,drums128,,,3,-8.5,-24.3,,2.7,5.4
+generaluser-gs:128:1,Standard 2,drums128,,,3,-7.8,-25.9,,1.1,6.1
+generaluser-gs:128:2,Standard 3,drums128,,,3,-8.5,-25.6,,1.4,5.4
+generaluser-gs:128:8,Room,drums128,,,3,-10.0,-24.1,,2.9,3.9
+generaluser-gs:128:16,Power,drums128,,,3,-8.0,-21.4,,5.6,5.9
+generaluser-gs:128:24,Electronic,drums128,,,3,-6.9,-24.7,,2.3,7.0
+generaluser-gs:128:25,808/909,drums128,,,3,-9.5,-30.4,,-3.4,4.4
+generaluser-gs:128:26,Dance,drums128,,,3,-8.9,-27.1,,-0.1,5.0
+generaluser-gs:128:32,Jazz,drums128,,,3,-9.3,-26.4,,0.6,4.6
+generaluser-gs:128:40,Brush,drums128,,,3,-17.0,-38.6,,-11.6,-3.1
+generaluser-gs:128:48,Orchestral,drums128,,,3,-8.2,-25.3,,1.7,5.7
+generaluser-gs:128:56,SFX,drums128,,,3,-58.4,-67.1,,-40.1,-44.5
+generaluser-gs:128:127,CM-64/32L,drums128,,,3,-8.5,-24.3,,2.7,5.4
+freepats-light/bass-finger:0:0,YR Finger Bass,melodic,27,45,7,-7.4,-18.8,-20.7,8.2,6.5
+freepats-light/bass-picked:0:0,YR Picked Bass,melodic,27,45,7,-7.4,-21.0,-22.1,6.0,6.5
+freepats-light/clarinet:0:0,Clarinet,melodic,45,90,16,-7.6,-13.5,-13.4,13.5,6.3
+freepats-light/electronic-drums:0:0,Synthesizer Percussion,drums,48,66,7,-8.4,-30.1,-180.0,-3.1,5.5
+freepats-light/guitar-clean:0:0,FSBS Clean Electric Guitar Small,melodic,36,84,17,-7.5,-20.0,-22.7,7.0,6.4
+freepats-light/guitar-jazz:0:0,FSBS Jazz Electric Guitar Small,melodic,36,84,17,-7.4,-19.7,-22.5,7.3,6.5
+freepats-light/harp:0:0,Concert Harp,melodic,30,96,23,-7.5,-21.9,-26.7,5.1,6.4
+freepats-light/pad-choir:0:0,Synth Pad Choir,melodic,33,96,22,-6.9,-16.5,-17.0,10.5,7.0
+freepats-light/pad-new-age:0:0,New Age Pad,melodic,36,96,21,-7.5,-17.4,-18.9,9.6,6.4
+freepats-light/pad-sweep:0:0,Sweep Pad,melodic,33,96,22,-7.7,-17.4,-16.8,9.6,6.2
+freepats-light/piano-kw:0:0,KW Upright Piano Small,melodic,24,96,25,-7.4,-21.8,-32.5,5.2,6.5
+freepats-light/timpani:0:0,Timpani,melodic,36,60,9,-5.8,-26.3,-37.7,0.7,8.1
+freepats-light/world-percussion:0:0,World Percussion,drums,48,69,8,-7.6,-33.1,-139.1,-6.1,6.3

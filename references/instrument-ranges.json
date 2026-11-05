@@ -1,0 +1,1191 @@
+{
+  "_说明": "实音MIDI，C4=60。未纳入本次核查的行保持旧数值与原把握标记，不等于已查证。原21个low条目的旧common/extreme移到legacy_unverified，不再用于硬判定。有条件数值实例、型号/定弦、缺音和来源见instrument-range-evidence.json；只有声部显式选择range_variant才按该参照检查。资料所示音域不等于舒适音区或所有型号的极限；不以音区判音色自然感。",
+  "instruments": {
+    "piano": {
+      "name": "钢琴",
+      "common": [
+        36,
+        96
+      ],
+      "extreme": [
+        21,
+        108
+      ],
+      "confidence": "high"
+    },
+    "violin": {
+      "name": "小提琴",
+      "common": [
+        55,
+        91
+      ],
+      "extreme": [
+        55,
+        103
+      ],
+      "confidence": "high"
+    },
+    "viola": {
+      "name": "中提琴",
+      "common": [
+        48,
+        84
+      ],
+      "extreme": [
+        48,
+        96
+      ],
+      "confidence": "high"
+    },
+    "cello": {
+      "name": "大提琴",
+      "common": [
+        36,
+        76
+      ],
+      "extreme": [
+        36,
+        88
+      ],
+      "confidence": "high"
+    },
+    "contrabass": {
+      "name": "低音提琴",
+      "common": [
+        28,
+        55
+      ],
+      "extreme": [
+        28,
+        67
+      ],
+      "confidence": "high"
+    },
+    "string-ensemble": {
+      "name": "弦乐合奏",
+      "common": [
+        36,
+        93
+      ],
+      "extreme": [
+        28,
+        103
+      ],
+      "confidence": "medium"
+    },
+    "harp": {
+      "name": "竖琴",
+      "common": [
+        36,
+        96
+      ],
+      "extreme": [
+        24,
+        103
+      ],
+      "confidence": "high"
+    },
+    "guitar": {
+      "name": "吉他",
+      "common": [
+        40,
+        79
+      ],
+      "extreme": [
+        40,
+        88
+      ],
+      "confidence": "high"
+    },
+    "bass-guitar": {
+      "name": "贝斯(电/指弹/原声)",
+      "common": [
+        28,
+        55
+      ],
+      "extreme": [
+        28,
+        67
+      ],
+      "confidence": "high"
+    },
+    "flute": {
+      "name": "长笛(西洋)",
+      "common": [
+        60,
+        91
+      ],
+      "extreme": [
+        59,
+        103
+      ],
+      "confidence": "high"
+    },
+    "piccolo": {
+      "name": "短笛",
+      "common": [
+        74,
+        102
+      ],
+      "extreme": [
+        74,
+        108
+      ],
+      "confidence": "high"
+    },
+    "oboe": {
+      "name": "双簧管",
+      "common": [
+        58,
+        91
+      ],
+      "extreme": [
+        58,
+        98
+      ],
+      "confidence": "high"
+    },
+    "clarinet": {
+      "name": "单簧管",
+      "common": [
+        50,
+        91
+      ],
+      "extreme": [
+        50,
+        101
+      ],
+      "confidence": "high"
+    },
+    "bassoon": {
+      "name": "巴松",
+      "common": [
+        34,
+        72
+      ],
+      "extreme": [
+        34,
+        82
+      ],
+      "confidence": "high"
+    },
+    "trumpet": {
+      "name": "小号",
+      "common": [
+        55,
+        82
+      ],
+      "extreme": [
+        54,
+        89
+      ],
+      "confidence": "high"
+    },
+    "horn": {
+      "name": "圆号",
+      "common": [
+        41,
+        77
+      ],
+      "extreme": [
+        34,
+        84
+      ],
+      "confidence": "high"
+    },
+    "trombone": {
+      "name": "长号",
+      "common": [
+        40,
+        72
+      ],
+      "extreme": [
+        40,
+        82
+      ],
+      "confidence": "high"
+    },
+    "tuba": {
+      "name": "大号",
+      "common": [
+        28,
+        58
+      ],
+      "extreme": [
+        22,
+        65
+      ],
+      "confidence": "high"
+    },
+    "timpani": {
+      "name": "定音鼓",
+      "common": [
+        40,
+        55
+      ],
+      "extreme": [
+        38,
+        60
+      ],
+      "confidence": "medium"
+    },
+    "erhu": {
+      "name": "二胡",
+      "common": [
+        62,
+        93
+      ],
+      "extreme": [
+        62,
+        100
+      ],
+      "confidence": "medium"
+    },
+    "pipa": {
+      "name": "琵琶",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          45,
+          84
+        ],
+        "extreme": [
+          45,
+          92
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "pipa",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "pipa.hkco-pipa"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "guzheng": {
+      "name": "古筝(21弦D调)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          50,
+          88
+        ],
+        "extreme": [
+          38,
+          96
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "guzheng",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "guzheng.hkco-21d"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "dizi": {
+      "name": "竹笛(因笛种而异)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          67,
+          96
+        ],
+        "extreme": [
+          62,
+          102
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "dizi",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "dizi.hkco-qudi-c",
+          "dizi.hkco-bangdi-g",
+          "dizi.hkco-dadi-g"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "xiao": {
+      "name": "洞箫(因调而异)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          55,
+          84
+        ],
+        "extreme": [
+          50,
+          91
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "xiao",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "xiao.grinnell-d"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "shakuhachi": {
+      "name": "尺八",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          62,
+          88
+        ],
+        "extreme": [
+          62,
+          98
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "shakuhachi",
+        "status": "conditional_only",
+        "variant_ids": [],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "electric-piano": {
+      "name": "电钢琴",
+      "common": [
+        36,
+        96
+      ],
+      "extreme": [
+        28,
+        100
+      ],
+      "confidence": "medium"
+    },
+    "harpsichord": {
+      "name": "羽管键琴",
+      "common": [
+        36,
+        88
+      ],
+      "extreme": [
+        29,
+        93
+      ],
+      "confidence": "high"
+    },
+    "clavinet": {
+      "name": "击弦古钢琴(Clavinet)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          36,
+          84
+        ],
+        "extreme": [
+          29,
+          91
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "clavinet",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "clavinet.hohner-d6"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "organ": {
+      "name": "管风琴/电风琴",
+      "common": [
+        36,
+        96
+      ],
+      "extreme": [
+        24,
+        103
+      ],
+      "confidence": "medium"
+    },
+    "reed-organ": {
+      "name": "簧风琴",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          36,
+          84
+        ],
+        "extreme": [
+          29,
+          91
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "reed-organ",
+        "status": "conditional_only",
+        "variant_ids": [],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "accordion": {
+      "name": "手风琴",
+      "common": [
+        41,
+        93
+      ],
+      "extreme": [
+        36,
+        98
+      ],
+      "confidence": "medium"
+    },
+    "bandoneon": {
+      "name": "班多钮手风琴",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          38,
+          91
+        ],
+        "extreme": [
+          34,
+          96
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "bandoneon",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "bandoneon.rheinische-142"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "harmonica": {
+      "name": "口琴(C调diatonic)",
+      "common": [
+        60,
+        96
+      ],
+      "extreme": [
+        60,
+        100
+      ],
+      "confidence": "medium"
+    },
+    "ukulele": {
+      "name": "尤克里里(高音)",
+      "common": [
+        60,
+        81
+      ],
+      "extreme": [
+        60,
+        88
+      ],
+      "confidence": "medium"
+    },
+    "mandolin": {
+      "name": "曼陀林",
+      "common": [
+        55,
+        88
+      ],
+      "extreme": [
+        55,
+        100
+      ],
+      "confidence": "high"
+    },
+    "banjo": {
+      "name": "五弦班卓",
+      "common": [
+        50,
+        86
+      ],
+      "extreme": [
+        48,
+        93
+      ],
+      "confidence": "medium"
+    },
+    "sitar": {
+      "name": "西塔琴",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          48,
+          84
+        ],
+        "extreme": [
+          43,
+          96
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "sitar",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "sitar.grinnell-sa-c4"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "shamisen": {
+      "name": "三味线",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          47,
+          84
+        ],
+        "extreme": [
+          47,
+          91
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "shamisen",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "shamisen.nipponia-hoso-d",
+          "shamisen.nipponia-futo-g"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "koto": {
+      "name": "日本筝",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          50,
+          86
+        ],
+        "extreme": [
+          43,
+          93
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "koto",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "koto.nipponia-13"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "ruan": {
+      "name": "阮",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          48,
+          84
+        ],
+        "extreme": [
+          43,
+          91
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "ruan",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "ruan.hkco-zhongruan"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "liuqin": {
+      "name": "柳琴",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          62,
+          93
+        ],
+        "extreme": [
+          55,
+          100
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "liuqin",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "liuqin.hkco-xiaoruan-liuqin"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "dulcimer": {
+      "name": "扬琴/锤击扬琴",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          48,
+          88
+        ],
+        "extreme": [
+          43,
+          96
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "dulcimer",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "dulcimer.hkco-yangqin",
+          "dulcimer.dusty-d45"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "dan-tranh": {
+      "name": "越南十六弦筝",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          52,
+          86
+        ],
+        "extreme": [
+          48,
+          93
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "dan-tranh",
+        "status": "absolute_endpoints_pending",
+        "variant_ids": [],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "english-horn": {
+      "name": "英国管",
+      "common": [
+        52,
+        81
+      ],
+      "extreme": [
+        52,
+        88
+      ],
+      "confidence": "high"
+    },
+    "soprano-sax": {
+      "name": "高音萨克斯",
+      "common": [
+        56,
+        86
+      ],
+      "extreme": [
+        56,
+        91
+      ],
+      "confidence": "high"
+    },
+    "alto-sax": {
+      "name": "中音萨克斯",
+      "common": [
+        49,
+        80
+      ],
+      "extreme": [
+        49,
+        86
+      ],
+      "confidence": "high"
+    },
+    "tenor-sax": {
+      "name": "次中音萨克斯",
+      "common": [
+        44,
+        76
+      ],
+      "extreme": [
+        44,
+        82
+      ],
+      "confidence": "high"
+    },
+    "baritone-sax": {
+      "name": "上低音萨克斯",
+      "common": [
+        36,
+        68
+      ],
+      "extreme": [
+        36,
+        74
+      ],
+      "confidence": "high"
+    },
+    "recorder": {
+      "name": "竖笛(因型号而异)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          65,
+          96
+        ],
+        "extreme": [
+          60,
+          103
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "recorder",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "recorder.yamaha-soprano",
+          "recorder.yamaha-alto",
+          "recorder.yamaha-tenor",
+          "recorder.yamaha-bass"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "pan-flute": {
+      "name": "排箫",
+      "common": [
+        60,
+        96
+      ],
+      "extreme": [
+        55,
+        100
+      ],
+      "confidence": "medium"
+    },
+    "ocarina": {
+      "name": "陶笛(12孔)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          69,
+          93
+        ],
+        "extreme": [
+          65,
+          96
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "ocarina",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "ocarina.stl-tenor-c"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "whistle": {
+      "name": "口哨/哨笛",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          72,
+          96
+        ],
+        "extreme": [
+          67,
+          103
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "whistle",
+        "status": "conditional_only",
+        "variant_ids": [],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "shehnai": {
+      "name": "唢呐类(印度Shehnai)",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          60,
+          91
+        ],
+        "extreme": [
+          55,
+          96
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "shehnai",
+        "status": "numeric_scoped",
+        "variant_ids": [
+          "shehnai.grinnell-d"
+        ],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "bagpipe": {
+      "name": "风笛",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          65,
+          84
+        ],
+        "extreme": [
+          65,
+          86
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "bagpipe",
+        "status": "conditional_only",
+        "variant_ids": [],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "brass-section": {
+      "name": "铜管组",
+      "common": [
+        40,
+        82
+      ],
+      "extreme": [
+        34,
+        89
+      ],
+      "confidence": "medium"
+    },
+    "celesta": {
+      "name": "钢片琴",
+      "common": [
+        60,
+        100
+      ],
+      "extreme": [
+        60,
+        108
+      ],
+      "confidence": "high"
+    },
+    "glockenspiel": {
+      "name": "钟琴",
+      "common": [
+        79,
+        108
+      ],
+      "extreme": [
+        79,
+        108
+      ],
+      "confidence": "high"
+    },
+    "vibraphone": {
+      "name": "颤音琴",
+      "common": [
+        53,
+        89
+      ],
+      "extreme": [
+        53,
+        89
+      ],
+      "confidence": "high"
+    },
+    "marimba": {
+      "name": "马林巴",
+      "common": [
+        48,
+        96
+      ],
+      "extreme": [
+        36,
+        96
+      ],
+      "confidence": "high"
+    },
+    "xylophone": {
+      "name": "木琴",
+      "common": [
+        77,
+        108
+      ],
+      "extreme": [
+        77,
+        108
+      ],
+      "confidence": "high"
+    },
+    "tubular-bells": {
+      "name": "管钟",
+      "common": [
+        60,
+        77
+      ],
+      "extreme": [
+        60,
+        77
+      ],
+      "confidence": "high"
+    },
+    "kalimba": {
+      "name": "拇指琴(17键)",
+      "common": [
+        60,
+        88
+      ],
+      "extreme": [
+        55,
+        92
+      ],
+      "confidence": "medium"
+    },
+    "music-box": {
+      "name": "八音盒",
+      "common": null,
+      "extreme": null,
+      "confidence": "low",
+      "legacy_unverified": {
+        "common": [
+          72,
+          96
+        ],
+        "extreme": [
+          60,
+          108
+        ],
+        "confidence": "low",
+        "status": "superseded_unverified_generic_values"
+      },
+      "range_review": {
+        "evidence_id": "music-box",
+        "status": "conditional_only",
+        "variant_ids": [],
+        "common_status": "not_independently_verified",
+        "universal_extreme_status": "not_established"
+      }
+    },
+    "steel-drums": {
+      "name": "钢鼓",
+      "common": [
+        60,
+        93
+      ],
+      "extreme": [
+        55,
+        96
+      ],
+      "confidence": "medium"
+    },
+    "choir": {
+      "name": "合唱(混声)",
+      "common": [
+        48,
+        81
+      ],
+      "extreme": [
+        40,
+        88
+      ],
+      "confidence": "medium"
+    }
+  },
+  "gm_program_to_instrument": {
+    "0-3": "piano",
+    "4-5": "electric-piano",
+    "6": "harpsichord",
+    "7": "clavinet",
+    "8": "celesta",
+    "9": "glockenspiel",
+    "10": "music-box",
+    "11": "vibraphone",
+    "12": "marimba",
+    "13": "xylophone",
+    "14": "tubular-bells",
+    "15": "dulcimer",
+    "16-19": "organ",
+    "20": "reed-organ",
+    "21": "accordion",
+    "22": "harmonica",
+    "23": "bandoneon",
+    "24-30": "guitar",
+    "32": "contrabass",
+    "33-37": "bass-guitar",
+    "40": "violin",
+    "41": "viola",
+    "42": "cello",
+    "43": "contrabass",
+    "44-45": "string-ensemble",
+    "46": "harp",
+    "47": "timpani",
+    "48-49": "string-ensemble",
+    "52-53": "choir",
+    "56": "trumpet",
+    "57": "trombone",
+    "58": "tuba",
+    "59": "trumpet",
+    "60": "horn",
+    "61": "brass-section",
+    "64": "soprano-sax",
+    "65": "alto-sax",
+    "66": "tenor-sax",
+    "67": "baritone-sax",
+    "68": "oboe",
+    "69": "english-horn",
+    "70": "bassoon",
+    "71": "clarinet",
+    "72": "piccolo",
+    "73": "flute",
+    "74": "recorder",
+    "75": "pan-flute",
+    "77": "shakuhachi",
+    "78": "whistle",
+    "79": "ocarina",
+    "104": "sitar",
+    "105": "banjo",
+    "106": "shamisen",
+    "107": "koto",
+    "108": "kalimba",
+    "109": "bagpipe",
+    "110": "violin",
+    "111": "shehnai",
+    "114": "steel-drums"
+  },
+  "preset_stem_to_instrument": {
+    "piano-kw": "piano",
+    "harp": "harp",
+    "bass-finger": "bass-guitar",
+    "bass-picked": "bass-guitar",
+    "guitar-clean": "guitar",
+    "guitar-jazz": "guitar",
+    "clarinet": "clarinet",
+    "timpani": "timpani",
+    "world-percussion": null,
+    "electronic-drums": null,
+    "pad-choir": null,
+    "pad-new-age": null,
+    "pad-sweep": null
+  },
+  "dsk_program_to_instrument": {
+    "0": "pipa",
+    "3": "guzheng",
+    "4": "erhu"
+  },
+  "inst_name_to_instrument": {
+    "dizi": "dizi",
+    "xiao": "xiao",
+    "erhu": "erhu",
+    "guzheng": "guzheng",
+    "pipa": "pipa",
+    "bass": "bass-guitar",
+    "pluck": "guitar",
+    "marimba": "marimba",
+    "keys": "electric-piano",
+    "organ": "organ",
+    "whistle": "whistle"
+  },
+  "gm_programs_not_checked": "31 吉他泛音,34? 已含在33-37,38-39 合成贝斯,50-51 合成弦乐,54 合成人声,55 乐队齐奏,62-63 合成铜管,76 瓶吹,80-103 合成主音/pad/特效,85 Solo Vox,112-113 钟/哨类打击,115-127 打击与音效：不检查音区。",
+  "range_evidence_file": "instrument-range-evidence.json"
+}

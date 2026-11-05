@@ -1,0 +1,1311 @@
+{
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko"
+  ],
+  "instruments": {
+    "piano": {
+      "names": {
+        "zh": "钢琴",
+        "en": "piano",
+        "ja": "ピアノ",
+        "ko": "피아노"
+      },
+      "aliases": [
+        "piano",
+        "grand",
+        "upright",
+        "钢琴",
+        "鋼琴"
+      ]
+    },
+    "electric-piano": {
+      "names": {
+        "zh": "电钢琴/电子钢琴预设",
+        "en": "electric piano",
+        "ja": "エレクトリックピアノ",
+        "ko": "일렉트릭 피아노"
+      },
+      "aliases": [
+        "electric piano",
+        "EP",
+        "电钢",
+        "电钢琴",
+        "電子鋼琴",
+        "電子ピアノ",
+        "エレピ",
+        "전자피아노",
+        "디지털 피아노"
+      ]
+    },
+    "harpsichord": {
+      "names": {
+        "zh": "羽管键琴",
+        "en": "harpsichord",
+        "ja": "チェンバロ",
+        "ko": "하프시코드"
+      },
+      "aliases": [
+        "harpsichord",
+        "大键琴"
+      ]
+    },
+    "clavinet": {
+      "names": {
+        "zh": "Clavinet电机械键盘",
+        "en": "clavinet",
+        "ja": "クラビネット",
+        "ko": "클라비넷"
+      },
+      "aliases": [
+        "clavinet",
+        "clav"
+      ]
+    },
+    "organ": {
+      "names": {
+        "zh": "管风琴",
+        "en": "pipe organ",
+        "ja": "パイプオルガン",
+        "ko": "파이프 오르간"
+      },
+      "aliases": [
+        "pipe organ",
+        "管风琴",
+        "オルガン",
+        "오르간"
+      ]
+    },
+    "tonewheel-organ": {
+      "names": {
+        "zh": "音轮风琴",
+        "en": "tonewheel organ",
+        "ja": "トーンホイールオルガン",
+        "ko": "톤휠 오르간"
+      },
+      "aliases": [
+        "tonewheel",
+        "Hammond",
+        "摇滚风琴"
+      ]
+    },
+    "reed-organ": {
+      "names": {
+        "zh": "簧风琴",
+        "en": "reed organ",
+        "ja": "リードオルガン",
+        "ko": "리드 오르간"
+      },
+      "aliases": [
+        "reed organ",
+        "harmonium"
+      ]
+    },
+    "accordion": {
+      "names": {
+        "zh": "手风琴",
+        "en": "accordion",
+        "ja": "アコーディオン",
+        "ko": "아코디언"
+      },
+      "aliases": [
+        "accordion",
+        "手风琴"
+      ]
+    },
+    "bandoneon": {
+      "names": {
+        "zh": "班多钮手风琴",
+        "en": "bandoneon",
+        "ja": "バンドネオン",
+        "ko": "반도네온"
+      },
+      "aliases": [
+        "bandoneon"
+      ]
+    },
+    "harmonica": {
+      "names": {
+        "zh": "口琴",
+        "en": "harmonica",
+        "ja": "ハーモニカ",
+        "ko": "하모니카"
+      },
+      "aliases": [
+        "harmonica",
+        "口琴"
+      ]
+    },
+    "violin": {
+      "names": {
+        "zh": "小提琴",
+        "en": "violin",
+        "ja": "ヴァイオリン",
+        "ko": "바이올린"
+      },
+      "aliases": [
+        "violin",
+        "バイオリン"
+      ]
+    },
+    "viola": {
+      "names": {
+        "zh": "中提琴",
+        "en": "viola",
+        "ja": "ヴィオラ",
+        "ko": "비올라"
+      },
+      "aliases": [
+        "viola",
+        "ビオラ"
+      ]
+    },
+    "cello": {
+      "names": {
+        "zh": "大提琴",
+        "en": "cello",
+        "ja": "チェロ",
+        "ko": "첼로"
+      },
+      "aliases": [
+        "cello",
+        "大提琴"
+      ]
+    },
+    "double-bass": {
+      "names": {
+        "zh": "低音提琴",
+        "en": "double bass",
+        "ja": "コントラバス",
+        "ko": "더블 베이스"
+      },
+      "aliases": [
+        "double-bass",
+        "contrabass",
+        "ウッドベース",
+        "콘트라베이스"
+      ]
+    },
+    "string-ensemble": {
+      "names": {
+        "zh": "弦乐合奏",
+        "en": "string ensemble",
+        "ja": "弦楽アンサンブル",
+        "ko": "현악 앙상블"
+      },
+      "aliases": [
+        "strings",
+        "弦乐",
+        "ensemble"
+      ]
+    },
+    "strings-tremolo": {
+      "names": {
+        "zh": "弦乐颤弓",
+        "en": "tremolo strings",
+        "ja": "トレモロ弦楽器",
+        "ko": "트레몰로 스트링"
+      },
+      "aliases": [
+        "tremolo strings",
+        "颤弓"
+      ]
+    },
+    "strings-pizzicato": {
+      "names": {
+        "zh": "弦乐拨奏",
+        "en": "pizzicato strings",
+        "ja": "ピチカート弦楽器",
+        "ko": "피치카토 스트링"
+      },
+      "aliases": [
+        "pizzicato",
+        "拨奏弦乐"
+      ]
+    },
+    "harp": {
+      "names": {
+        "zh": "竖琴",
+        "en": "harp",
+        "ja": "ハープ",
+        "ko": "하프"
+      },
+      "aliases": [
+        "harp",
+        "竖琴"
+      ]
+    },
+    "classical-guitar": {
+      "names": {
+        "zh": "古典/尼龙弦吉他",
+        "en": "classical guitar",
+        "ja": "クラシックギター",
+        "ko": "클래식 기타"
+      },
+      "aliases": [
+        "classical-guitar",
+        "nylon guitar",
+        "ナイロンギター",
+        "나일론 기타"
+      ]
+    },
+    "acoustic-guitar": {
+      "names": {
+        "zh": "钢弦原声吉他",
+        "en": "steel-string acoustic guitar",
+        "ja": "スチール弦アコースティックギター",
+        "ko": "스틸 현 어쿠스틱 기타"
+      },
+      "aliases": [
+        "acoustic-guitar",
+        "acoustic guitar",
+        "アコースティックギター",
+        "アコギ",
+        "어쿠스틱 기타",
+        "통기타"
+      ]
+    },
+    "electric-guitar": {
+      "names": {
+        "zh": "电吉他",
+        "en": "electric guitar",
+        "ja": "エレクトリックギター",
+        "ko": "일렉트릭 기타"
+      },
+      "aliases": [
+        "electric-guitar",
+        "エレキギター",
+        "エレキ",
+        "일렉 기타"
+      ]
+    },
+    "electric-bass": {
+      "names": {
+        "zh": "电贝斯",
+        "en": "electric bass",
+        "ja": "エレクトリックベース",
+        "ko": "일렉트릭 베이스"
+      },
+      "aliases": [
+        "bass",
+        "electric bass",
+        "贝斯",
+        "bass guitar",
+        "ベースギター",
+        "베이스 기타"
+      ]
+    },
+    "ukulele": {
+      "names": {
+        "zh": "尤克里里",
+        "en": "ukulele",
+        "ja": "ウクレレ",
+        "ko": "우쿨렐레"
+      },
+      "aliases": [
+        "ukulele",
+        "尤克里里"
+      ]
+    },
+    "mandolin": {
+      "names": {
+        "zh": "曼陀林",
+        "en": "mandolin",
+        "ja": "マンドリン",
+        "ko": "만돌린"
+      },
+      "aliases": [
+        "mandolin",
+        "曼陀林"
+      ]
+    },
+    "banjo": {
+      "names": {
+        "zh": "班卓琴",
+        "en": "banjo",
+        "ja": "バンジョー",
+        "ko": "밴조"
+      },
+      "aliases": [
+        "banjo",
+        "班卓"
+      ]
+    },
+    "sitar": {
+      "names": {
+        "zh": "西塔琴",
+        "en": "sitar",
+        "ja": "シタール",
+        "ko": "시타르"
+      },
+      "aliases": [
+        "sitar",
+        "西塔"
+      ]
+    },
+    "shamisen": {
+      "names": {
+        "zh": "三味线",
+        "en": "shamisen",
+        "ja": "三味線",
+        "ko": "샤미센"
+      },
+      "aliases": [
+        "shamisen",
+        "三味线",
+        "三味线",
+        "しゃみせん"
+      ]
+    },
+    "koto": {
+      "names": {
+        "zh": "日本筝",
+        "en": "Japanese koto",
+        "ja": "日本の箏",
+        "ko": "일본 고토"
+      },
+      "aliases": [
+        "koto",
+        "日本筝",
+        "koto",
+        "箏",
+        "こと",
+        "고토"
+      ]
+    },
+    "guzheng": {
+      "names": {
+        "zh": "古筝",
+        "en": "guzheng",
+        "ja": "古筝（グーチェン）",
+        "ko": "구정"
+      },
+      "aliases": [
+        "guzheng",
+        "古筝",
+        "zheng",
+        "古箏",
+        "グーチェン",
+        "중국 쟁"
+      ]
+    },
+    "pipa": {
+      "names": {
+        "zh": "琵琶",
+        "en": "pipa",
+        "ja": "琵琶（ピパ）",
+        "ko": "비파"
+      },
+      "aliases": [
+        "pipa",
+        "琵琶",
+        "琵琶",
+        "ピパ",
+        "중국 비파"
+      ]
+    },
+    "ruan": {
+      "names": {
+        "zh": "阮",
+        "en": "ruan",
+        "ja": "阮（ルアン）",
+        "ko": "롼"
+      },
+      "aliases": [
+        "ruan",
+        "阮"
+      ]
+    },
+    "liuqin": {
+      "names": {
+        "zh": "柳琴",
+        "en": "liuqin",
+        "ja": "柳琴（リウチン）",
+        "ko": "류친"
+      },
+      "aliases": [
+        "liuqin",
+        "柳琴"
+      ]
+    },
+    "dulcimer": {
+      "names": {
+        "zh": "扬琴/击弦扬琴类",
+        "en": "dulcimer",
+        "ja": "ダルシマー",
+        "ko": "덜시머"
+      },
+      "aliases": [
+        "dulcimer",
+        "yangqin",
+        "扬琴"
+      ]
+    },
+    "dan-tranh": {
+      "names": {
+        "zh": "越南筝Đàn tranh",
+        "en": "dan tranh",
+        "ja": "ベトナム箏（ダン・チャイン）",
+        "ko": "베트남 단짜인"
+      },
+      "aliases": [
+        "dantranh",
+        "dan tranh",
+        "越南筝",
+        "đàn tranh",
+        "dantranh",
+        "ダンチャイン",
+        "단짜인"
+      ]
+    },
+    "erhu": {
+      "names": {
+        "zh": "二胡",
+        "en": "erhu",
+        "ja": "二胡",
+        "ko": "얼후"
+      },
+      "aliases": [
+        "erhu",
+        "二胡",
+        "にこ",
+        "ニコ"
+      ]
+    },
+    "flute": {
+      "names": {
+        "zh": "西洋长笛",
+        "en": "flute",
+        "ja": "フルート",
+        "ko": "플루트"
+      },
+      "aliases": [
+        "flute",
+        "长笛"
+      ]
+    },
+    "piccolo": {
+      "names": {
+        "zh": "短笛",
+        "en": "piccolo",
+        "ja": "ピッコロ",
+        "ko": "피콜로"
+      },
+      "aliases": [
+        "piccolo",
+        "短笛"
+      ]
+    },
+    "oboe": {
+      "names": {
+        "zh": "双簧管",
+        "en": "oboe",
+        "ja": "オーボエ",
+        "ko": "오보에"
+      },
+      "aliases": [
+        "oboe"
+      ]
+    },
+    "english-horn": {
+      "names": {
+        "zh": "英国管",
+        "en": "English horn",
+        "ja": "イングリッシュホルン",
+        "ko": "잉글리시 호른"
+      },
+      "aliases": [
+        "english-horn"
+      ]
+    },
+    "clarinet": {
+      "names": {
+        "zh": "单簧管",
+        "en": "clarinet",
+        "ja": "クラリネット",
+        "ko": "클라리넷"
+      },
+      "aliases": [
+        "clarinet"
+      ]
+    },
+    "bassoon": {
+      "names": {
+        "zh": "大管",
+        "en": "bassoon",
+        "ja": "ファゴット",
+        "ko": "바순"
+      },
+      "aliases": [
+        "bassoon",
+        "ファゴット",
+        "파곳"
+      ]
+    },
+    "soprano-sax": {
+      "names": {
+        "zh": "高音萨克斯",
+        "en": "soprano saxophone",
+        "ja": "ソプラノサックス",
+        "ko": "소프라노 색소폰"
+      },
+      "aliases": [
+        "soprano-sax",
+        "高音萨克斯"
+      ]
+    },
+    "alto-sax": {
+      "names": {
+        "zh": "中音萨克斯",
+        "en": "alto saxophone",
+        "ja": "アルトサックス",
+        "ko": "알토 색소폰"
+      },
+      "aliases": [
+        "alto-sax",
+        "中音萨克斯"
+      ]
+    },
+    "tenor-sax": {
+      "names": {
+        "zh": "次中音萨克斯",
+        "en": "tenor saxophone",
+        "ja": "テナーサックス",
+        "ko": "테너 색소폰"
+      },
+      "aliases": [
+        "tenor-sax",
+        "次中音萨克斯"
+      ]
+    },
+    "baritone-sax": {
+      "names": {
+        "zh": "上低音萨克斯",
+        "en": "baritone saxophone",
+        "ja": "バリトンサックス",
+        "ko": "바리톤 색소폰"
+      },
+      "aliases": [
+        "baritone-sax",
+        "上低音萨克斯"
+      ]
+    },
+    "recorder": {
+      "names": {
+        "zh": "竖笛",
+        "en": "recorder",
+        "ja": "リコーダー",
+        "ko": "리코더"
+      },
+      "aliases": [
+        "recorder",
+        "竖笛"
+      ]
+    },
+    "dizi": {
+      "names": {
+        "zh": "中国竹笛",
+        "en": "Chinese dizi",
+        "ja": "中国竹笛（ディーズー）",
+        "ko": "중국 디즈"
+      },
+      "aliases": [
+        "dizi",
+        "笛子",
+        "竹笛",
+        "梆笛",
+        "曲笛",
+        "ディーズー",
+        "디즈"
+      ]
+    },
+    "xiao": {
+      "names": {
+        "zh": "箫",
+        "en": "xiao",
+        "ja": "簫（シャオ）",
+        "ko": "샤오"
+      },
+      "aliases": [
+        "xiao",
+        "箫",
+        "洞箫",
+        "簫",
+        "シャオ"
+      ]
+    },
+    "shakuhachi": {
+      "names": {
+        "zh": "尺八",
+        "en": "shakuhachi",
+        "ja": "尺八",
+        "ko": "샤쿠하치"
+      },
+      "aliases": [
+        "shakuhachi",
+        "尺八"
+      ]
+    },
+    "pan-flute": {
+      "names": {
+        "zh": "排箫",
+        "en": "pan flute",
+        "ja": "パンフルート",
+        "ko": "팬플루트"
+      },
+      "aliases": [
+        "pan flute",
+        "排箫"
+      ]
+    },
+    "ocarina": {
+      "names": {
+        "zh": "陶笛",
+        "en": "ocarina",
+        "ja": "オカリナ",
+        "ko": "오카리나"
+      },
+      "aliases": [
+        "ocarina",
+        "陶笛"
+      ]
+    },
+    "whistle": {
+      "names": {
+        "zh": "口哨",
+        "en": "whistle",
+        "ja": "口笛",
+        "ko": "휘파람"
+      },
+      "aliases": [
+        "whistle",
+        "口哨"
+      ]
+    },
+    "tin-whistle": {
+      "names": {
+        "zh": "锡笛",
+        "en": "tin whistle",
+        "ja": "ティンホイッスル",
+        "ko": "틴 휘슬"
+      },
+      "aliases": [
+        "tin whistle",
+        "锡笛"
+      ]
+    },
+    "shehnai": {
+      "names": {
+        "zh": "Shehnai双簧管",
+        "en": "shehnai",
+        "ja": "シェーナイ",
+        "ko": "셰나이"
+      },
+      "aliases": [
+        "shenai",
+        "shehnai"
+      ]
+    },
+    "bagpipe": {
+      "names": {
+        "zh": "风笛",
+        "en": "bagpipe",
+        "ja": "バグパイプ",
+        "ko": "백파이프"
+      },
+      "aliases": [
+        "bagpipe",
+        "风笛"
+      ]
+    },
+    "trumpet": {
+      "names": {
+        "zh": "小号",
+        "en": "trumpet",
+        "ja": "トランペット",
+        "ko": "트럼펫"
+      },
+      "aliases": [
+        "trumpet",
+        "小号"
+      ]
+    },
+    "muted-trumpet": {
+      "names": {
+        "zh": "弱音小号",
+        "en": "muted trumpet",
+        "ja": "ミュートトランペット",
+        "ko": "뮤트 트럼펫"
+      },
+      "aliases": [
+        "muted trumpet",
+        "弱音小号"
+      ]
+    },
+    "horn": {
+      "names": {
+        "zh": "圆号",
+        "en": "French horn",
+        "ja": "ホルン",
+        "ko": "호른"
+      },
+      "aliases": [
+        "horn",
+        "圆号",
+        "圆号",
+        "圓號"
+      ]
+    },
+    "trombone": {
+      "names": {
+        "zh": "长号",
+        "en": "trombone",
+        "ja": "トロンボーン",
+        "ko": "트롬본"
+      },
+      "aliases": [
+        "trombone",
+        "长号"
+      ]
+    },
+    "tuba": {
+      "names": {
+        "zh": "大号",
+        "en": "tuba",
+        "ja": "チューバ",
+        "ko": "튜바"
+      },
+      "aliases": [
+        "tuba",
+        "大号"
+      ]
+    },
+    "brass-section": {
+      "names": {
+        "zh": "铜管组",
+        "en": "brass section",
+        "ja": "ブラスセクション",
+        "ko": "금관 섹션"
+      },
+      "aliases": [
+        "brass section",
+        "铜管组"
+      ]
+    },
+    "celesta": {
+      "names": {
+        "zh": "钢片琴",
+        "en": "celesta",
+        "ja": "チェレスタ",
+        "ko": "첼레스타"
+      },
+      "aliases": [
+        "celesta"
+      ]
+    },
+    "glockenspiel": {
+      "names": {
+        "zh": "钟琴",
+        "en": "glockenspiel",
+        "ja": "グロッケンシュピール",
+        "ko": "글로켄슈필"
+      },
+      "aliases": [
+        "glockenspiel"
+      ]
+    },
+    "vibraphone": {
+      "names": {
+        "zh": "颤音琴",
+        "en": "vibraphone",
+        "ja": "ヴィブラフォン",
+        "ko": "비브라폰"
+      },
+      "aliases": [
+        "vibraphone",
+        "ビブラフォン"
+      ]
+    },
+    "marimba": {
+      "names": {
+        "zh": "马林巴",
+        "en": "marimba",
+        "ja": "マリンバ",
+        "ko": "마림바"
+      },
+      "aliases": [
+        "marimba"
+      ]
+    },
+    "xylophone": {
+      "names": {
+        "zh": "木琴",
+        "en": "xylophone",
+        "ja": "シロフォン",
+        "ko": "실로폰"
+      },
+      "aliases": [
+        "xylophone",
+        "木琴"
+      ]
+    },
+    "tubular-bells": {
+      "names": {
+        "zh": "管钟",
+        "en": "tubular bells",
+        "ja": "チューブラーベル",
+        "ko": "튜블러 벨"
+      },
+      "aliases": [
+        "tubular-bells"
+      ]
+    },
+    "timpani": {
+      "names": {
+        "zh": "定音鼓",
+        "en": "timpani",
+        "ja": "ティンパニ",
+        "ko": "팀파니"
+      },
+      "aliases": [
+        "timpani"
+      ]
+    },
+    "kalimba": {
+      "names": {
+        "zh": "卡林巴/拇指琴",
+        "en": "kalimba",
+        "ja": "カリンバ",
+        "ko": "칼림바"
+      },
+      "aliases": [
+        "kalimba",
+        "拇指琴"
+      ]
+    },
+    "bass-drum": {
+      "names": {
+        "zh": "大鼓",
+        "en": "bass drum",
+        "ja": "バスドラム",
+        "ko": "베이스 드럼"
+      },
+      "aliases": [
+        "bass-drum"
+      ]
+    },
+    "snare": {
+      "names": {
+        "zh": "军鼓/小鼓",
+        "en": "snare drum",
+        "ja": "スネアドラム",
+        "ko": "스네어 드럼"
+      },
+      "aliases": [
+        "snare"
+      ]
+    },
+    "gong": {
+      "names": {
+        "zh": "锣类",
+        "en": "gong",
+        "ja": "銅鑼",
+        "ko": "공"
+      },
+      "aliases": [
+        "gong",
+        "銅鑼",
+        "ゴング",
+        "징"
+      ]
+    },
+    "cymbals": {
+      "names": {
+        "zh": "镲",
+        "en": "cymbals",
+        "ja": "シンバル",
+        "ko": "심벌즈"
+      },
+      "aliases": [
+        "cymbals"
+      ]
+    },
+    "drum-kit": {
+      "names": {
+        "zh": "鼓组",
+        "en": "drum kit",
+        "ja": "ドラムセット",
+        "ko": "드럼 세트"
+      },
+      "aliases": [
+        "drum-kit",
+        "drumkit",
+        "ドラムキット",
+        "드럼세트"
+      ]
+    },
+    "wood-percussion": {
+      "names": {
+        "zh": "木质打击",
+        "en": "wood percussion",
+        "ja": "木製打楽器",
+        "ko": "목재 타악기"
+      },
+      "aliases": [
+        "wood-percussion"
+      ]
+    },
+    "metal-percussion": {
+      "names": {
+        "zh": "金属小打击",
+        "en": "metal percussion",
+        "ja": "金属打楽器",
+        "ko": "금속 타악기"
+      },
+      "aliases": [
+        "metal-percussion"
+      ]
+    },
+    "steel-drums": {
+      "names": {
+        "zh": "钢鼓",
+        "en": "steel drums",
+        "ja": "スティールドラム",
+        "ko": "스틸 드럼"
+      },
+      "aliases": [
+        "steel-drums"
+      ]
+    },
+    "hand-percussion": {
+      "names": {
+        "zh": "手鼓及世界打击",
+        "en": "hand percussion",
+        "ja": "ハンドパーカッション",
+        "ko": "핸드 퍼커션"
+      },
+      "aliases": [
+        "hand-percussion"
+      ]
+    },
+    "taiko": {
+      "names": {
+        "zh": "太鼓/大鼓近似",
+        "en": "taiko / low-drum approximation",
+        "ja": "太鼓・大鼓の近似",
+        "ko": "다이코·큰북 근사음"
+      },
+      "aliases": [
+        "taiko",
+        "太鼓",
+        "타이코",
+        "다이코"
+      ]
+    },
+    "music-box": {
+      "names": {
+        "zh": "八音盒",
+        "en": "music box",
+        "ja": "オルゴール",
+        "ko": "오르골"
+      },
+      "aliases": [
+        "music box",
+        "八音盒",
+        "八音盒",
+        "뮤직 박스"
+      ]
+    },
+    "choir": {
+      "names": {
+        "zh": "人声/合唱元音",
+        "en": "choir",
+        "ja": "合唱",
+        "ko": "합창"
+      },
+      "aliases": [
+        "choir",
+        "voice",
+        "合唱",
+        "人声"
+      ]
+    },
+    "orchestra-hit": {
+      "names": {
+        "zh": "管弦齐奏重击",
+        "en": "orchestra hit",
+        "ja": "オーケストラヒット",
+        "ko": "오케스트라 히트"
+      },
+      "aliases": [
+        "orchestra hit",
+        "齐奏重击"
+      ]
+    },
+    "synth-lead": {
+      "names": {
+        "zh": "合成主音",
+        "en": "synth lead",
+        "ja": "シンセリード",
+        "ko": "신스 리드"
+      },
+      "aliases": [
+        "synth-lead"
+      ]
+    },
+    "synth-bass": {
+      "names": {
+        "zh": "合成贝斯",
+        "en": "synth bass",
+        "ja": "シンセベース",
+        "ko": "신스 베이스"
+      },
+      "aliases": [
+        "synth-bass"
+      ]
+    },
+    "synth-pad": {
+      "names": {
+        "zh": "合成铺底",
+        "en": "synth pad",
+        "ja": "シンセパッド",
+        "ko": "신스 패드"
+      },
+      "aliases": [
+        "synth-pad",
+        "パッド",
+        "패드"
+      ]
+    },
+    "synth-strings": {
+      "names": {
+        "zh": "合成弦乐",
+        "en": "synth strings",
+        "ja": "シンセストリングス",
+        "ko": "신스 스트링"
+      },
+      "aliases": [
+        "synth-strings"
+      ]
+    },
+    "synth-brass": {
+      "names": {
+        "zh": "合成铜管",
+        "en": "synth brass",
+        "ja": "シンセブラス",
+        "ko": "신스 브라스"
+      },
+      "aliases": [
+        "synth-brass"
+      ]
+    },
+    "synth-fx": {
+      "names": {
+        "zh": "合成效果纹理",
+        "en": "synth effects",
+        "ja": "シンセエフェクト",
+        "ko": "신스 이펙트"
+      },
+      "aliases": [
+        "synth-fx"
+      ]
+    },
+    "synth-drum": {
+      "names": {
+        "zh": "合成鼓",
+        "en": "synth drum",
+        "ja": "シンセドラム",
+        "ko": "신스 드럼"
+      },
+      "aliases": [
+        "synth-drum"
+      ]
+    },
+    "sound-effect": {
+      "names": {
+        "zh": "拟音/噪声预设",
+        "en": "sound-effect preset",
+        "ja": "効果音プリセット",
+        "ko": "효과음 프리셋"
+      },
+      "aliases": [
+        "noise",
+        "effect",
+        "sfx",
+        "拟音"
+      ]
+    },
+    "unverified-wind": {
+      "names": {
+        "zh": "身份待核实的吹管预设",
+        "en": "unverified wind preset",
+        "ja": "楽器未確認の管楽器プリセット",
+        "ko": "악기 미확인 관악 프리셋"
+      },
+      "aliases": [
+        "BAN-DI",
+        "不明笛类"
+      ]
+    },
+    "unverified-lute": {
+      "names": {
+        "zh": "身份待核实的弹拨预设",
+        "en": "unverified plucked preset",
+        "ja": "楽器未確認の撥弦プリセット",
+        "ko": "악기 미확인 발현 프리셋"
+      },
+      "aliases": [
+        "LUAN",
+        "不明弹拨"
+      ]
+    },
+    "taisho-koto": {
+      "names": {
+        "zh": "大正琴",
+        "en": "taisho koto",
+        "ja": "大正琴",
+        "ko": "다이쇼고토"
+      },
+      "aliases": [
+        "taisho koto",
+        "taishogoto",
+        "大正琴"
+      ]
+    },
+    "orchestra-ensemble": {
+      "names": {
+        "zh": "管弦合奏叠层",
+        "en": "orchestral ensemble layer",
+        "ja": "オーケストラ合奏レイヤー",
+        "ko": "오케스트라 합주 레이어"
+      },
+      "aliases": [
+        "full orchestra",
+        "全管弦"
+      ]
+    },
+    "woodwind-ensemble": {
+      "names": {
+        "zh": "木管合奏",
+        "en": "woodwind ensemble",
+        "ja": "木管アンサンブル",
+        "ko": "목관 앙상블"
+      },
+      "aliases": [
+        "woodwind choir",
+        "木管合奏"
+      ]
+    },
+    "hybrid-keyboard": {
+      "names": {
+        "zh": "键盘与其他音色叠层",
+        "en": "layered keyboard preset",
+        "ja": "レイヤー鍵盤プリセット",
+        "ko": "레이어 건반 프리셋"
+      },
+      "aliases": [
+        "piano strings",
+        "bell piano",
+        "叠层键盘"
+      ]
+    }
+  },
+  "categories": {
+    "guitar": {
+      "names": {
+        "zh": "吉他",
+        "en": "guitar",
+        "ja": "ギター",
+        "ko": "기타"
+      },
+      "aliases": [
+        "吉他",
+        "吉它",
+        "guitars"
+      ]
+    },
+    "bass": {
+      "names": {
+        "zh": "贝斯",
+        "en": "bass",
+        "ja": "ベース",
+        "ko": "베이스"
+      },
+      "aliases": [
+        "貝斯"
+      ]
+    },
+    "strings": {
+      "names": {
+        "zh": "弦乐",
+        "en": "strings",
+        "ja": "弦楽器",
+        "ko": "현악기"
+      },
+      "aliases": [
+        "弦樂",
+        "ストリングス",
+        "스트링"
+      ]
+    },
+    "brass": {
+      "names": {
+        "zh": "铜管",
+        "en": "brass",
+        "ja": "金管楽器",
+        "ko": "금관악기"
+      },
+      "aliases": [
+        "銅管"
+      ]
+    },
+    "woodwinds": {
+      "names": {
+        "zh": "木管",
+        "en": "woodwinds",
+        "ja": "木管楽器",
+        "ko": "목관악기"
+      },
+      "aliases": [
+        "woodwind"
+      ]
+    },
+    "percussion": {
+      "names": {
+        "zh": "打击",
+        "en": "percussion",
+        "ja": "打楽器",
+        "ko": "타악기"
+      },
+      "aliases": [
+        "打擊",
+        "パーカッション",
+        "퍼커션"
+      ]
+    },
+    "drums": {
+      "names": {
+        "zh": "鼓组",
+        "en": "drums",
+        "ja": "ドラム",
+        "ko": "드럼"
+      },
+      "aliases": [
+        "鼓組"
+      ]
+    },
+    "variant": {
+      "names": {
+        "zh": "变体",
+        "en": "variant",
+        "ja": "バリエーション",
+        "ko": "변형"
+      },
+      "aliases": [
+        "變體"
+      ]
+    }
+  }
+}

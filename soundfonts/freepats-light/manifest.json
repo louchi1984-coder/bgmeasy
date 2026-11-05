@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "download_bytes": 78188905,
+  "installed_bytes": 127974818,
+  "assets": [
+    {
+      "id": "piano-kw",
+      "name": "KW Upright Piano Small",
+      "family": "piano",
+      "file": "freepats-light/piano-kw.sf2",
+      "source_url": "https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html",
+      "download_url": "https://freepats.zenvoid.org/Piano/UprightPianoKW/UprightPianoKW-small-SF2-20190703.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 6093984,
+      "installed_bytes": 9456310,
+      "package_sha256": "3bd025e7c2ffa9e6f3f99215ce383c9cebbac991cfbf9be1453cdb4328ec3492",
+      "sha256": "cf2a98eb38a32c4954b4b6e2caae4112d62dd8e892eceefdd7942b0e7d01ac2f"
+    },
+    {
+      "id": "guitar-clean",
+      "name": "FSBS Clean Electric Guitar Small",
+      "family": "guitar",
+      "file": "freepats-light/guitar-clean.sf2",
+      "source_url": "https://freepats.zenvoid.org/ElectricGuitar/clean-electric-guitar.html",
+      "download_url": "https://github.com/freepats/electric-guitar-FSBS-clean/releases/download/2026-08-07/EGuitarFSBS-clean-bridge-small-SF2-20260807.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 6599454,
+      "installed_bytes": 10854982,
+      "package_sha256": "bcea7d4c92a1cc6a26e545a218b34e59037d4bab6cf0fce24396428e6934d69c",
+      "sha256": "a58803acd8640a06a0a1a277a16ff4cd2610d9eab5fd6793741db4730c12f594"
+    },
+    {
+      "id": "guitar-jazz",
+      "name": "FSBS Jazz Electric Guitar Small",
+      "family": "guitar",
+      "file": "freepats-light/guitar-jazz.sf2",
+      "source_url": "https://freepats.zenvoid.org/ElectricGuitar/clean-electric-guitar.html",
+      "download_url": "https://github.com/freepats/electric-guitar-FSBS-jazz/releases/download/2026-08-07/EGuitarFSBS-jazz-bridge-small-SF2-20260807.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 5232868,
+      "installed_bytes": 7768134,
+      "package_sha256": "d2090931a0339ba6b60c6713bc6d701393d3a420c20e56ad69a8d50de645135d",
+      "sha256": "1baca0ebb66627bbd4c08d4137c41728253588ce85504ed5148f06ea7c000d22"
+    },
+    {
+      "id": "bass-picked",
+      "name": "YR Picked Bass",
+      "family": "bass",
+      "file": "freepats-light/bass-picked.sf2",
+      "source_url": "https://freepats.zenvoid.org/ElectricGuitar/clean-electric-bass.html",
+      "download_url": "https://github.com/freepats/electric-bass-YR/releases/download/2019-09-30/PickedBassYR-SF2-20190930.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 2345077,
+      "installed_bytes": 3527750,
+      "package_sha256": "e6bff767c352cd27de2de8cfff326d0849a76bb38d876075eecd5ffd2dc5afd0",
+      "sha256": "b16f6666486f42c6c4bde19a62462f0cda8b0f1d0ce72ad8ec51a557118d03ae"
+    },
+    {
+      "id": "bass-finger",
+      "name": "YR Finger Bass",
+      "family": "bass",
+      "file": "freepats-light/bass-finger.sf2",
+      "source_url": "https://freepats.zenvoid.org/ElectricGuitar/clean-electric-bass.html",
+      "download_url": "https://github.com/freepats/electric-bass-YR/releases/download/2019-09-30/FingerBassYR-SF2-20190930.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 2613000,
+      "installed_bytes": 4220300,
+      "package_sha256": "f5b5cfe04435a9e9037d1f97d515dc596535acf26637db9579d724cd757f179e",
+      "sha256": "bd1332696f61c0cb254ce7f202fb6b945ff46ccb1dcdd62e345a50bde3afb165"
+    },
+    {
+      "id": "harp",
+      "name": "Concert Harp",
+      "family": "strings",
+      "file": "freepats-light/harp.sf2",
+      "source_url": "https://freepats.zenvoid.org/OrchestralStrings/harp.html",
+      "download_url": "https://freepats.zenvoid.org/OrchestralStrings/ConcertHarp/ConcertHarp-SF2-20200702.tar.xz",
+      "license": "CC0-1.0",
+      "download_bytes": 9513292,
+      "installed_bytes": 18810604,
+      "package_sha256": "a328faa1996369154f20f960dde2e255b96e823574d5cf80eb9e7f00aed6a150",
+      "sha256": "cb5f6b48cff7efd45bf8d302272f76410833034cfbf327c9be954bd5b4a6fc66",
+      "tags": [
+        "竖琴",
+        "管弦"
+      ]
+    },
+    {
+      "id": "clarinet",
+      "name": "Clarinet",
+      "family": "woodwinds",
+      "file": "freepats-light/clarinet.sf2",
+      "source_url": "https://freepats.zenvoid.org/Reed/clarinet.html",
+      "download_url": "https://freepats.zenvoid.org/Reed/Clarinet1/Clarinet-SF2-20190818.tar.xz",
+      "license": "CC0-1.0",
+      "download_bytes": 6965072,
+      "installed_bytes": 7394048,
+      "package_sha256": "3f06aa4747cf52fb595d5778b147070a2a0213bcea331005e319d8b11d606a5e",
+      "sha256": "b5324e7659c2b5994f5e2020e4de3706462bfeec8a79d488f9759eb03aa2ccb9",
+      "tags": [
+        "单簧管",
+        "木管"
+      ]
+    },
+    {
+      "id": "pad-choir",
+      "name": "Synth Pad Choir",
+      "family": "synth",
+      "file": "freepats-light/pad-choir.sf2",
+      "source_url": "https://freepats.zenvoid.org/Synthesizer/synth-pad.html",
+      "download_url": "https://github.com/freepats/synth-pad-choir/releases/download/2020-05-16/SynthPadChoir-SF2-20200516.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 12594157,
+      "installed_bytes": 14381582,
+      "package_sha256": "4a6024721615d15bedff030a7e8259d380fdcef51f2a223961c69dfbbbdb39f1",
+      "sha256": "8688e074a15a40f2d9a251f9a642f67f91b1667ba6f4a1e765b9ee7347260c2d",
+      "tags": [
+        "合成人声",
+        "合唱",
+        "氛围"
+      ]
+    },
+    {
+      "id": "pad-sweep",
+      "name": "Sweep Pad",
+      "family": "synth",
+      "file": "freepats-light/pad-sweep.sf2",
+      "source_url": "https://freepats.zenvoid.org/Synthesizer/synth-pad.html",
+      "download_url": "https://github.com/freepats/sweep-pad/releases/download/2019-08-13/SweepPad-SF2-20190813.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 7588540,
+      "installed_bytes": 8414208,
+      "package_sha256": "2a2eb595b47e780fc633391f756e972e87512d61adcb9564c3c27b9ffca3fb63",
+      "sha256": "5a09a1d8ab60d236907572a46af8b4211881e2f8c7325e75f782ad5d7acce433",
+      "tags": [
+        "扫频",
+        "氛围"
+      ]
+    },
+    {
+      "id": "pad-new-age",
+      "name": "New Age Pad",
+      "family": "synth",
+      "file": "freepats-light/pad-new-age.sf2",
+      "source_url": "https://freepats.zenvoid.org/Synthesizer/synth-pad.html",
+      "download_url": "https://github.com/freepats/new-age/releases/download/2019-07-30/NewAge-SF2-20190730.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 7792228,
+      "installed_bytes": 9667326,
+      "package_sha256": "016c4b1c3053cdf1067dbe4a0c3a4a8ceb1ae5de31433edde27785f35c3387f4",
+      "sha256": "39a85b39e85a4115bcb8ab99ac2bde3070ab802ba60ca45e15ba34a6bde990f6",
+      "tags": [
+        "新世纪",
+        "氛围"
+      ]
+    },
+    {
+      "id": "timpani",
+      "name": "Timpani",
+      "family": "percussion",
+      "file": "freepats-light/timpani.sf2",
+      "source_url": "https://freepats.zenvoid.org/Percussion/orchestral-percussion.html",
+      "download_url": "https://github.com/freepats/timpani/releases/download/2024-08-10/Timpani-SF2-20240810.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 4723477,
+      "installed_bytes": 22569396,
+      "package_sha256": "6a8dff96d9ad109c7ba6155b11f2c2dcc635850cdd43fc1db460f80c45a8e066",
+      "sha256": "f4f133d63bca297c98143e95c1f3fe5418a2a51d7b1f4d5470971eec7885d87b",
+      "tags": [
+        "定音鼓",
+        "管弦"
+      ]
+    },
+    {
+      "id": "world-percussion",
+      "name": "World Percussion",
+      "family": "percussion",
+      "file": "freepats-light/world-percussion.sf2",
+      "source_url": "https://freepats.zenvoid.org/Percussion/world-and-rare-percussion.html",
+      "download_url": "https://github.com/freepats/world-percussion/releases/download/2020-09-05/WorldPercussion-SF2-20200905.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 5100075,
+      "installed_bytes": 9256408,
+      "package_sha256": "5d72c35572259804091657e094fb094c4ee45ffd4bc37f1708878ef6cfeeb129",
+      "sha256": "0a848e8cb3df5ba9f2720093267fdc4edf9d8512a1a367f7a0365440cb629103",
+      "kind": "drums",
+      "tags": [
+        "世界",
+        "民族",
+        "卡洪",
+        "邦戈",
+        "康加",
+        "铃鼓",
+        "沙锤",
+        "达布卡"
+      ],
+      "drum_notes": {
+        "kick": 48,
+        "snare": 51,
+        "tom": 52,
+        "hat": 57,
+        "openhat": 58,
+        "clap": 59,
+        "rim": 60,
+        "shaker": 54,
+        "cowbell": 61,
+        "taiko": 69,
+        "gong": 71
+      }
+    },
+    {
+      "id": "electronic-drums",
+      "name": "Synthesizer Percussion",
+      "family": "drums",
+      "file": "freepats-light/electronic-drums.sf2",
+      "source_url": "https://freepats.zenvoid.org/Percussion/electric-percussion.html",
+      "download_url": "https://freepats.zenvoid.org/Percussion/SynthesizerPercussion/SynthesizerPercussion-SF2-20220718.7z",
+      "license": "CC0-1.0",
+      "download_bytes": 1027681,
+      "installed_bytes": 1653770,
+      "package_sha256": "6ff6580165061eac3113a9961e1e93860c9af87a82b523a49949f099d6f47ea3",
+      "sha256": "b732f685ec460dc18e88a45dd150240d3bf50198d6a09f09483babd6a9fb4c31",
+      "kind": "drums",
+      "tags": [
+        "电子鼓",
+        "模拟合成",
+        "复古"
+      ],
+      "drum_notes": {
+        "kick": 48,
+        "snare": 50,
+        "hat": 52,
+        "openhat": 54,
+        "crash": 55,
+        "ride": 56,
+        "tom": 57,
+        "clap": 63,
+        "shaker": 64,
+        "rim": 66
+      }
+    }
+  ]
+}

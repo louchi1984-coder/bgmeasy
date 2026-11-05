@@ -1,0 +1,1730 @@
+{
+  "schema_version": 1,
+  "budget_bytes": 30000000,
+  "upstream_archive_url": "https://codeload.github.com/sfzinstruments/aliexpress-erhu/zip/6615047b2fd06126877483e97b8bb4af9d00b080",
+  "source_wav_bytes": 92745382,
+  "preparation": "Stereo mean, scipy resample_poly 44100->32000 Hz, mono PCM16; no normalization, denoise, added effects, looping or pitch correction. 0.25s SF2 note-off release.",
+  "pitch_mapping": "Scientific MIDI convention, A4=69; filenames are one octave higher. Original performance intonation retained, not auto-tuned.",
+  "limitations": [
+    "No recorded legato transitions or recorded articulation switching.",
+    "Takes require explicit presets; no automatic round robin or velocity layers.",
+    "One-shot notes stop at sample end; long samples are not indefinite sustains.",
+    "Some attacks/intonation vary; no naturalness or quality improvement certified."
+  ],
+  "listening_status": "not_listened",
+  "assets": [
+    {
+      "id": "erhu",
+      "file": "ethnic-light/erhu.sf2",
+      "inst": "erhu",
+      "kind": "melodic",
+      "family": "bowed",
+      "tags": [
+        "二胡",
+        "民族",
+        "弓弦",
+        "CC0"
+      ],
+      "license": "CC0-1.0",
+      "source_url": "https://github.com/sfzinstruments/aliexpress-erhu",
+      "source_commit": "6615047b2fd06126877483e97b8bb4af9d00b080",
+      "installed_bytes": 22458028,
+      "sha256": "3d1fdc5022401d4955b40c140dc450bbb34c862245e84777106946e739d761d9",
+      "presets": [
+        {
+          "program": 0,
+          "bank": 0,
+          "name": "Erhu Long Take 1",
+          "display_name": "二胡 长音 Take 1",
+          "tags": [
+            "二胡",
+            "长音"
+          ],
+          "articulation": "sus",
+          "take": 1,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 1,
+          "bank": 0,
+          "name": "Erhu Long Take 2",
+          "display_name": "二胡 长音 Take 2",
+          "tags": [
+            "二胡",
+            "长音"
+          ],
+          "articulation": "sus",
+          "take": 2,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 2,
+          "bank": 0,
+          "name": "Erhu Short Take 1",
+          "display_name": "二胡 短音 Take 1",
+          "tags": [
+            "二胡",
+            "短音"
+          ],
+          "articulation": "stac",
+          "take": 1,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 3,
+          "bank": 0,
+          "name": "Erhu Short Take 2",
+          "display_name": "二胡 短音 Take 2",
+          "tags": [
+            "二胡",
+            "短音"
+          ],
+          "articulation": "stac",
+          "take": 2,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 4,
+          "bank": 0,
+          "name": "Erhu Short Take 3",
+          "display_name": "二胡 短音 Take 3",
+          "tags": [
+            "二胡",
+            "短音"
+          ],
+          "articulation": "stac",
+          "take": 3,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 5,
+          "bank": 0,
+          "name": "Erhu Short Take 4",
+          "display_name": "二胡 短音 Take 4",
+          "tags": [
+            "二胡",
+            "短音"
+          ],
+          "articulation": "stac",
+          "take": 4,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 6,
+          "bank": 0,
+          "name": "Erhu Tasto Take 1",
+          "display_name": "二胡 sul-tasto 指板附近运弓 Take 1",
+          "tags": [
+            "二胡",
+            "sul-tasto",
+            "指板附近运弓"
+          ],
+          "articulation": "st",
+          "take": 1,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        },
+        {
+          "program": 7,
+          "bank": 0,
+          "name": "Erhu Tasto Take 2",
+          "display_name": "二胡 sul-tasto 指板附近运弓 Take 2",
+          "tags": [
+            "二胡",
+            "sul-tasto",
+            "指板附近运弓"
+          ],
+          "articulation": "st",
+          "take": 2,
+          "recorded_roots": [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86
+          ],
+          "selection": "Explicit preset; no automatic round robin"
+        }
+      ]
+    },
+    {
+      "id": "erhu-practice",
+      "file": "ethnic-light/erhu-practice.sf2",
+      "name": "二胡 练习录音切片 A4/C5",
+      "inst": "erhu",
+      "kind": "melodic",
+      "family": "bowed",
+      "tags": [
+        "二胡",
+        "民族",
+        "弓弦",
+        "CC0",
+        "试听通过",
+        "演奏切片",
+        "有限音高"
+      ],
+      "license": "CC0-1.0",
+      "source_url": "https://freesound.org/people/irzirgpznj/sounds/477169/",
+      "installed_bytes": 541724,
+      "sha256": "0f3c2c5d971e29b6d89c6820dbdfc20aee54a247039e0d1bb6cf42dd119456bd",
+      "source_sha256": "d2826ba89e1c41df4cf0ea8ecb43e58a0e810e933fb30103b880f6f4e64c11eb",
+      "provenance_file": "ethnic-light/erhu-practice-provenance.json",
+      "recorded_roots": [
+        69,
+        72
+      ],
+      "looped": false,
+      "duration_seconds_by_midi": {
+        "69": 1.015,
+        "72": 2.05
+      },
+      "user_audition": {
+        "status": "user_accepted_timbre_trial",
+        "date": "2026-11-05",
+        "reply": "都可以",
+        "audition_file": "cc0-practice-erhu-trial-20261105.wav",
+        "scope": "用户认可A4/C5技术片段音色；不认证其他音高、无限延音或完整音源库。"
+      }
+    }
+  ],
+  "samples": [
+    {
+      "source_file": "Samples/st/erhu_a5_st_rr1.wav",
+      "source_sha256": "a2f2830a90efb5b9170a1aacd044ad1a250341d8197ae0c96207374eee70104e",
+      "root_midi": 69,
+      "frames": 121996,
+      "sample_rate": 32000,
+      "pcm_sha256": "42b9eea5e43fa3a3013687da1454ca10bb1253c5d1dc8494bc62af7936eb9a00"
+    },
+    {
+      "source_file": "Samples/st/erhu_a5_st_rr2.wav",
+      "source_sha256": "03da7102cbbcfa16fdead63d018384995e9d77ea01dd41660d11556c357485e5",
+      "root_midi": 69,
+      "frames": 106084,
+      "sample_rate": 32000,
+      "pcm_sha256": "9d38c8f4a3251cb8a8733f04198c1ee13ef233fad82444c7f84d06e7881dbdf3"
+    },
+    {
+      "source_file": "Samples/st/erhu_a6_st_rr1.wav",
+      "source_sha256": "73c0c8d84ce4965d07cceda157009330dfb13a0662c766b20645c6a9aeb8dc28",
+      "root_midi": 81,
+      "frames": 76464,
+      "sample_rate": 32000,
+      "pcm_sha256": "f1b8e9de736bc350969904ca4466011218bdecdaa45d15cb273f8943408d4431"
+    },
+    {
+      "source_file": "Samples/st/erhu_a6_st_rr2.wav",
+      "source_sha256": "7f9fb705338eb834fe2831652b2428984ee86fa64ab67478d5454cf292e76751",
+      "root_midi": 81,
+      "frames": 75129,
+      "sample_rate": 32000,
+      "pcm_sha256": "bdbd3dac24cd63f331ce9566a5a043e3e5ceb26be973cf5642dbee136f908723"
+    },
+    {
+      "source_file": "Samples/st/erhu_ab5_st_rr1.wav",
+      "source_sha256": "4ae991d5e6184cae60d555bffe3c7d0e5ecf3f68ed532fc14fa61ad7bc609359",
+      "root_midi": 68,
+      "frames": 132570,
+      "sample_rate": 32000,
+      "pcm_sha256": "4a9abb7f4123347e8966036b4b63b2bbfa5da588a340711ddc38425f813e2d92"
+    },
+    {
+      "source_file": "Samples/st/erhu_ab5_st_rr2.wav",
+      "source_sha256": "d02d5b7858f9461b64e6bca9b28ebce96f4d8702ca9a168c8a3052d3ea55d214",
+      "root_midi": 68,
+      "frames": 106072,
+      "sample_rate": 32000,
+      "pcm_sha256": "557ef099ea936157bf131fe9f1accbf3779f8e59b3015b59ab6a856aa8d614a1"
+    },
+    {
+      "source_file": "Samples/st/erhu_ab6_st_rr1.wav",
+      "source_sha256": "e6c3cf47552612ecd9b55626bd71e01e0e3000f6d04a33026d67d9a28de17b85",
+      "root_midi": 80,
+      "frames": 96276,
+      "sample_rate": 32000,
+      "pcm_sha256": "175b0266783435284ba5cc4e0a052a1cccde23521d552de3a5aa3c5597b37e8a"
+    },
+    {
+      "source_file": "Samples/st/erhu_ab6_st_rr2.wav",
+      "source_sha256": "db79e7c608419d081e9fd51fa45ebe5ba813afc8cbc9d43447595135d8a733fc",
+      "root_midi": 80,
+      "frames": 96665,
+      "sample_rate": 32000,
+      "pcm_sha256": "fca0f4f5f5821386394004044691b613d19adc597094f344ad2d79c691b2a7e1"
+    },
+    {
+      "source_file": "Samples/st/erhu_b5_st_rr1.wav",
+      "source_sha256": "f5b57db302b7f5ee12390e952fbb401e966e1049b41714c1743e54328838ed9a",
+      "root_midi": 71,
+      "frames": 121767,
+      "sample_rate": 32000,
+      "pcm_sha256": "eb770fd16ad37974253e9312d5e7d9316b1c475aa723e833fecc0368a5f797c8"
+    },
+    {
+      "source_file": "Samples/st/erhu_b5_st_rr2.wav",
+      "source_sha256": "b2c754684105b5d2e6f6a3946bd4d63a46c240dfab7ca846e73c1e551d3d8c53",
+      "root_midi": 71,
+      "frames": 132914,
+      "sample_rate": 32000,
+      "pcm_sha256": "8df3fa6ee05d71a22cd2d481d50e4b4fa0c380ea7ee1d4ef79a632d5a1d2d64c"
+    },
+    {
+      "source_file": "Samples/st/erhu_b6_st_rr1.wav",
+      "source_sha256": "b34df020a51c718786f62066ae373dc4104bb692412e83430856745daf6c706f",
+      "root_midi": 83,
+      "frames": 92446,
+      "sample_rate": 32000,
+      "pcm_sha256": "d8894a278a4c2fcf43d27e8db570fc50eb8f23f3f5e3cc8a858af3734b0ee5a2"
+    },
+    {
+      "source_file": "Samples/st/erhu_b6_st_rr2.wav",
+      "source_sha256": "8d98c3eddffc6e419e66bfb6a9d8910bdcb0f2649c4feb2e7cee618ee5ccb9b2",
+      "root_midi": 83,
+      "frames": 69246,
+      "sample_rate": 32000,
+      "pcm_sha256": "b76ad626675f47e5701b59b7e77a2f006781d0aaf9e23f545f6d616ce593fec4"
+    },
+    {
+      "source_file": "Samples/st/erhu_bb5_st_rr1.wav",
+      "source_sha256": "f95712771140e5f262b2fd2f9cda77f442dbb1eb483925358fe125fb2f3dbaf2",
+      "root_midi": 70,
+      "frames": 171187,
+      "sample_rate": 32000,
+      "pcm_sha256": "f547e9194498c0139d3e83d18d9841353072bdc4d7390b016eec9a820295505f"
+    },
+    {
+      "source_file": "Samples/st/erhu_bb5_st_rr2.wav",
+      "source_sha256": "d63bc1d126a76394795c7b105db16783c26c3cd9e5bd081b5b184506077cf0af",
+      "root_midi": 70,
+      "frames": 138964,
+      "sample_rate": 32000,
+      "pcm_sha256": "f1aa4b0ed4a636987b95acba74940cd81b8731d9e107c86aec9593595f83b456"
+    },
+    {
+      "source_file": "Samples/st/erhu_bb6_st_rr1.wav",
+      "source_sha256": "824581ca9c4fcad5bd8fe573949c313953fe94027dbfcd89184180312d7266c2",
+      "root_midi": 82,
+      "frames": 66678,
+      "sample_rate": 32000,
+      "pcm_sha256": "c7bd41d8c94f4f890fc2d196375766f8399193e81ee3fd4cb2a2d78def627704"
+    },
+    {
+      "source_file": "Samples/st/erhu_bb6_st_rr2.wav",
+      "source_sha256": "0e68732a17289553c0896ac76d8a02995542eda6a2a572ecfa7141b29b574465",
+      "root_midi": 82,
+      "frames": 79866,
+      "sample_rate": 32000,
+      "pcm_sha256": "a96e8b2a0663518c41881f722190ab5dfd3ac90c2193e2a39ec46f30714d8d66"
+    },
+    {
+      "source_file": "Samples/st/erhu_c6_st_rr1.wav",
+      "source_sha256": "5d2dd34af7ac65530be4b7ac5258117f265a172dfbe401788fc2bed093e3d4d3",
+      "root_midi": 72,
+      "frames": 131078,
+      "sample_rate": 32000,
+      "pcm_sha256": "9b1a43bb97399602aa3e8cb65ddbf95756dadc4a231a9cabc052414edb1da82c"
+    },
+    {
+      "source_file": "Samples/st/erhu_c6_st_rr2.wav",
+      "source_sha256": "374488c19f31300292fa02d03a44a9ec7b829ae743ff99377a9b2bd28725177e",
+      "root_midi": 72,
+      "frames": 117076,
+      "sample_rate": 32000,
+      "pcm_sha256": "69b67b43c75940e7a65525e33792733e641e59d34b7683e0ccf559061a7784f4"
+    },
+    {
+      "source_file": "Samples/st/erhu_c7_st_rr1.wav",
+      "source_sha256": "6b7279d5f02e2c446ce41c5eb362676ad635b20e55d6bce9f31af5d55ca72a38",
+      "root_midi": 84,
+      "frames": 70942,
+      "sample_rate": 32000,
+      "pcm_sha256": "402bfeb926300b5f923fa358846bf28fd22a197b316f50fd13ba4f39d1ba6c2a"
+    },
+    {
+      "source_file": "Samples/st/erhu_c7_st_rr2.wav",
+      "source_sha256": "4d233770ab0d59968034639a579d816b194226134d55d1aec49b89080824455b",
+      "root_midi": 84,
+      "frames": 80276,
+      "sample_rate": 32000,
+      "pcm_sha256": "9ba3723ed29ad0bda0ef806f79b9d7db60083179706cf97a73debfdc94db2528"
+    },
+    {
+      "source_file": "Samples/st/erhu_d5_st_rr1.wav",
+      "source_sha256": "22fd77c31c7ea0457323ae167af66627feaaff5db14cba388e39982e81e82a81",
+      "root_midi": 62,
+      "frames": 136027,
+      "sample_rate": 32000,
+      "pcm_sha256": "1d239d7ccd78189f22b25ec9a6f5cd9b5474dc514274ac740f8eba1d45f82479"
+    },
+    {
+      "source_file": "Samples/st/erhu_d5_st_rr2.wav",
+      "source_sha256": "39c7f0764b6f2e62d3fae8ac7788e123d4f1cfae61b7b0703bb3a50564746842",
+      "root_midi": 62,
+      "frames": 151321,
+      "sample_rate": 32000,
+      "pcm_sha256": "51e93055bd63a88c1239f12f5db1e2c82f570ad3a48cdd998483ef312eade339"
+    },
+    {
+      "source_file": "Samples/st/erhu_d6_st_rr1.wav",
+      "source_sha256": "59ce62c3b98a94bb1aa6b2f30652d94f99e4e4ab3a2278ef49fe9311e79167e0",
+      "root_midi": 74,
+      "frames": 89713,
+      "sample_rate": 32000,
+      "pcm_sha256": "3667a4cfe65df9ad904b9367adc8d1a61e8ee160f00a65fe586235bd40ccabcc"
+    },
+    {
+      "source_file": "Samples/st/erhu_d6_st_rr2.wav",
+      "source_sha256": "0f561c6aa32f63bacdaf5332f98862ce2982d4ced64d2b18500978d9a884e259",
+      "root_midi": 74,
+      "frames": 89471,
+      "sample_rate": 32000,
+      "pcm_sha256": "182bf727f1c38eb87ef5167ab5036614a8650ed45c57eea79d7cb2f56368e8fe"
+    },
+    {
+      "source_file": "Samples/st/erhu_d7_st_rr1.wav",
+      "source_sha256": "9e0817a205ff9994c209fb1684d4e567ab22f901f99bf375c2c3dad1c843403a",
+      "root_midi": 86,
+      "frames": 95448,
+      "sample_rate": 32000,
+      "pcm_sha256": "cf9fcb180847317431c06992d0d663c805649d5a459d62293f15a72f665e18c2"
+    },
+    {
+      "source_file": "Samples/st/erhu_d7_st_rr2.wav",
+      "source_sha256": "f08180c092cd8b2f0500e6aa330a31c36084ec341b4f776dc1492eb42f9dc2a4",
+      "root_midi": 86,
+      "frames": 118479,
+      "sample_rate": 32000,
+      "pcm_sha256": "24e30095246666c99e587e0746e601cf1398c8e68a6bedee438786843f79d629"
+    },
+    {
+      "source_file": "Samples/st/erhu_db6_st_rr1.wav",
+      "source_sha256": "63d08aa6e9e946bdfa4c5357bb7b3eb4971e6f3634f6daf0c385779385929e18",
+      "root_midi": 73,
+      "frames": 109513,
+      "sample_rate": 32000,
+      "pcm_sha256": "4468cb290fc1df98356edfaf0dc311fd598ad5f92684d100727785cda37bcb38"
+    },
+    {
+      "source_file": "Samples/st/erhu_db6_st_rr2.wav",
+      "source_sha256": "6271852e897fb92aac49a847523632cf9be84b6856808edf3758470c723d54ed",
+      "root_midi": 73,
+      "frames": 99955,
+      "sample_rate": 32000,
+      "pcm_sha256": "b252ad995d709fb34e83cc9a8f9a52cfb9a985239880118c019c7abf9468b148"
+    },
+    {
+      "source_file": "Samples/st/erhu_db7_st_rr1.wav",
+      "source_sha256": "e044199a1dee20007b35ff92e2ef7411b206fb67d9205bda0471a5d4294d0146",
+      "root_midi": 85,
+      "frames": 89005,
+      "sample_rate": 32000,
+      "pcm_sha256": "1467d7c91aa73a42a1d0ab1d30c28225cc0b5726aa2fdf7a087043632775f72c"
+    },
+    {
+      "source_file": "Samples/st/erhu_db7_st_rr2.wav",
+      "source_sha256": "34e020ed281717b77c41ac2e8805db25cc811786c6fe85c6d6c0d6fecb9d7c7d",
+      "root_midi": 85,
+      "frames": 88654,
+      "sample_rate": 32000,
+      "pcm_sha256": "bac42fbd6e75a201d13ccb62b541cda4e24c9a01e2d1aede5efb48bbb63fff6e"
+    },
+    {
+      "source_file": "Samples/st/erhu_e5_st_rr1.wav",
+      "source_sha256": "c941df9e38ff369c1a8245babfd5353ac3b0e5a8b03b3aa8419fd4692fee4e10",
+      "root_midi": 64,
+      "frames": 156666,
+      "sample_rate": 32000,
+      "pcm_sha256": "c267673783482ea0ff7d41a388336216cb99c902accb45d39d1a22e803c32944"
+    },
+    {
+      "source_file": "Samples/st/erhu_e5_st_rr2.wav",
+      "source_sha256": "8fd9e2604b1cae01457b49f45b719f8469ecab15cda9129469c93c964ebd32ec",
+      "root_midi": 64,
+      "frames": 136406,
+      "sample_rate": 32000,
+      "pcm_sha256": "3dd05e3fbd43779de53b3bbb457299dc17df30e571fc730de917d0c7277f71fb"
+    },
+    {
+      "source_file": "Samples/st/erhu_e6_st_rr1.wav",
+      "source_sha256": "e8a10d274502586823ce0a73a82c2218bfd04f1c8da909196e04b1bb2b697ab6",
+      "root_midi": 76,
+      "frames": 110071,
+      "sample_rate": 32000,
+      "pcm_sha256": "a8b29ebd378fa054de9c49928da940db0977b8d4f52b58a29ea91b3359edb768"
+    },
+    {
+      "source_file": "Samples/st/erhu_e6_st_rr2.wav",
+      "source_sha256": "b9b9705f853b53571600f51a755bee191ec0a4b793175fc743bd8a6f662dedbb",
+      "root_midi": 76,
+      "frames": 103286,
+      "sample_rate": 32000,
+      "pcm_sha256": "75924145d03e355c4dd59f4a45a762e594602f007bb0b61a049d8e39378e99a7"
+    },
+    {
+      "source_file": "Samples/st/erhu_eb5_st_rr1.wav",
+      "source_sha256": "a606e223428168cccca794df1db80b215f1c4feb7646b2e43686a7aee469c595",
+      "root_midi": 63,
+      "frames": 182464,
+      "sample_rate": 32000,
+      "pcm_sha256": "eaec3dba6ddb3d6abc467c89449ce3423c637df1c2588767be608b81cb1a8e18"
+    },
+    {
+      "source_file": "Samples/st/erhu_eb5_st_rr2.wav",
+      "source_sha256": "e48993a698bcf276dc7648b90793e1a6a22463eaf78376805bec5575aae3f605",
+      "root_midi": 63,
+      "frames": 145872,
+      "sample_rate": 32000,
+      "pcm_sha256": "65216f39acdcae044521b562d988c2b4e0788a14f805da90f998edd295731895"
+    },
+    {
+      "source_file": "Samples/st/erhu_eb6_st_rr1.wav",
+      "source_sha256": "dfcb4a35f392cc04457d97fa5cb7e7da3776fb63d6333448ba1b8d4bbbaaee27",
+      "root_midi": 75,
+      "frames": 102113,
+      "sample_rate": 32000,
+      "pcm_sha256": "095095879740097d76a77eda73054d9c4ed54fe340a9848c9d145e0445fa154d"
+    },
+    {
+      "source_file": "Samples/st/erhu_eb6_st_rr2.wav",
+      "source_sha256": "b9f73a613bf51aa447889bf942f870e69ff53fedff00d2b3db57b2c39b1a1d86",
+      "root_midi": 75,
+      "frames": 85046,
+      "sample_rate": 32000,
+      "pcm_sha256": "6aa23d546c2f3808d0cdcec6e6ed9462a0b164e123c4cbfbc27866a141f9aebb"
+    },
+    {
+      "source_file": "Samples/st/erhu_f5_st_rr1.wav",
+      "source_sha256": "b36bea696ed07927e1f3c1e1a71af0abea91baf466a06b9b46e89c5b56222452",
+      "root_midi": 65,
+      "frames": 148337,
+      "sample_rate": 32000,
+      "pcm_sha256": "036572c011178c6ec8f01d17ca1bf298a019880474c433c4d3a124032c461126"
+    },
+    {
+      "source_file": "Samples/st/erhu_f5_st_rr2.wav",
+      "source_sha256": "3519e69d5ed55bf8dd768960f9200ca4771a50218be7cfe20249304ccf8bb11c",
+      "root_midi": 65,
+      "frames": 143966,
+      "sample_rate": 32000,
+      "pcm_sha256": "635114c1f74fc27fc3eada50d182250e1d48ffbb66159764ef8ddc4ba8c0fb7c"
+    },
+    {
+      "source_file": "Samples/st/erhu_f6_st_rr1.wav",
+      "source_sha256": "217480d4fc17a01f9bd14334697014506490aaaf23c46adba50959c72d6f837f",
+      "root_midi": 77,
+      "frames": 75781,
+      "sample_rate": 32000,
+      "pcm_sha256": "1f7b66d32210ba9e96b5be629b3841e12d5515fa7d442f082b225b0be20c7fdd"
+    },
+    {
+      "source_file": "Samples/st/erhu_f6_st_rr2.wav",
+      "source_sha256": "8b585c04f230f6ba156d3b0aea24cfb2af8bc321682e6e9b9fa97e11218336b5",
+      "root_midi": 77,
+      "frames": 80659,
+      "sample_rate": 32000,
+      "pcm_sha256": "1cbe32a65b986e52019962ad98b550a880e1c795671bfefd19d3bf9aa36623f7"
+    },
+    {
+      "source_file": "Samples/st/erhu_g5_st_rr1.wav",
+      "source_sha256": "d5d6c49725525b7d7497a13e9f85ac6d6f1ba9192b786d990d0fe2720ff7be7c",
+      "root_midi": 67,
+      "frames": 126578,
+      "sample_rate": 32000,
+      "pcm_sha256": "6df01cdbd4054208cec86303c7248385205f1697e5226910507e22bc23edd081"
+    },
+    {
+      "source_file": "Samples/st/erhu_g5_st_rr2.wav",
+      "source_sha256": "2ab22df55dada183b172d6e5047f959ed6ca918f24260239ae9d372948b2c0c9",
+      "root_midi": 67,
+      "frames": 129916,
+      "sample_rate": 32000,
+      "pcm_sha256": "191bef1c647aa01c62c7dc5d07c6a7dc653995f0ef06514d938047fc550804d2"
+    },
+    {
+      "source_file": "Samples/st/erhu_g6_st_rr1.wav",
+      "source_sha256": "481c6ca3e63269171604dd942fc2b7abf51029866421f55db6e8bb6d6c861168",
+      "root_midi": 79,
+      "frames": 91896,
+      "sample_rate": 32000,
+      "pcm_sha256": "d4cbdda014702b4af2b95834e341b0e50b0cacbdffad3ca27df0cec231e65684"
+    },
+    {
+      "source_file": "Samples/st/erhu_g6_st_rr2.wav",
+      "source_sha256": "2e9947b7de2ecc6bd32bfd3c3fe29729bbf52a2079e7b4701affa371a135df17",
+      "root_midi": 79,
+      "frames": 83942,
+      "sample_rate": 32000,
+      "pcm_sha256": "ad9a24c6b770f99e8e19ae64eb1389cf37d676cad87a55fe87abcc63be7b0319"
+    },
+    {
+      "source_file": "Samples/st/erhu_gb5_st_rr1.wav",
+      "source_sha256": "a687a99927c7641ec67af8ba6f4f806bd7be64bedd25d7174417303cebf52346",
+      "root_midi": 66,
+      "frames": 137675,
+      "sample_rate": 32000,
+      "pcm_sha256": "8d440983fbac98e56c669b53bdba30a8f7b52606db2988b2899516bc57c8c7a7"
+    },
+    {
+      "source_file": "Samples/st/erhu_gb5_st_rr2.wav",
+      "source_sha256": "c2dd4db314de18859b9e7ca92f33d75ce2d458ddb4f6678680e13293d574ecf1",
+      "root_midi": 66,
+      "frames": 104817,
+      "sample_rate": 32000,
+      "pcm_sha256": "5a9ca66225d180526cad1c15918936f1a18d06b2fa1fdfa072edc646c2bf9baa"
+    },
+    {
+      "source_file": "Samples/st/erhu_gb6_st_rr1.wav",
+      "source_sha256": "9a7f7f77fa7f752be53a6963a01442ed9bdae4888dbfc430d54789c50175c4dd",
+      "root_midi": 78,
+      "frames": 81984,
+      "sample_rate": 32000,
+      "pcm_sha256": "b4326d6ce632501691cbe30475f9593654943322d7c029406b5ab63d7c94e8f7"
+    },
+    {
+      "source_file": "Samples/st/erhu_gb6_st_rr2.wav",
+      "source_sha256": "cabcee96b4df08d7cf407ef80369f124f47c1681957287c6e63c0005a7545ff4",
+      "root_midi": 78,
+      "frames": 75409,
+      "sample_rate": 32000,
+      "pcm_sha256": "38e3b4a24f7e5a820d3c106656dd581f36c141cef2042a1a99d7a790924c336a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a5_stac_rr1.wav",
+      "source_sha256": "3df80f10343c53547db9231bc3a22a97385e357fdee97987622b683bd8f77f10",
+      "root_midi": 69,
+      "frames": 26354,
+      "sample_rate": 32000,
+      "pcm_sha256": "5ea48efae602cf045e156bc74143f5b2487fed9b043a89ac5016b66e0a6298e5"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a5_stac_rr2.wav",
+      "source_sha256": "ff7441f0193d956398ff0cc3a08208cba2ec8927d772f2487fc11b9284211404",
+      "root_midi": 69,
+      "frames": 24126,
+      "sample_rate": 32000,
+      "pcm_sha256": "d9c71230996de14ff5df080744911edb0605b73e91aa7accc3a249f5c88c7e9e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a5_stac_rr3.wav",
+      "source_sha256": "12d9dd19c71fe80a71554a55ea4313c25f9cfe45ef469b69409dc9499053f9f3",
+      "root_midi": 69,
+      "frames": 24657,
+      "sample_rate": 32000,
+      "pcm_sha256": "e6f3dade76fcc0eb27c560935288aa1459adb2d702507bdb22ad13b5082fe58c"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a5_stac_rr4.wav",
+      "source_sha256": "d8ffca5d3fc405bfc4e818dd2e96bb99841d3649e195722e1538a2efd62e6f3d",
+      "root_midi": 69,
+      "frames": 31011,
+      "sample_rate": 32000,
+      "pcm_sha256": "46aa792a26a4c079f351dd8ff51bfb4933714a57646d429fadfa219c46bb9b91"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a6_stac_rr1.wav",
+      "source_sha256": "8db1f4035f50567718795768a8ff938292ed6cd43b92d2a110462bd8a4a7763a",
+      "root_midi": 81,
+      "frames": 22340,
+      "sample_rate": 32000,
+      "pcm_sha256": "8d41652082cfa9234ace7afc6bf77e37d24407d48651464a2e4619912d790e11"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a6_stac_rr2.wav",
+      "source_sha256": "f4639d7d5297ace0cfe7261eecd9f933842bdec35181f1791b0de5c3c4ccd084",
+      "root_midi": 81,
+      "frames": 22826,
+      "sample_rate": 32000,
+      "pcm_sha256": "fad3119c5d1d6b1831cbec58d732dfaae2c80597538ae81219cb0b770f3a3fcd"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a6_stac_rr3.wav",
+      "source_sha256": "54b5cdf11cbd5c099e9dfdb1ebf219726124f2a77b9232f1fa15189dc312dd55",
+      "root_midi": 81,
+      "frames": 23918,
+      "sample_rate": 32000,
+      "pcm_sha256": "445b2c874c33ae8b50b6f6c8afa05b0728fd28ad539053d1b25d004cfb4c4168"
+    },
+    {
+      "source_file": "Samples/stac/erhu_a6_stac_rr4.wav",
+      "source_sha256": "ac7bfe9ac23f1eb8edb8dad8ab6d34e2c730961dbb1473b43055277fb0b9e62b",
+      "root_midi": 81,
+      "frames": 20449,
+      "sample_rate": 32000,
+      "pcm_sha256": "a12f9b40c40feeb47fc6a3aa630a3308d5ece4da3728b49d3c95d192e5f10a93"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab5_stac_rr1.wav",
+      "source_sha256": "e2d076c89c887258ab3392c3e1d9c9040152c8ddf8b00844af60ee3a0f84b0a7",
+      "root_midi": 68,
+      "frames": 33480,
+      "sample_rate": 32000,
+      "pcm_sha256": "ceac5f80b1524602fb8c56f76c07f79cf15f8daed70878174f96774162a4c40c"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab5_stac_rr2.wav",
+      "source_sha256": "9e1011b6fd2b628af00981d49fe0c6431a91604fc13feff182fd862081f66173",
+      "root_midi": 68,
+      "frames": 28769,
+      "sample_rate": 32000,
+      "pcm_sha256": "70131f65b0d405d2eb1287619cafbd8f46206243b47cc035c7c9488f1888c688"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab5_stac_rr3.wav",
+      "source_sha256": "8d8105c902f00e8232cf3e4e3f8145b50d006b88054c7ad16816327ac8a60dc0",
+      "root_midi": 68,
+      "frames": 25358,
+      "sample_rate": 32000,
+      "pcm_sha256": "9532298e836370734f11e2e2d33bc300854fcf8e41734b0f6e3e4ae245c4b100"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab5_stac_rr4.wav",
+      "source_sha256": "2673c1f56d45897db7a0bc0fe62b8be31e26aa5c73707e99dcaec419d99357f8",
+      "root_midi": 68,
+      "frames": 28659,
+      "sample_rate": 32000,
+      "pcm_sha256": "4feb781ca93f30dbd148501ea58e7d8187e97cc63313b1be6532ebb6de3e4f7b"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab6_stac_rr1.wav",
+      "source_sha256": "eb3eb76eeb88c32eed209434e2c012e65710bddca37ed9e68ab6a60c8da2188e",
+      "root_midi": 80,
+      "frames": 18481,
+      "sample_rate": 32000,
+      "pcm_sha256": "48cef139210ec3cb9b3fa4d54796a6c0371818209e965312afdf9b27e61ee583"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab6_stac_rr2.wav",
+      "source_sha256": "2555a2a7444731511f197d4c76c4d4f7865c5397ef75941c9fe2f623e2b30bb6",
+      "root_midi": 80,
+      "frames": 23700,
+      "sample_rate": 32000,
+      "pcm_sha256": "a831d6c3501ac198c7c620491f5de2a87777e2d24c6a71401276d6ba34457b6e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab6_stac_rr3.wav",
+      "source_sha256": "ea84397a57e6bce7e39b347ffae6eedbe055d4d8cb573c448f96e98229eb7480",
+      "root_midi": 80,
+      "frames": 21338,
+      "sample_rate": 32000,
+      "pcm_sha256": "38d668ff78bd68d292f344778c8985efdaa1664f60b48d7fe31d70ff3abcf245"
+    },
+    {
+      "source_file": "Samples/stac/erhu_ab6_stac_rr4.wav",
+      "source_sha256": "87a0434ea1c7aea292ecf666463461fd803b3557f78059e849d83ba7339525c0",
+      "root_midi": 80,
+      "frames": 26751,
+      "sample_rate": 32000,
+      "pcm_sha256": "ab5e244ed96905260a370a3625b2aad45ef5f23a0853e8821e414034ac4ac83a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_b5_stac_rr1.wav",
+      "source_sha256": "f9030d76b58817347eea0c8484d66c2633ad78a412810440b6368fd62c46a5bd",
+      "root_midi": 71,
+      "frames": 26912,
+      "sample_rate": 32000,
+      "pcm_sha256": "97b222903a1f6b623a25fcb23550984a449ff838e3dd7cbefb6acac3e429b269"
+    },
+    {
+      "source_file": "Samples/stac/erhu_b5_stac_rr2.wav",
+      "source_sha256": "e1458a34c18db64dec069ca0af8036bbf10f721c1c365f2e6dc1726de08c6834",
+      "root_midi": 71,
+      "frames": 35956,
+      "sample_rate": 32000,
+      "pcm_sha256": "461dc605d25582d8d9faa9d4a5e4b498f19880207a8af9595e3a247bf020ad0a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_b5_stac_rr3.wav",
+      "source_sha256": "294ca26329e819a4df72de01f255d3f587a30a4329ca653e8a866ec469fdc4cf",
+      "root_midi": 71,
+      "frames": 32130,
+      "sample_rate": 32000,
+      "pcm_sha256": "814dcf795805cbe638fbe78c73baabf4199ade869c84f6f570bd7ec7988ded62"
+    },
+    {
+      "source_file": "Samples/stac/erhu_b5_stac_rr4.wav",
+      "source_sha256": "04d1fe763e4f7ce9bd227684f693647b98a2fc45b5ed2ad3c48cf43b70a26916",
+      "root_midi": 71,
+      "frames": 29736,
+      "sample_rate": 32000,
+      "pcm_sha256": "bc3ab0d844fc972a63e10b9927b35cba5cb7ccef030ce5c83f7acfe0dab72a11"
+    },
+    {
+      "source_file": "Samples/stac/erhu_bb5_stac_rr1.wav",
+      "source_sha256": "bbc1006ac95dfd65012536303bb78503e9b72d8fc02ac30ba944122dd077b119",
+      "root_midi": 70,
+      "frames": 34836,
+      "sample_rate": 32000,
+      "pcm_sha256": "0c1d5fe2a22368c279f8873a0cf20c01168caf679574d320ca2a2e48be1d509f"
+    },
+    {
+      "source_file": "Samples/stac/erhu_bb5_stac_rr2.wav",
+      "source_sha256": "a0a9bd25d72fcc13002991ffef88204cfe9a7b03d19f803d2848453bd9c11570",
+      "root_midi": 70,
+      "frames": 34971,
+      "sample_rate": 32000,
+      "pcm_sha256": "1e9c94fec007e8b45602d2cdb04cf05b27e76cbf06c68629d495646b628c16d6"
+    },
+    {
+      "source_file": "Samples/stac/erhu_bb5_stac_rr3.wav",
+      "source_sha256": "f127570975e5639c03fc116189773be43402f53bf776c413f9f34d1bd4398005",
+      "root_midi": 70,
+      "frames": 34009,
+      "sample_rate": 32000,
+      "pcm_sha256": "c460aa24943011d202aeb503b6b1be9d709455f28dbb63d95000c750f0c28b69"
+    },
+    {
+      "source_file": "Samples/stac/erhu_bb5_stac_rr4.wav",
+      "source_sha256": "3ed292e5614c20cdb709d2a6490b16eb1544cc093b3db53ff3a7c95c6b2335d3",
+      "root_midi": 70,
+      "frames": 29545,
+      "sample_rate": 32000,
+      "pcm_sha256": "f58112a2a93348a754bbbbff83d49958626ca80de1ce41801559338170a39700"
+    },
+    {
+      "source_file": "Samples/stac/erhu_c6_stac_rr1.wav",
+      "source_sha256": "23f874207e7565ffc4a260034097c1e0a38a539e16f400cccb0da9c2b3ceec84",
+      "root_midi": 72,
+      "frames": 31219,
+      "sample_rate": 32000,
+      "pcm_sha256": "3748ec75a4ead9b08c6a71bae521d5e3717d0445ab59cd5b204a97c0b0f30c38"
+    },
+    {
+      "source_file": "Samples/stac/erhu_c6_stac_rr2.wav",
+      "source_sha256": "3cbc6971e7a21141945e3a97f0c9dc3f4d4669d736dd2e057d61aff829d42478",
+      "root_midi": 72,
+      "frames": 28276,
+      "sample_rate": 32000,
+      "pcm_sha256": "f2c0e629112bf9e45499095aafb46e0efe96ace94e11d34f3ed298e62d1f87f1"
+    },
+    {
+      "source_file": "Samples/stac/erhu_c6_stac_rr3.wav",
+      "source_sha256": "d05cd647847625bf7ca9522592f9b814c392fa8b9a64a31a3bce3417d60c63d9",
+      "root_midi": 72,
+      "frames": 30604,
+      "sample_rate": 32000,
+      "pcm_sha256": "4136911b38949d5fb90abdc7f85b4b267d835f425fe807692e6200c1d1ec67f8"
+    },
+    {
+      "source_file": "Samples/stac/erhu_c6_stac_rr4.wav",
+      "source_sha256": "fb0d45053dea1e0bd0b85f877b87de7057699651775656a73fe4f004fef1ac69",
+      "root_midi": 72,
+      "frames": 31868,
+      "sample_rate": 32000,
+      "pcm_sha256": "2b505eba932898bb81fd4048c6fc693f66123b50d173301b657d439c395afa68"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d5_stac_rr1.wav",
+      "source_sha256": "42edd68265d63d4b30510ccef35cbfd332b2670a0acef663b1527ea414524054",
+      "root_midi": 62,
+      "frames": 53015,
+      "sample_rate": 32000,
+      "pcm_sha256": "29166c20565e684f999f822b794f5e7fafb7f5c136cb8602fa8ff8be8c8b984e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d5_stac_rr2.wav",
+      "source_sha256": "e8c4b0c872c61c5ccc5ae1a5910113703fc5d16ea40e52af5db51021d6570f91",
+      "root_midi": 62,
+      "frames": 45023,
+      "sample_rate": 32000,
+      "pcm_sha256": "e7ad6b1ab9d140186029b6ccff764dabf53c12ed111ec3674a6d3842e354811e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d5_stac_rr3.wav",
+      "source_sha256": "56da247cf26113f36d274c0cf095dfeca39d1f8985104ca591dcb39b40a88ab7",
+      "root_midi": 62,
+      "frames": 45774,
+      "sample_rate": 32000,
+      "pcm_sha256": "859f8af91f2c62432b1eda5e7d47aefb280e0274bf5e616c0aad94d094bdb762"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d5_stac_rr4.wav",
+      "source_sha256": "30439b538f3b5324271c9022f6b52d156a2d58248919621944b2e7be30bcfb4c",
+      "root_midi": 62,
+      "frames": 45525,
+      "sample_rate": 32000,
+      "pcm_sha256": "80f1883be7a204cec8a2f9793ccd40644b7918ee84b1d9bdb150603201d7c451"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d6_stac_rr1.wav",
+      "source_sha256": "dfe625eaaac0b2a27f3aa13669aebf46065190f2209940173f88553f7d6b2beb",
+      "root_midi": 74,
+      "frames": 28939,
+      "sample_rate": 32000,
+      "pcm_sha256": "0fb74149716ac6afcb85f9e3ea644a3fe8b996fd9d558e6adfc6cb6ec6740439"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d6_stac_rr2.wav",
+      "source_sha256": "cde1cd384b77c567b1bf416c54449769268cfa5222c4b7360b82e02524ca5dd1",
+      "root_midi": 74,
+      "frames": 25968,
+      "sample_rate": 32000,
+      "pcm_sha256": "9b9194095281a3daeaad7dbecaf791cd6e8ccfcc29253d41526e053d0a192468"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d6_stac_rr3.wav",
+      "source_sha256": "a80a07979cd6b9794ed91f14d1c9959ec4c246933235ce04218bd1597a107acc",
+      "root_midi": 74,
+      "frames": 27610,
+      "sample_rate": 32000,
+      "pcm_sha256": "5096ce551d068706743bc6c6265dd1d8d9fecbe854a1d0ccb0b26df15ff5e48f"
+    },
+    {
+      "source_file": "Samples/stac/erhu_d6_stac_rr4.wav",
+      "source_sha256": "e37b96e279d907bcdc83e9e7d0e413def464796f7d3c52cd657d69206f6ef362",
+      "root_midi": 74,
+      "frames": 26455,
+      "sample_rate": 32000,
+      "pcm_sha256": "3288d0eb9c85b8d3de7c7404eac9928cf134d5c8b3d399fb5d5dec415919a77a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_db6_stac_rr1.wav",
+      "source_sha256": "a8b4609c25677098e682f3d75a3746d6d78f83312541694261c3227ed4734ba0",
+      "root_midi": 73,
+      "frames": 29424,
+      "sample_rate": 32000,
+      "pcm_sha256": "a4d74e5ae05488aba89485a3b28e3b70ed7c667547e6d185875929ffb0861f98"
+    },
+    {
+      "source_file": "Samples/stac/erhu_db6_stac_rr2.wav",
+      "source_sha256": "cfe37e2f9a00dc45b56e6b4cbfcc5fbec413fe5c09368a3b567105eef9e87f14",
+      "root_midi": 73,
+      "frames": 30693,
+      "sample_rate": 32000,
+      "pcm_sha256": "8171aa75749af67c71631039b9461fbf9c246a47d97d83ecb72be066382c341d"
+    },
+    {
+      "source_file": "Samples/stac/erhu_db6_stac_rr3.wav",
+      "source_sha256": "36a4f86a568673b5b4e667f60d4f5e9f417d66a437152505d157ff68c28b1afa",
+      "root_midi": 73,
+      "frames": 31022,
+      "sample_rate": 32000,
+      "pcm_sha256": "3f0e0f8c34d66d4372641bb5acbecc6a08a958f1d034495a78f1c4c211053803"
+    },
+    {
+      "source_file": "Samples/stac/erhu_db6_stac_rr4.wav",
+      "source_sha256": "e9233dbe317ecb0ca3f56ece4db075a9b5251af8c586736e600280d8c9efcb06",
+      "root_midi": 73,
+      "frames": 25090,
+      "sample_rate": 32000,
+      "pcm_sha256": "e9f31bb8cfc904b9793f2329d3c7ad3335fc5fa9ee49a4b1b224de0fe50b140a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e5_stac_rr1.wav",
+      "source_sha256": "4333b75c56fca3d33e815c454911e114a7e3023e23e6cf27a701969a9d3f90be",
+      "root_midi": 64,
+      "frames": 40830,
+      "sample_rate": 32000,
+      "pcm_sha256": "9fdeceace1a9d0d545ee58fc6d58e0690405068d43ea25d0d17b3d883b0f9698"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e5_stac_rr2.wav",
+      "source_sha256": "14bafc5ff4d0b2bc2f7230f1b9bfcefcfa3ff6760d98bda70b96117738d5bb4b",
+      "root_midi": 64,
+      "frames": 39101,
+      "sample_rate": 32000,
+      "pcm_sha256": "3cb4f51e3055ca0e6060b52be5da578d882864ad3b9750f5f1cc9211dabbb26e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e5_stac_rr3.wav",
+      "source_sha256": "e7fd8b950a511a005769ec1412fbe4831bf6e46acc78e77d91b40983d6f86d53",
+      "root_midi": 64,
+      "frames": 38099,
+      "sample_rate": 32000,
+      "pcm_sha256": "4c080a4f18b2b1244ed2a0ef736318380207923236de6572e022f157258fde5d"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e5_stac_rr4.wav",
+      "source_sha256": "ae037e1c4407f56aac670e3160ceb60e396f110b013b0dce852a10654f053aed",
+      "root_midi": 64,
+      "frames": 33679,
+      "sample_rate": 32000,
+      "pcm_sha256": "3cf8457655c277367887560040b3b6dc936e7d598db55cacdd417e7e9737104d"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e6_stac_rr1.wav",
+      "source_sha256": "f0b797467cf881ab6b95f8490f32e8fed32b5b23581c48000a531d4a4c008e4d",
+      "root_midi": 76,
+      "frames": 25029,
+      "sample_rate": 32000,
+      "pcm_sha256": "276f182dabab62dc936958669453576b3df692c50e2c46fa629ae1c4eabc906c"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e6_stac_rr2.wav",
+      "source_sha256": "e9668deab0caad965305d4dda5c46a54b8917075527f8799546dc8b201d3b1aa",
+      "root_midi": 76,
+      "frames": 27333,
+      "sample_rate": 32000,
+      "pcm_sha256": "165b037c43b855490363740fce63d434bc7090b4852810edab0d32c5c77c5457"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e6_stac_rr3.wav",
+      "source_sha256": "a2d0f9ff8bd757f7ec83b47dade0485a712d5208990a1d0cdba1c0775e4b54d2",
+      "root_midi": 76,
+      "frames": 29930,
+      "sample_rate": 32000,
+      "pcm_sha256": "076ad09d5f9a2c452aac649cbd91889be87c7964fe4504a1744137e3ed72e1d2"
+    },
+    {
+      "source_file": "Samples/stac/erhu_e6_stac_rr4.wav",
+      "source_sha256": "6fad6ae31726d969fd645d6ff1647db7087ab11f703b12fc9f0008600f33cde7",
+      "root_midi": 76,
+      "frames": 27896,
+      "sample_rate": 32000,
+      "pcm_sha256": "7b30d3cd67e2a803811925e9a3654c7e89977dd02f25b3f37f23332879c0fc82"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb5_stac_rr1.wav",
+      "source_sha256": "a7891055965b9c9ccbbc41b579e3acbc1da0939d2fd79f246877bba248cd9057",
+      "root_midi": 63,
+      "frames": 32985,
+      "sample_rate": 32000,
+      "pcm_sha256": "8ed095cf961c74bfced4438f0447c28fd84269f5b438e1f1f6e4e42bd39d0e4a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb5_stac_rr2.wav",
+      "source_sha256": "5c4661511ca30620e5951918c99878c3a98d6c687a1a3ce7d68839d482c0590d",
+      "root_midi": 63,
+      "frames": 31413,
+      "sample_rate": 32000,
+      "pcm_sha256": "bbf549e1654ef5cccec178a0726c15de2b9a5ab661bd46611ae932d161274e5a"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb5_stac_rr3.wav",
+      "source_sha256": "a56694a14b9fe898352ea121841cfbbad7d26156e12f67ebcbcea2e66b1fd1be",
+      "root_midi": 63,
+      "frames": 35165,
+      "sample_rate": 32000,
+      "pcm_sha256": "34c0771ec00844ac952678be09c219fbc5e9cef55c5c380caeeb1d180c899a17"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb5_stac_rr4.wav",
+      "source_sha256": "014ff76b8f2d7e65fbdfe37b37cd2e83904248aa5b531ffd3982ec8833beb506",
+      "root_midi": 63,
+      "frames": 27584,
+      "sample_rate": 32000,
+      "pcm_sha256": "057ecb6c6a66956160145e63aa1068deca702ce11b6341175d4e1741d1016ad1"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb6_stac_rr1.wav",
+      "source_sha256": "6cf982940269f8474d7025ee573ac5fa3f6b06191554e4c25acfaa6edf6b4bce",
+      "root_midi": 75,
+      "frames": 31701,
+      "sample_rate": 32000,
+      "pcm_sha256": "2ba4c9ec7714449c0c61b21a9521337242d455d505342037d959cef859b03159"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb6_stac_rr2.wav",
+      "source_sha256": "9924a2c6f78992db98e81382638efdb6f516a0eb93e5c419d92213e1455bf23f",
+      "root_midi": 75,
+      "frames": 35403,
+      "sample_rate": 32000,
+      "pcm_sha256": "7572cd56ab168230aa7ed221b36d5aac229eeb0eb393e65a55b48e3233035fa2"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb6_stac_rr3.wav",
+      "source_sha256": "7a1154b19831512c6ba843c05bbff6bf4e5ded6e8891ef75261120dd49d85d3e",
+      "root_midi": 75,
+      "frames": 30035,
+      "sample_rate": 32000,
+      "pcm_sha256": "08450a07dff4c2f646a2ea7af0d87cf16f14431a6d80f94b767a559e1c4af014"
+    },
+    {
+      "source_file": "Samples/stac/erhu_eb6_stac_rr4.wav",
+      "source_sha256": "832a26caeee43a9ba507f7a8b9a2ae35fa80d29d5257d47be32234f22c7733fc",
+      "root_midi": 75,
+      "frames": 35386,
+      "sample_rate": 32000,
+      "pcm_sha256": "13c792c4a2f333614ba3fa3a2ab1552babc5b657846005de7c19e651607e372e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f5_stac_rr1.wav",
+      "source_sha256": "35133364952fb5d24ec5b4345fba4f00d4418d5a24775f24b7bed9f28299584a",
+      "root_midi": 65,
+      "frames": 33928,
+      "sample_rate": 32000,
+      "pcm_sha256": "3f6c68a27c72a2a43f89b67c0136c52eae482ff6b797403e5ab9deaf848fb168"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f5_stac_rr2.wav",
+      "source_sha256": "7f3c072f9e2f9fb4ba71e7b72f94cce3308a8f97a1fdb5dcff25be68f5025a38",
+      "root_midi": 65,
+      "frames": 30438,
+      "sample_rate": 32000,
+      "pcm_sha256": "6d049f254c9ed25962a9691675a198a1819c12b884c6774b4f786e8404b4d1da"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f5_stac_rr3.wav",
+      "source_sha256": "c7a328f69ebec12e4c1064e08faefb762e3bb153cfde2e6b6fa014922fa0fa68",
+      "root_midi": 65,
+      "frames": 31904,
+      "sample_rate": 32000,
+      "pcm_sha256": "89514c0fe775f469044d43da584e1ffbdcebba4ccef2fe42ebf7bf6bfe6f6fcc"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f5_stac_rr4.wav",
+      "source_sha256": "3895a3939e3d8a2d8c5c16cff1f233583049d9847325db38ed8b50c2eee268b0",
+      "root_midi": 65,
+      "frames": 32029,
+      "sample_rate": 32000,
+      "pcm_sha256": "d81d36b0f1443a38a2bc28cfa39b3de090c5d82d4465de4fbfabec3e55072813"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f6_stac_rr1.wav",
+      "source_sha256": "dc7fe22ffafef5f5f143059adeab6dcb657aeebe7ddd867112af8a86a53e28d8",
+      "root_midi": 77,
+      "frames": 24704,
+      "sample_rate": 32000,
+      "pcm_sha256": "5e42ffe16ba5b36e75c612e98860f114ef3a04027b4385fdcfb69c960111ff23"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f6_stac_rr2.wav",
+      "source_sha256": "2c7b3994d13428478329372fd8e26539b680d7214c98a29c73fd6820cc83a4b0",
+      "root_midi": 77,
+      "frames": 27914,
+      "sample_rate": 32000,
+      "pcm_sha256": "7fc51d695f38ead0727ce359ea048b38b012c52de92291d6ca5b19c2468a0be6"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f6_stac_rr3.wav",
+      "source_sha256": "89219e61a4e12cbaacb3775eb7fcd85e1c95f60cdf3c25b80f52acc0b9ccb2b8",
+      "root_midi": 77,
+      "frames": 28631,
+      "sample_rate": 32000,
+      "pcm_sha256": "0f6bb8e45d40cee603d23f176afc9deffe6640de894ca00a55d7db38b9795e27"
+    },
+    {
+      "source_file": "Samples/stac/erhu_f6_stac_rr4.wav",
+      "source_sha256": "3733ac93ef4773ccf7eb8ffcfcaa826ca90bf442ff0418182e6f6b8c1a7b3203",
+      "root_midi": 77,
+      "frames": 22452,
+      "sample_rate": 32000,
+      "pcm_sha256": "5e53ff127bbd530b3072c1e856068b0986fb1fbf743a7ec48efa3dbf707a43ce"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g5_stac_rr1.wav",
+      "source_sha256": "7d205004aaa47500adc85e1e0357d3c8eb5139ddd27e878ea3574c4fa99b32aa",
+      "root_midi": 67,
+      "frames": 24390,
+      "sample_rate": 32000,
+      "pcm_sha256": "56e89f81f0969db1dae01b3418fd9643705a0e2f23c3746580b1ef2455de11c3"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g5_stac_rr2.wav",
+      "source_sha256": "2d9cc64fef0f7807adb72ab7a32fa7076d6fb89751e7f35cd7f31eb30ef30072",
+      "root_midi": 67,
+      "frames": 25995,
+      "sample_rate": 32000,
+      "pcm_sha256": "3312bd0f231267295d1dc36b5da685099b2a7cc60ae6b7c86367e4e23181d3df"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g5_stac_rr3.wav",
+      "source_sha256": "813d64536afb79aba77dd5ce4b93ba861d7d05fc9bc6fd4be2556f4230892fee",
+      "root_midi": 67,
+      "frames": 24490,
+      "sample_rate": 32000,
+      "pcm_sha256": "5c5471a4e8714abea1158994d859a800e17e6dde0a7f07a5e2359bb2f87ba0f2"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g5_stac_rr4.wav",
+      "source_sha256": "78c5179a5b8693004abf13d0baaa60414680e1aa4c8bc51256b9da3f2cc8710b",
+      "root_midi": 67,
+      "frames": 26218,
+      "sample_rate": 32000,
+      "pcm_sha256": "d12067c7fa1f2f860363103dcc52bb659b6470b6b2b96ad07a9b16a81a9e765e"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g6_stac_rr1.wav",
+      "source_sha256": "83f15152ba995efe2019ca392845d713afa83957da57352edd8fa46d1f18184c",
+      "root_midi": 79,
+      "frames": 20416,
+      "sample_rate": 32000,
+      "pcm_sha256": "24b216b7e0c461beb07d0e2ab055198fcf45bf0d34b31a08820f505094f8bb67"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g6_stac_rr2.wav",
+      "source_sha256": "29cdc6e228ef4ad8b0e2cf1b24b9e27fdb242b022f073966a76ded7e777061f3",
+      "root_midi": 79,
+      "frames": 19198,
+      "sample_rate": 32000,
+      "pcm_sha256": "1b75e547a2dcd50a5e3c73c3db27bf0df94f1e5aa7243e6eca9ec42282199fbb"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g6_stac_rr3.wav",
+      "source_sha256": "eeb51cfd69fbf0a7c01501f2358058d23dcbba0c554fdc77b84170d1ce90ff80",
+      "root_midi": 79,
+      "frames": 19949,
+      "sample_rate": 32000,
+      "pcm_sha256": "c5b1138d71857d502249365d720fe590585202131723d0e56cfb9622a2317fa6"
+    },
+    {
+      "source_file": "Samples/stac/erhu_g6_stac_rr4.wav",
+      "source_sha256": "5d22ac2d97f7fd47d48dd634128cbc15134f1e849d4a87a0d050d868f940c8da",
+      "root_midi": 79,
+      "frames": 19664,
+      "sample_rate": 32000,
+      "pcm_sha256": "1893636dde8b3374ad80b6188a6756296e7e7749205113f245417fb0c1a4bdf1"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb5_stac_rr1.wav",
+      "source_sha256": "813767d1ffff28c8d1bb5e1a7b27c23b70af6f58f433f60fe2fd736fd2ec5955",
+      "root_midi": 66,
+      "frames": 32171,
+      "sample_rate": 32000,
+      "pcm_sha256": "fc1d42c7bff5e8086cb8a61a0840e9d7d3efaf26832be36f8a31a86b2c57ab98"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb5_stac_rr2.wav",
+      "source_sha256": "caf1b10c0c9f731a61e3d3813d639a70179103c19deb1ba6d71a02c9be85e328",
+      "root_midi": 66,
+      "frames": 28962,
+      "sample_rate": 32000,
+      "pcm_sha256": "b70612eab2df6411190b729ae271d437f76f9edf8aebc07bdead5bf6402bba80"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb5_stac_rr3.wav",
+      "source_sha256": "66aef581a7a335f28635fb7b93e3076eb23e2fc8a4757db29953de466ded52a2",
+      "root_midi": 66,
+      "frames": 31580,
+      "sample_rate": 32000,
+      "pcm_sha256": "afe57f75cc2b22b88e1920f4487d8a5e3fce86b8ed901ba3a8d1c7a41e637289"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb5_stac_rr4.wav",
+      "source_sha256": "de10aa26cff7dba17b910d7dc1b49d86e0fb2f611e1a3b5df623d1ba63b8c893",
+      "root_midi": 66,
+      "frames": 25386,
+      "sample_rate": 32000,
+      "pcm_sha256": "219930535cff3523a149dd2116753714005c539c30e0a9c609d94840565dc184"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb6_stac_rr1.wav",
+      "source_sha256": "e9567daea949bb6d48552bcffeba56c4729aebf5662f56dacbe6c09d07fe2a40",
+      "root_midi": 78,
+      "frames": 24514,
+      "sample_rate": 32000,
+      "pcm_sha256": "7e82941617d5a83af2fb64461a573405bb6ebe5d243f627dac1f9a6fdd85d530"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb6_stac_rr2.wav",
+      "source_sha256": "c98e7cb927d15ad029152bc05697a8e48e521df8ed01190f7804eb8acc1fc492",
+      "root_midi": 78,
+      "frames": 25876,
+      "sample_rate": 32000,
+      "pcm_sha256": "b8f822a03b64f6313fe761f6e6c29892bbf064985bb45e71ec3196cffc9f121b"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb6_stac_rr3.wav",
+      "source_sha256": "6400f12495338acb2589adea5d60c58ca0d3a695fd2956d39b4b3d0852f31a7b",
+      "root_midi": 78,
+      "frames": 21355,
+      "sample_rate": 32000,
+      "pcm_sha256": "3360d6d4a957b78e48be051b3f00cdc0ca3b84b85f3df321dc4da4f037c0a754"
+    },
+    {
+      "source_file": "Samples/stac/erhu_gb6_stac_rr4.wav",
+      "source_sha256": "1c31620883744d25f73995e6d201aeb3fc6ba44fc228617ea4427df3e257971e",
+      "root_midi": 78,
+      "frames": 23215,
+      "sample_rate": 32000,
+      "pcm_sha256": "4cc295dec4c0f6b0616720ed68e427121093b7312d4951b74034de43bbf854ad"
+    },
+    {
+      "source_file": "Samples/sus/erhu_a5_sus_rr1.wav",
+      "source_sha256": "8f632281ccea6c4855b1dcce61f00ae9635f551d701c09fe69123042d3ac1a15",
+      "root_midi": 69,
+      "frames": 82542,
+      "sample_rate": 32000,
+      "pcm_sha256": "e4a33cee517f287bfa23fb7b521b81e16eb1a2e36ebdf1c39cde8c861748202a"
+    },
+    {
+      "source_file": "Samples/sus/erhu_a5_sus_rr2.wav",
+      "source_sha256": "4a9d074744cfbfbb20904a29754b5432d8ac9b46fcd4366b6049fb4d081169cb",
+      "root_midi": 69,
+      "frames": 84566,
+      "sample_rate": 32000,
+      "pcm_sha256": "c5655bff1be3af03cc518f312d3a11df085c7f499e2ddd661f18c506687176f4"
+    },
+    {
+      "source_file": "Samples/sus/erhu_a6_sus_rr1.wav",
+      "source_sha256": "946113da4500cf02967fbfc7329218dcd72b4c9dabfc3e5ad8f1b6b7bb2030cb",
+      "root_midi": 81,
+      "frames": 80548,
+      "sample_rate": 32000,
+      "pcm_sha256": "cc8bf8d5683f9081c407b51d49eb8c1ed2214e12c6d848814beabd0ae0ba9c3d"
+    },
+    {
+      "source_file": "Samples/sus/erhu_a6_sus_rr2.wav",
+      "source_sha256": "f9f404c33ce11f5e255d9e486e021697a2c14a9ef20cbf9a9d271df288b462bf",
+      "root_midi": 81,
+      "frames": 69208,
+      "sample_rate": 32000,
+      "pcm_sha256": "8e98d3bc6273f82601a5f9273c800bc9f02b81e2589bf6f103dd3273b256cd46"
+    },
+    {
+      "source_file": "Samples/sus/erhu_ab5_sus_rr1.wav",
+      "source_sha256": "b6392f26d3067aed5d4fdd3be79952d4fc1272e8a0bd2341f52a0d61636c8623",
+      "root_midi": 68,
+      "frames": 88227,
+      "sample_rate": 32000,
+      "pcm_sha256": "e39fc69c5752eb924e00bc6dc297f1358a61f8cdd901e4571707f48e701cb27e"
+    },
+    {
+      "source_file": "Samples/sus/erhu_ab5_sus_rr2.wav",
+      "source_sha256": "b32e60b17bee3688c2f445a7d81ab0bc2b4305ec1c8827672f361c9a01eb519b",
+      "root_midi": 68,
+      "frames": 103032,
+      "sample_rate": 32000,
+      "pcm_sha256": "955779b2fdca483af3f6ec98e69f239f2172a42c5cc8b01318b377d0d8d04cdf"
+    },
+    {
+      "source_file": "Samples/sus/erhu_ab6_sus_rr1.wav",
+      "source_sha256": "cede78e8a1173030fda0137ec2708f01be611f696cb503e2f649c64078397e4f",
+      "root_midi": 80,
+      "frames": 74775,
+      "sample_rate": 32000,
+      "pcm_sha256": "5bca51b7ecf6ac69a13a0f527482f886e2839301489820efc3574ca425d4fe8c"
+    },
+    {
+      "source_file": "Samples/sus/erhu_ab6_sus_rr2.wav",
+      "source_sha256": "fa2a45c5a3b77e0ee08ce676bd129516c3788138b45d67fd4b32ba7eac5e3d55",
+      "root_midi": 80,
+      "frames": 73221,
+      "sample_rate": 32000,
+      "pcm_sha256": "db0534a019ca5dea76cb43993d868221596ef1f3749fa950f031983c5f1d617a"
+    },
+    {
+      "source_file": "Samples/sus/erhu_b5_sus_rr1.wav",
+      "source_sha256": "a1233c366919478e866ff17f96b4bc62204a461aae0d9e5ca60ddf4207038092",
+      "root_midi": 71,
+      "frames": 80569,
+      "sample_rate": 32000,
+      "pcm_sha256": "c7d4a1f79225cc7269403efa11f47f522c1580fa4688d818a6629d026d538cfa"
+    },
+    {
+      "source_file": "Samples/sus/erhu_b5_sus_rr2.wav",
+      "source_sha256": "2fec850912356e1dad38d967397843cf0894922385141eaba22784a29eafaf42",
+      "root_midi": 71,
+      "frames": 86687,
+      "sample_rate": 32000,
+      "pcm_sha256": "25d0280ec0b3b6fdb302a7da2590d944a82f7010d669f442cfac658a6fb172ec"
+    },
+    {
+      "source_file": "Samples/sus/erhu_bb5_sus_rr1.wav",
+      "source_sha256": "739db725d1b6c06173af3d2df5a12ea998fb72ba094f683e2ed4538091ad2dba",
+      "root_midi": 70,
+      "frames": 76008,
+      "sample_rate": 32000,
+      "pcm_sha256": "673f7f36d80dfd432be4f846ca781668f15575d6fc51f67464b0b1caf96fa759"
+    },
+    {
+      "source_file": "Samples/sus/erhu_bb5_sus_rr2.wav",
+      "source_sha256": "6da7d5c4c851cf1adc7df128edd3fcbb941ae731d1641da11e3c7887c4357a0f",
+      "root_midi": 70,
+      "frames": 88236,
+      "sample_rate": 32000,
+      "pcm_sha256": "f45d35744559e3b95ab40ac227e50d7cec59b254ee42bafbfdf1eb2211785543"
+    },
+    {
+      "source_file": "Samples/sus/erhu_c6_sus_rr1.wav",
+      "source_sha256": "de99454993ca46f1df0154441a1d59dc90f0ad2e56c6c0a900d586565ab2cf3a",
+      "root_midi": 72,
+      "frames": 81690,
+      "sample_rate": 32000,
+      "pcm_sha256": "eb67ae190cba8456f90b6365c0937cf9cf0480db543140bf3402b7d3ff74df6f"
+    },
+    {
+      "source_file": "Samples/sus/erhu_c6_sus_rr2.wav",
+      "source_sha256": "ffaa7f03913a24470353178fddf2fa43442b1064fb3fe7628bcc5fcf589bbed4",
+      "root_midi": 72,
+      "frames": 93485,
+      "sample_rate": 32000,
+      "pcm_sha256": "b13a820f699a611c771faf8315b0ca0e2b90d583a17d572ad75f014a38f02998"
+    },
+    {
+      "source_file": "Samples/sus/erhu_d5_sus_rr1.wav",
+      "source_sha256": "dd7369c93c6d8ab2651049cfccf8eec56540029834981a64706bd55c55d711f6",
+      "root_midi": 62,
+      "frames": 109949,
+      "sample_rate": 32000,
+      "pcm_sha256": "e0d2b86aa316b882687987c3a6668ccbe8931b3d3f61218f6c0ac6a32ba051f7"
+    },
+    {
+      "source_file": "Samples/sus/erhu_d5_sus_rr2.wav",
+      "source_sha256": "ebbb2fad4b46e935fad323bfd9271cc435ce00951dab0485b4023f8a82530800",
+      "root_midi": 62,
+      "frames": 101827,
+      "sample_rate": 32000,
+      "pcm_sha256": "92b0b6c50ee99473e1f8c6b09f5b5f9486fa1ab48f0077212be26c77e3c66b6f"
+    },
+    {
+      "source_file": "Samples/sus/erhu_d6_sus_rr1.wav",
+      "source_sha256": "55d407bc3054d06f19cb668610d0888e16e968eba003a7f890dda8e262561c32",
+      "root_midi": 74,
+      "frames": 81589,
+      "sample_rate": 32000,
+      "pcm_sha256": "b536a851b64fde2695c934f79272d9984a291bf75f428988c523bd1f6e03684a"
+    },
+    {
+      "source_file": "Samples/sus/erhu_d6_sus_rr2.wav",
+      "source_sha256": "d06fe4e1338bfd6473b508e00058bf0832468e8e83d26be1fbe57b4aa3595d2f",
+      "root_midi": 74,
+      "frames": 75653,
+      "sample_rate": 32000,
+      "pcm_sha256": "4984010c2e5d8296aa3cb607aceb3af50b5a128d9d8eab6dd20c3ba3d2ad83f6"
+    },
+    {
+      "source_file": "Samples/sus/erhu_db6_sus_rr1.wav",
+      "source_sha256": "425e5c81ef674561bcc4ac4073e601a8478e092f77725879ef18e702b32b94d1",
+      "root_midi": 73,
+      "frames": 86529,
+      "sample_rate": 32000,
+      "pcm_sha256": "24f6e4231b80bcc047e24f889891f912e70c5300a4afeb478a04cd96d48b4db0"
+    },
+    {
+      "source_file": "Samples/sus/erhu_db6_sus_rr2.wav",
+      "source_sha256": "0c11fd824082b62f313f9bab35ce4767fcd180ef1a54ee677096149018aaef6a",
+      "root_midi": 73,
+      "frames": 84092,
+      "sample_rate": 32000,
+      "pcm_sha256": "8a25b931a8e5ad9989424cf0595d3b6efadd2227a12d619fea8a431d0411121e"
+    },
+    {
+      "source_file": "Samples/sus/erhu_e5_sus_rr1.wav",
+      "source_sha256": "88a112f2e47d6af0d7b8692c4ec7a52e5d1d052cdc13c77cf430177003c203ae",
+      "root_midi": 64,
+      "frames": 106619,
+      "sample_rate": 32000,
+      "pcm_sha256": "a559bd9e9d3161a677c0422ba0958e28085fe018f33340deb9210341a5fce52f"
+    },
+    {
+      "source_file": "Samples/sus/erhu_e5_sus_rr2.wav",
+      "source_sha256": "5af345110f071b6c10c974fe74aedf0bba6da7964721c322669c7e965f0fc3fa",
+      "root_midi": 64,
+      "frames": 103183,
+      "sample_rate": 32000,
+      "pcm_sha256": "1d8c1711b77591e84552f64b217a5a70af2d22e37224d9940c40b3b41d57484d"
+    },
+    {
+      "source_file": "Samples/sus/erhu_e6_sus_rr1.wav",
+      "source_sha256": "df88addf6787ea658ed5cf354886ae20317bcb59374ecbc5bf24a342d03fb4af",
+      "root_midi": 76,
+      "frames": 69366,
+      "sample_rate": 32000,
+      "pcm_sha256": "27998a893cc4d0d87527d94867848e1cb3278bd0ad5543a08a701f9e4f7bf5a5"
+    },
+    {
+      "source_file": "Samples/sus/erhu_e6_sus_rr2.wav",
+      "source_sha256": "1d08eb2ad5a0eeb44b3d053b84f4c667fcf71b617c03a90eab38ec413f1d0b0c",
+      "root_midi": 76,
+      "frames": 80222,
+      "sample_rate": 32000,
+      "pcm_sha256": "83658e99b56cf09a4c4b9ce3e8b94ebffd45586c1e591ddaf7202050e758fd33"
+    },
+    {
+      "source_file": "Samples/sus/erhu_eb5_sus_rr1.wav",
+      "source_sha256": "2c63e7e6ec25d15669b90883abd0b3bb719dcfd2dfa38eb3ebfcfc48b03c6869",
+      "root_midi": 63,
+      "frames": 95329,
+      "sample_rate": 32000,
+      "pcm_sha256": "d83b6f89af5105dff0fd831a1081d8f3f6d7e47ee78f898ebb679cdccc8d7a3a"
+    },
+    {
+      "source_file": "Samples/sus/erhu_eb5_sus_rr2.wav",
+      "source_sha256": "e125c69f2f0954b97abc57a261ca4a31684df85b19fd1908d995238f2851962a",
+      "root_midi": 63,
+      "frames": 94329,
+      "sample_rate": 32000,
+      "pcm_sha256": "a3529c9ec8ab311e03a0d646d8a7826b5eab8ee9efe159bc86b1b2da8640ade9"
+    },
+    {
+      "source_file": "Samples/sus/erhu_eb6_sus_rr1.wav",
+      "source_sha256": "f63560ce10270be0776c22b66dadd257aabe9a9500f0b90533d1d3c7ea2b898d",
+      "root_midi": 75,
+      "frames": 62449,
+      "sample_rate": 32000,
+      "pcm_sha256": "f6a92e9f5880acb5c14f9fd708848e4f79634cdd78daf3039e4fc02b3b5f80e4"
+    },
+    {
+      "source_file": "Samples/sus/erhu_eb6_sus_rr2.wav",
+      "source_sha256": "0d2d019269aa900d6fd4ccc02ef333b5e3008465227c7306d96ae47e7f51a771",
+      "root_midi": 75,
+      "frames": 74868,
+      "sample_rate": 32000,
+      "pcm_sha256": "76b4c8d10d38095b9102c5a0a24ba06e3cfaaa5dfb7c57b77abdb47e37090076"
+    },
+    {
+      "source_file": "Samples/sus/erhu_f5_sus_rr1.wav",
+      "source_sha256": "a03941445662b2314b4e2575f49229f78f6385fc3876c65833c524648cf90b7f",
+      "root_midi": 65,
+      "frames": 92051,
+      "sample_rate": 32000,
+      "pcm_sha256": "6013e9b816b88e86fa9c8c6625c772b7cfa310e02991c587344e47706fba68c4"
+    },
+    {
+      "source_file": "Samples/sus/erhu_f5_sus_rr2.wav",
+      "source_sha256": "7cff60d9f2b5eb356ca3992b9ac73d200c36eba5afeda28498809f9ce07fc4a0",
+      "root_midi": 65,
+      "frames": 93359,
+      "sample_rate": 32000,
+      "pcm_sha256": "4c66cf141ff7a0819a9dad136ccd4399f749472876b4eab421716f9fee967e9e"
+    },
+    {
+      "source_file": "Samples/sus/erhu_f6_sus_rr1.wav",
+      "source_sha256": "63a97dfc215ac5b7f4a755e1a38c74549aeaadd5996d38ee11a3f08b047ae7e3",
+      "root_midi": 77,
+      "frames": 67658,
+      "sample_rate": 32000,
+      "pcm_sha256": "552223b2be6095673fd0b1d77f44c96bb7b0f9672cca37c3c2150632224601cf"
+    },
+    {
+      "source_file": "Samples/sus/erhu_f6_sus_rr2.wav",
+      "source_sha256": "bc7c9c5ed8ce1270ac62380f33ff6957929a70474013ab41d13fb0de5764e75a",
+      "root_midi": 77,
+      "frames": 77366,
+      "sample_rate": 32000,
+      "pcm_sha256": "01412ce6687ec92b9cfac79f0e3a1c850f6b760062c9332b04836ffc9fc1a7e2"
+    },
+    {
+      "source_file": "Samples/sus/erhu_g5_sus_rr1.wav",
+      "source_sha256": "672a3caa8c698e55c9d1f9e29801ef2ab131aab84498235c2fc30d71557587da",
+      "root_midi": 67,
+      "frames": 85631,
+      "sample_rate": 32000,
+      "pcm_sha256": "9ca75bed579f5292802fc9767715f7559e7e7d1f75345a0040e5e19ce900789d"
+    },
+    {
+      "source_file": "Samples/sus/erhu_g5_sus_rr2.wav",
+      "source_sha256": "cda9b3419e7e3e316c7fee40355763f2bc3dc267e4c4440addac31cb29e1d962",
+      "root_midi": 67,
+      "frames": 82370,
+      "sample_rate": 32000,
+      "pcm_sha256": "2fde4121a49b18a30aafdfd781ff7c4de504afe750af64f280cae6f5b61dec4f"
+    },
+    {
+      "source_file": "Samples/sus/erhu_g6_sus_rr1.wav",
+      "source_sha256": "54208182f2097709d8428ec28726fff4f816dfe50a1b51da4c6de61aefae7e47",
+      "root_midi": 79,
+      "frames": 80375,
+      "sample_rate": 32000,
+      "pcm_sha256": "616aa05a92f00a1e22228b81f0633d1d7fb8f157a178317d49a95894c7492a36"
+    },
+    {
+      "source_file": "Samples/sus/erhu_g6_sus_rr2.wav",
+      "source_sha256": "0ba7dda97e0398668592c0f310ae4aeceb78bf861bcf61b377f360366900e644",
+      "root_midi": 79,
+      "frames": 91035,
+      "sample_rate": 32000,
+      "pcm_sha256": "f0ecf4b6dd1577e99dfe91b8719c1917af7e3d4cf901f0ea20aedc7088eb860f"
+    },
+    {
+      "source_file": "Samples/sus/erhu_gb5_sus_rr1.wav",
+      "source_sha256": "01efdfcfc5bc72de6c9974af677b5020765dd9235370ffc3dafa8afc14678f0a",
+      "root_midi": 66,
+      "frames": 93896,
+      "sample_rate": 32000,
+      "pcm_sha256": "beb6c95eb69c08d45ecef926d7c1afd0d32464f53447457f1d3a52f755e49266"
+    },
+    {
+      "source_file": "Samples/sus/erhu_gb5_sus_rr2.wav",
+      "source_sha256": "65c6b84f1d120c0054585ca9515ac0fee3d32d2434e893f3c54f58177f9383e5",
+      "root_midi": 66,
+      "frames": 97530,
+      "sample_rate": 32000,
+      "pcm_sha256": "4667ec08618e2b70dbc9e61822c77735e8a31b3dc3317dbe51284c52606ebb68"
+    },
+    {
+      "source_file": "Samples/sus/erhu_gb6_sus_rr1.wav",
+      "source_sha256": "0311aebd66847344f6f7f493f4107aa7d697ee79059c6aedba0bf3742c060112",
+      "root_midi": 78,
+      "frames": 86435,
+      "sample_rate": 32000,
+      "pcm_sha256": "56e3f0cd93f19b54b0238e4d165a4784d38a5f38c18a82eaecedacc969bff1d5"
+    },
+    {
+      "source_file": "Samples/sus/erhu_gb6_sus_rr2.wav",
+      "source_sha256": "a7dc958db9b641183a74e59cb8020e7a4cebed6d2b324af2bda9267fbb7b8013",
+      "root_midi": 78,
+      "frames": 80376,
+      "sample_rate": 32000,
+      "pcm_sha256": "2c3a4d6f9361215099b3875bff5db713cd3024b8d7bec2a5e65472090b314552"
+    }
+  ]
+}

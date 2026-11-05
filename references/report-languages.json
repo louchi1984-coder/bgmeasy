@@ -1,0 +1,1151 @@
+{
+  "\n共 {v0} 个声部需CHECK，{v1}个所选资料范围外待复核，{v2}个型号/端点有条件或待核，{v3}个未检查。未纳入21项核查的旧表行仍只是原有数值提示；范围内不认证技法、预设身份或听感。": {
+    "en": "\n{v0} tracks need CHECK; {v1} outside the selected reference, {v2} conditional/pending, {v3} unchecked. Older unreviewed rows remain estimates; being in range does not certify technique, preset identity or sound.",
+    "ja": "\nCHECK対象{v0}声部、選択資料の範囲外{v1}、条件付き・未確認{v2}、未検査{v3}。旧表の未検証値は目安であり、音域内でも奏法・音源の正体・音質は保証されません。",
+    "ko": "\nCHECK 대상 {v0}개 성부, 선택 자료 범위 밖 {v1}개, 조건부·미확인 {v2}개, 미검사 {v3}개입니다. 기존 미검증 값은 참고치이며 범위 안이어도 주법·음원 정체·음질을 보장하지 않습니다."
+  },
+  "\n各层实际贡献（未归一化，整体 {v0:.1f} dB；差信号 RMS，越接近 0 越响）": {
+    "en": "\nLayer contributions (unnormalized, full mix {v0:.1f} dB; difference-signal RMS; closer to 0 is louder)",
+    "ja": "\n声部別寄与（未正規化、全体 {v0:.1f} dB、差分信号RMS。0に近いほど大きい）",
+    "ko": "\n성부별 기여도(정규화 전, 전체 {v0:.1f} dB, 차분 신호 RMS. 0에 가까울수록 큼)"
+  },
+  "\n声部    音域                出调音占比": {
+    "en": "\nTrack   Pitch range         Out-of-key ratio",
+    "ja": "\n声部    音域                調外音の割合",
+    "ko": "\n성부    음역                조성 밖 음 비율"
+  },
+  "\n小节 段落        ": {
+    "en": "\nBar  Section      ",
+    "ja": "\n小節 セクション  ",
+    "ko": "\n마디 구간        "
+  },
+  "\n结尾最后1s相对正文: {v0:+.1f} dB": {
+    "en": "\nLast 1s relative to body: {v0:+.1f} dB",
+    "ja": "\n末尾1秒と本体の差: {v0:+.1f} dB",
+    "ko": "\n마지막 1초와 본문 차이: {v0:+.1f} dB"
+  },
+  "      [音区位置] 中位音 {v0} 落在常用音域的最低四分之一：这件乐器在此处音色较暗/较虚，若它承担主旋律请确认。": {
+    "en": "      [Register] Median {v0} is in the lowest quarter of the stated common range; check the darker/weaker register if this is the melody.",
+    "ja": "      [音域位置] 中央音{v0}は常用音域の下位1/4です。主旋律なら暗め・弱めの音色を確認してください。",
+    "ko": "      [음역 위치] 중앙음 {v0}은 통상 음역의 하위 1/4입니다. 주선율이면 어둡고 약한 음색을 확인하세요."
+  },
+  "      [音区位置] 中位音 {v0} 落在常用音域的最高处：音色会很尖，持续使用请确认。": {
+    "en": "      [Register] Median {v0} is near the top of the stated common range; check the bright register if used continuously.",
+    "ja": "      [音域位置] 中央音{v0}は常用音域の上端付近です。持続使用時は鋭い音色を確認してください。",
+    "ko": "      [음역 위치] 중앙음 {v0}은 통상 음역 상단 부근입니다. 지속 사용 시 날카로운 음색을 확인하세요."
+  },
+  "      {v0}个音在资料所示范围外，小节 {v1}；需另查，不等于不可演奏。": {
+    "en": "      {v0} notes outside the documented range, bars {v1}; needs review, not proof of impossibility.",
+    "ja": "      資料の範囲外が{v0}音、小節{v1}。要確認であり演奏不能とは限りません。",
+    "ko": "      자료 범위 밖 {v0}음, 마디 {v1}. 검토가 필요하며 연주 불가를 뜻하지 않습니다."
+  },
+  "      原样重复可用于呈示/确认；未匹配不代表无关，匹配也不证明发展充分。": {
+    "en": "      Exact repetition may present/confirm an idea; no match does not prove unrelatedness, and a match does not prove sufficient development.",
+    "ja": "      同形反復は提示・確認に使えます。不一致は無関係の証明ではなく、一致も十分な展開の証明ではありません。",
+    "ko": "      동일 반복은 제시·확인에 쓸 수 있습니다. 불일치가 무관함을, 일치가 충분한 발전을 증명하지 않습니다."
+  },
+  "      图示附加音: {v0}；未由端点推定额外半音或技法能力。": {
+    "en": "      Additional documented notes: {v0}; no extra semitones or technique inferred from endpoints.",
+    "ja": "      資料上の追加音: {v0}。端点から他の半音や奏法を推定していません。",
+    "ko": "      자료에 명시된 추가음: {v0}. 끝음만으로 다른 반음이나 주법을 추정하지 않습니다."
+  },
+  "      多音事件仅比较最高音投影，不代表真实独立声部。": {
+    "en": "      Polyphonic events compare only the highest-note projection, not actual independent voices.",
+    "ja": "      多音イベントは最高音のみを比較し、実際の独立声部を表しません。",
+    "ko": "      다성 이벤트는 최고음 투영만 비교하며 실제 독립 성부를 뜻하지 않습니다."
+  },
+  "      旧通用common/extreme未核值不参与硬判定；没有判定不等于已验证可演奏。": {
+    "en": "      Unverified legacy common/extreme values are not hard limits; no verdict is not proof of playability.",
+    "ja": "      旧common/extreme未検証値は厳格判定に使いません。未判定は演奏可能性の検証済みを意味しません。",
+    "ko": "      기존 common/extreme 미검증 값은 엄격한 판정에 쓰지 않습니다. 미판정이 연주 가능성 검증을 뜻하지 않습니다."
+  },
+  "      末音位置不自动证明终止；结合低音、和声、节奏与结束意图复核。": {
+    "en": "      The last note alone does not establish a cadence; review bass, harmony, rhythm and ending intent.",
+    "ja": "      最終音だけでは終止は確定しません。低音・和声・リズム・終結意図を確認してください。",
+    "ko": "      마지막 음만으로 종지를 확정할 수 없습니다. 베이스·화성·리듬·종결 의도를 검토하세요."
+  },
+  "      条件: {v0}；当前预设检索: {v1}。这是演奏参照，不认证音源身份。": {
+    "en": "      Conditions: {v0}; preset lookup: {v1}. A performance reference, not preset identification.",
+    "ja": "      条件: {v0}。音源検索: {v1}。演奏の参照であり音源の正体を認証しません。",
+    "ko": "      조건: {v0}; 프리셋 조회: {v1}. 연주 참고 자료이며 음원 정체를 인증하지 않습니다."
+  },
+  "      来源: {v0} {v1}": {
+    "en": "      Source: {v0} {v1}",
+    "ja": "      出典: {v0} {v1}",
+    "ko": "      출처: {v0} {v1}"
+  },
+  "      用--list-variants {v0}查询，再在适用声部写range_variant。": {
+    "en": "      Use --list-variants {v0}, then select range_variant on the applicable track.",
+    "ja": "      --list-variants {v0}で確認し、適用する声部でrange_variantを指定してください。",
+    "ko": "      --list-variants {v0}로 조회한 후 해당 성부에 range_variant를 지정하세요."
+  },
+  "      第{v0}小节，0起算拍位{v1:g}: {v2}": {
+    "en": "      Bar {v0}, zero-based beat {v1:g}: {v2}",
+    "ja": "      第{v0}小節、0始まり拍位置{v1:g}: {v2}",
+    "ko": "      {v0}마디, 0부터 센 박 위치 {v1:g}: {v2}"
+  },
+  "      范围内不保证舒适度、全部半音、快速技法或自然感。": {
+    "en": "      In-range does not guarantee comfort, all semitones, fast techniques or naturalness.",
+    "ja": "      範囲内でも快適さ・全半音・速い奏法・自然さは保証されません。",
+    "ko": "      범위 안이어도 편안함·모든 반음·빠른 주법·자연스러움은 보장되지 않습니다."
+  },
+  "      该参照明确缺音: {v0}，小节 {v1}。": {
+    "en": "      Explicitly missing notes: {v0}, bars {v1}.",
+    "ja": "      この参照で明示された欠音: {v0}、小節{v1}。",
+    "ko": "      해당 자료에 명시된 결손음: {v0}, 마디 {v1}."
+  },
+  "      超出常用音域 {v0}/{v1} 个音，小节 {v2}：属于极端音区，确认是有意为之。": {
+    "en": "      Outside common range: {v0}/{v1} notes, bars {v2}; confirm this extreme register is intentional.",
+    "ja": "      常用音域外{v0}/{v1}音、小節{v2}。極端な音域を意図しているか確認してください。",
+    "ko": "      통상 음역 밖 {v0}/{v1}음, 마디 {v2}. 극단 음역 사용이 의도적인지 확인하세요."
+  },
+  "      超出所选型号的物理键盘边界。": {
+    "en": "      Beyond the selected model's physical keyboard limits.",
+    "ja": "      選択した型式の物理的な鍵盤範囲外です。",
+    "ko": "      선택한 모델의 물리적 건반 범위를 벗어납니다."
+  },
+  "      超出极端音域 {v0}/{v1} 个音，小节 {v2}：这件乐器几乎不会这样用，改音区或换乐器。": {
+    "en": "      Outside extreme range: {v0}/{v1} notes, bars {v2}; this is highly unusual, reconsider register or instrument.",
+    "ja": "      極限音域外{v0}/{v1}音、小節{v2}。非常に異例のため音域や楽器を再検討してください。",
+    "ko": "      극한 음역 밖 {v0}/{v1}음, 마디 {v2}. 매우 이례적이므로 음역이나 악기를 재검토하세요."
+  },
+  "      重复、变化或未匹配均不自动判定质量；优先用实际素材与整句范围复核。": {
+    "en": "      Repetition, variation and no match are not automatic quality verdicts; review the actual material and full phrase.",
+    "ja": "      反復・変化・不一致だけで品質を判定しません。実際の素材と楽句全体を確認してください。",
+    "ko": "      반복·변형·불일치만으로 품질을 판정하지 않습니다. 실제 소재와 전체 악구를 검토하세요."
+  },
+  "      （把握低：民族乐器因型号定弦而异，数值仅作粗略提示，需核对具体型号。）": {
+    "en": "      (Low confidence: traditional instruments vary by model/tuning; rough values require model-specific verification.)",
+    "ja": "      （確度低：民族楽器は型式・調弦で異なります。概数は具体的な型式で確認してください。）",
+    "ko": "      (확신도 낮음: 민족 악기는 모델·조율에 따라 다릅니다. 대략값은 구체적 모델로 확인하세요.)"
+  },
+  "    条件: {v0}": {
+    "en": "    Conditions: {v0}",
+    "ja": "    条件: {v0}",
+    "ko": "    조건: {v0}"
+  },
+  "   <-- 比最响层低 12 dB 以上，可能听不清": {
+    "en": "   <-- More than 12 dB below loudest layer; may be hard to hear",
+    "ja": "   <-- 最大声部より12 dB以上低く、聞き取りにくい可能性",
+    "ko": "   <-- 가장 큰 성부보다 12 dB 이상 낮아 잘 안 들릴 수 있음"
+  },
+  "   电平dB": {
+    "en": "   Level dB",
+    "ja": "   レベルdB",
+    "ko": "   레벨dB"
+  },
+  "  来源: {v0} {v1}\n    限制: {v2}": {
+    "en": "  Source: {v0} {v1}\n    Limitations: {v2}",
+    "ja": "  出典: {v0} {v1}\n    制約: {v2}",
+    "ko": "  출처: {v0} {v1}\n    한계: {v2}"
+  },
+  " 偏低的层: {v0}。": {
+    "en": " Quiet layers: {v0}.",
+    "ja": " 小さい声部: {v0}。",
+    "ko": " 작은 성부: {v0}."
+  },
+  "(上限 {v0})": {
+    "en": "(ceiling {v0})",
+    "ja": "（上限 {v0}）",
+    "ko": "(상한 {v0})"
+  },
+  "(仅描述电平差；约 0 dB 表示末秒与正文电平接近，不能据此判断截断、高潮或是否落定；结合闭合、循环或开放结尾的设计核查)": {
+    "en": "(Level difference only; about 0 dB means similar end/body level, not proof of truncation, climax or closure; review intended closed, looping or open endings.)",
+    "ja": "（レベル差のみ。約0 dBは末尾と本体が近いことを示し、途切れ・クライマックス・終止の判定ではありません。閉じる・ループ・開放的な終わりの意図と照合してください。）",
+    "ko": "(레벨 차이만 설명합니다. 약 0 dB는 끝과 본문의 레벨이 비슷하다는 뜻이며 잘림·절정·종지를 판정하지 않습니다. 닫힌 결말·루프·열린 결말의 의도와 대조하세요.)"
+  },
+  "(排查阈值为差值 ≤1.2s；超过时结合设计核查弱收、停顿或自然释放，不直接判断早停或终止质量)": {
+    "en": "(Screening threshold: gap <=1.2s; review soft endings, pauses or release against the design; not an automatic early-stop or cadence verdict.)",
+    "ja": "（確認用の差分閾値は1.2秒以下。超える場合は弱い終わり・休止・自然な余韻を設計と照合し、早期停止や終止の質を自動判定しません。）",
+    "ko": "(점검 기준: 차이 1.2초 이하. 초과 시 약한 마무리·쉼·자연 감쇠를 설계와 대조하며 조기 종료나 종지의 질을 자동 판정하지 않습니다.)"
+  },
+  "(目标 {v0})": {
+    "en": "(target {v0})",
+    "ja": "（目標 {v0}）",
+    "ko": "(목표 {v0})"
+  },
+  "--mute: 没有声部 {v0}": {
+    "en": "--mute: no track {v0}",
+    "ja": "--mute: 声部{v0}がありません",
+    "ko": "--mute: 성부 {v0}이 없습니다"
+  },
+  "-（未声明 key）": {
+    "en": "- (key not declared)",
+    "ja": "-（key未指定）",
+    "ko": "- (key 미지정)"
+  },
+  "=== 声部 {v0} ({v1}) ===": {
+    "en": "=== Track {v0} ({v1}) ===",
+    "ja": "=== 声部 {v0} ({v1}) ===",
+    "ko": "=== 성부 {v0} ({v1}) ==="
+  },
+  "FreePats 轻量扩充": {
+    "en": "FreePats lightweight expansion",
+    "ja": "FreePats軽量拡張",
+    "ko": "FreePats 경량 확장"
+  },
+  "JSON 语法错误: {v0}": {
+    "en": "JSON syntax error: {v0}",
+    "ja": "JSON構文エラー: {v0}",
+    "ko": "JSON 구문 오류: {v0}"
+  },
+  "WARN: bpm {v0:g} -> {v1:.1f}（偏离>8%）": {
+    "en": "WARN: bpm {v0:g} -> {v1:.1f} (deviation >8%)",
+    "ja": "WARN: bpm {v0:g} -> {v1:.1f}（差>8%）",
+    "ko": "WARN: bpm {v0:g} -> {v1:.1f}(편차 >8%)"
+  },
+  "WARN: 为凑 {v0}s，bpm {v1:g} -> {v2:.1f}（偏离>8%，建议增减小节数）": {
+    "en": "WARN: to fit {v0}s, bpm {v1:g} -> {v2:.1f} (deviation >8%; consider changing bar count)",
+    "ja": "WARN: {v0}秒に合わせbpm {v1:g} -> {v2:.1f}（差>8%、小節数の調整を検討）",
+    "ko": "WARN: {v0}초에 맞춰 bpm {v1:g} -> {v2:.1f}(편차 >8%, 마디 수 조정 검토)"
+  },
+  "WARN: 视频没有音轨，忽略 --keep-audio": {
+    "en": "WARN: video has no audio track; ignoring --keep-audio",
+    "ja": "WARN: 動画に音声がないため--keep-audioを無視します",
+    "ko": "WARN: 영상에 오디오가 없어 --keep-audio를 무시합니다"
+  },
+  "[CHECK] {v0}: 未对该鼓/采样器建立有音高的演奏参照。": {
+    "en": "[CHECK] {v0}: no pitched-performance reference established for this drum/sampler.",
+    "ja": "[CHECK] {v0}: このドラム・サンプラーの音高演奏参照は未整備です。",
+    "ko": "[CHECK] {v0}: 이 드럼·샘플러의 유음정 연주 참조가 없습니다."
+  },
+  "[CHECK] {v0}: 未知range_variant {v1!r}；用--list-variants查询，不会静默套用通用音域。": {
+    "en": "[CHECK] {v0}: unknown range_variant {v1!r}; use --list-variants. No silent generic-range fallback.",
+    "ja": "[CHECK] {v0}: 不明なrange_variant {v1!r}。--list-variantsで確認してください。汎用音域へ黙って代替しません。",
+    "ko": "[CHECK] {v0}: 알 수 없는 range_variant {v1!r}. --list-variants로 조회하세요. 일반 음역으로 조용히 대체하지 않습니다."
+  },
+  "[INFO] {v0}: 第{v1}小节末个记谱音 {v2}{v3}，{v4}上的{v5}{v6}。": {
+    "en": "[INFO] {v0}: last notated note in bar {v1}: {v2}{v3}, {v5} over {v4}{v6}.",
+    "ja": "[INFO] {v0}: 第{v1}小節の最終記譜音{v2}{v3}、{v4}上の{v5}{v6}。",
+    "ko": "[INFO] {v0}: {v1}마디 마지막 기보음 {v2}{v3}, {v4} 위의 {v5}{v6}."
+  },
+  "[INFO] {v0}: 范围内无记谱音符。": {
+    "en": "[INFO] {v0}: no notated notes in this span.",
+    "ja": "[INFO] {v0}: この範囲に記譜音はありません。",
+    "ko": "[INFO] {v0}: 이 범위에 기보음이 없습니다."
+  },
+  "[INFO] {v0}（作者记录，非自动验收）: {v1}": {
+    "en": "[INFO] {v0} (author's record, not automated approval): {v1}",
+    "ja": "[INFO] {v0}（作者の記録、自動合格判定ではない）: {v1}",
+    "ko": "[INFO] {v0}(작가 기록, 자동 합격 판정 아님): {v1}"
+  },
+  "[INFO] {v0}（作者记录，须对照音符）: {v1}": {
+    "en": "[INFO] {v0} (author's record; compare with notes): {v1}",
+    "ja": "[INFO] {v0}（作者の記録、音符と照合）: {v1}",
+    "ko": "[INFO] {v0}(작가 기록, 음표와 대조 필요): {v1}"
+  },
+  "[INFO] 只有 1 个有旋律的小节（第 {v0} 小节）": {
+    "en": "[INFO] Only one melodic bar (bar {v0}).",
+    "ja": "[INFO] 旋律のある小節は1つのみ（第{v0}小節）。",
+    "ko": "[INFO] 선율이 있는 마디가 하나뿐입니다({v0}마디)."
+  },
+  "[INFO] 小节内和声时间（0起算拍位）: {v0}": {
+    "en": "[INFO] Within-bar harmony timing (zero-based beats): {v0}",
+    "ja": "[INFO] 小節内の和声時点（0始まり拍）: {v0}",
+    "ko": "[INFO] 마디 내 화성 시점(0부터 센 박): {v0}"
+  },
+  "[INFO] 无可作逐小节比较的多起音材料；长音、纹理或跨小节关系另查整句。": {
+    "en": "[INFO] No multi-onset material for barwise comparison; review sustained tones, textures and cross-bar phrases separately.",
+    "ja": "[INFO] 小節比較に適した複数起音素材がありません。持続音・テクスチャ・小節をまたぐ楽句を別途確認してください。",
+    "ko": "[INFO] 마디별 비교용 다중 어택 소재가 없습니다. 지속음·질감·마디를 넘는 악구를 따로 검토하세요."
+  },
+  "[INFO] 无可判断和声的首拍起音；有 {v0} 个有音小节首拍无起音。": {
+    "en": "[INFO] No first-beat attacks with known harmony; {v0} sounding bars have no first-beat attack.",
+    "ja": "[INFO] 和声判定可能な第1拍起音はありません。有音小節{v0}個で第1拍起音なし。",
+    "ko": "[INFO] 화성을 판단할 수 있는 첫박 어택이 없습니다. 유음 마디 {v0}개에서 첫박 어택이 없습니다."
+  },
+  "[INFO] 最长连续无记谱休止 {v0} 小节；连断、音长、重心与演奏呼吸仍须另查。": {
+    "en": "[INFO] Longest notated run without rests: {v0} bars; articulation, note lengths, emphasis and breathing need separate review.",
+    "ja": "[INFO] 記譜上の無休止連続は最大{v0}小節。アーティキュレーション・音長・重心・呼吸は別途確認してください。",
+    "ko": "[INFO] 기보상 쉼 없는 최장 구간은 {v0}마디입니다. 아티큘레이션·음 길이·중심·호흡은 별도 검토하세요."
+  },
+  "[INFO] 未识别和弦标签 {v0}，跳过相关音级判断；不表示和声错误。": {
+    "en": "[INFO] Unrecognized chord labels {v0}; skipping their scale-degree checks, not declaring harmonic errors.",
+    "ja": "[INFO] 未認識の和音ラベル{v0}。関連音級判定を省略しますが、和声の誤りとは判定しません。",
+    "ko": "[INFO] 인식하지 못한 화음 표기 {v0}. 관련 음급 검사를 건너뛰며 화성 오류를 뜻하지 않습니다."
+  },
+  "[INFO] 此声部在展开编排中没有记谱音符。\n": {
+    "en": "[INFO] This track has no notated notes in the expanded arrangement.\n",
+    "ja": "[INFO] 展開後の編成にこの声部の記譜音はありません。\n",
+    "ko": "[INFO] 펼친 편곡에 이 성부의 기보음이 없습니다.\n"
+  },
+  "[INFO] 第三拍落和弦音: {v0}/{v1}": {
+    "en": "[INFO] Third-beat chord-tone attacks: {v0}/{v1}",
+    "ja": "[INFO] 第3拍の和音構成音: {v0}/{v1}",
+    "ko": "[INFO] 셋째 박 화음 구성음: {v0}/{v1}"
+  },
+  "[INFO] 素材窗口 {v0:g} 拍（保留起音与休止，跨小节搜索）；匹配 {v1} 处。": {
+    "en": "[INFO] Material window: {v0:g} beats (onsets/rests preserved; searches across bars); {v1} matches.",
+    "ja": "[INFO] 素材窓{v0:g}拍（起音と休止を保持、小節をまたいで検索）、一致{v1}箇所。",
+    "ko": "[INFO] 소재 창 {v0:g}박(어택·쉼 유지, 마디를 넘어 검색), 일치 {v1}곳."
+  },
+  "[INFO] 记谱休止比例 {v0:.0%}；按乐器、句法与用途判断，不设固定合格区间。": {
+    "en": "[INFO] Notated rest proportion: {v0:.0%}; judge by instrument, syntax and use, without a fixed pass interval.",
+    "ja": "[INFO] 記譜休止率{v0:.0%}。楽器・句法・用途で判断し、固定合格範囲は設けません。",
+    "ko": "[INFO] 기보 쉼 비율 {v0:.0%}. 악기·구문·용도로 판단하며 고정 합격 구간은 없습니다."
+  },
+  "[INFO] 逐小节素材线索（第 {v0} 小节参考，非整句分析）: {v1}": {
+    "en": "[INFO] Barwise material clues (reference bar {v0}; not full-phrase analysis): {v1}",
+    "ja": "[INFO] 小節別素材の手掛かり（第{v0}小節基準、楽句全体の分析ではない）: {v1}",
+    "ko": "[INFO] 마디별 소재 단서({v0}마디 기준, 전체 악구 분석 아님): {v1}"
+  },
+  "[INFO] 音域 {v0}~{v1}，相邻事件最高音最大跳进 {v2} 半音；按乐器和线条判断。": {
+    "en": "[INFO] Range {v0}~{v1}; largest top-note leap between events: {v2} semitones. Review instrument and line.",
+    "ja": "[INFO] 音域{v0}~{v1}、隣接イベント最高音の最大跳躍{v2}半音。楽器と旋律線で判断してください。",
+    "ko": "[INFO] 음역 {v0}~{v1}, 인접 이벤트 최고음의 최대 도약 {v2}반음. 악기와 선율선으로 판단하세요."
+  },
+  "[INFO] 首拍起音含和弦音: {v0}/{v1} 个可判断小节": {
+    "en": "[INFO] First-beat attacks contain chord tones: {v0}/{v1} assessable bars",
+    "ja": "[INFO] 第1拍起音に和音構成音を含む小節: 判定可能{v1}中{v0}",
+    "ko": "[INFO] 첫박 어택에 화음 구성음 포함: 판단 가능 {v1}마디 중 {v0}"
+  },
+  "[REVIEW] design.motif_review.{v0} 未记录，请补充{v1}并复核实际音符。": {
+    "en": "[REVIEW] Missing design.motif_review.{v0}; record {v1} and review actual notes.",
+    "ja": "[REVIEW] design.motif_review.{v0}が未記録です。{v1}を記録し実際の音符を確認してください。",
+    "ko": "[REVIEW] design.motif_review.{v0}가 없습니다. {v1}을 기록하고 실제 음표를 검토하세요."
+  },
+  "[REVIEW] 以下是谱面现象，不自动评审素材、乐句、节奏协作或听感质量。": {
+    "en": "[REVIEW] These are score observations, not automated judgments of material, phrases, rhythmic cooperation or sound quality.",
+    "ja": "[REVIEW] 以下は譜面上の観察であり、素材・楽句・リズム連携・音質の自動評価ではありません。",
+    "ko": "[REVIEW] 다음은 악보상 관찰이며 소재·악구·리듬 협력·음질의 자동 평가가 아닙니다."
+  },
+  "[REVIEW] 缺少 design.motif_review：新作须记录职能、具体辨识点及声部/小节发展依据；旧谱仍可检查。": {
+    "en": "[REVIEW] Missing design.motif_review: document function, concrete identity and track/bar evidence of development for new work; old scores can still be checked.",
+    "ja": "[REVIEW] design.motif_reviewなし。新作は機能・具体的特徴・声部や小節による展開根拠を記録してください。旧譜も検査可能です。",
+    "ko": "[REVIEW] design.motif_review가 없습니다. 신작은 기능·구체적 정체성·성부 및 마디별 발전 근거를 기록하세요. 기존 악보도 검사할 수 있습니다."
+  },
+  "[REVIEW] 请对照共同节奏、完整乐句与声部连接复核；以上数值/匹配不判定创作合格。听感仍须实际核听。": {
+    "en": "[REVIEW] Review shared rhythm, complete phrases and voice leading. Numbers/matches do not approve a composition; listening is still required.",
+    "ja": "[REVIEW] 共通リズム・完結した楽句・声部連結を確認してください。数値や一致は作曲の合格判定ではなく、実際の試聴が必要です。",
+    "ko": "[REVIEW] 공통 리듬·완결된 악구·성부 진행을 검토하세요. 수치나 일치는 작곡 합격 판정이 아니며 실제 청취가 필요합니다."
+  },
+  "[sf2] bpm {v0:.1f} | {v1} 小节 | 总长 {v2:.2f}s | 音色库 {v3}": {
+    "en": "[sf2] bpm {v0:.1f} · {v1} bars · total {v2:.2f}s · soundfont {v3}",
+    "ja": "[sf2] bpm {v0:.1f} · {v1}小節 · 合計{v2:.2f}秒 · 音源{v3}",
+    "ko": "[sf2] bpm {v0:.1f} · {v1}마디 · 전체 {v2:.2f}초 · 음원 {v3}"
+  },
+  "[{v0}] {v1} ({v2}，来源 {v3}): 实际 {v4}~{v5}；未指定型号/定弦参照。": {
+    "en": "[{v0}] {v1} ({v2}, source {v3}): actual {v4}~{v5}; model/tuning reference not selected.",
+    "ja": "[{v0}] {v1}（{v2}、出典{v3}）: 実音域{v4}~{v5}。型式・調弦参照が未指定。",
+    "ko": "[{v0}] {v1}({v2}, 출처 {v3}): 실제 {v4}~{v5}. 모델·조율 참조가 미지정입니다."
+  },
+  "[{v0}] {v1} ({v2}，来源 {v3}，把握 {v4}): 实际 {v5}~{v6}，常用 {v7}~{v8}，极端 {v9}~{v10}": {
+    "en": "[{v0}] {v1} ({v2}, source {v3}, confidence {v4}): actual {v5}~{v6}, common {v7}~{v8}, extreme {v9}~{v10}",
+    "ja": "[{v0}] {v1}（{v2}、出典{v3}、確度{v4}）: 実音域{v5}~{v6}、常用{v7}~{v8}、極限{v9}~{v10}",
+    "ko": "[{v0}] {v1}({v2}, 출처 {v3}, 확신도 {v4}): 실제 {v5}~{v6}, 통상 {v7}~{v8}, 극한 {v9}~{v10}"
+  },
+  "[{v0}] {v1}: 实际 {v2}~{v3}；作者选择参照 {v4}（{v5}），资料范围 {v6}~{v7}": {
+    "en": "[{v0}] {v1}: actual {v2}~{v3}; selected reference {v4} ({v5}), documented range {v6}~{v7}",
+    "ja": "[{v0}] {v1}: 実音域{v2}~{v3}、作者指定の参照{v4}（{v5}）、資料範囲{v6}~{v7}",
+    "ko": "[{v0}] {v1}: 실제 {v2}~{v3}; 선택 참조 {v4}({v5}), 자료 범위 {v6}~{v7}"
+  },
+  "[未检查] {v0}: {v1}（没有检查不等于没问题）": {
+    "en": "[UNCHECKED] {v0}: {v1} (unchecked does not mean problem-free)",
+    "ja": "[未検査] {v0}: {v1}（未検査は問題なしを意味しません）",
+    "ko": "[미검사] {v0}: {v1}(미검사는 문제없음을 뜻하지 않습니다)"
+  },
+  "[注意] 预设解析失败，改用 inst 名识别: {v0}": {
+    "en": "[NOTICE] Preset resolution failed; identifying from inst: {v0}",
+    "ja": "[注意] 音源解決に失敗したためinst名から識別: {v0}",
+    "ko": "[주의] 프리셋 해석 실패, inst 이름으로 식별: {v0}"
+  },
+  "afplay / 任意播放器（人工核听）": {
+    "en": "afplay / any player (manual listening)",
+    "ja": "afplay / 任意のプレーヤー（試聴用）",
+    "ko": "afplay / 임의 플레이어(직접 청취용)"
+  },
+  "bpm {v0:.1f} | {v1} 小节 | 正文 {v2:.2f}s + 尾音 {v3}s = {v4:.2f}s | seed {v5}": {
+    "en": "bpm {v0:.1f} · {v1} bars · body {v2:.2f}s + tail {v3}s = {v4:.2f}s · seed {v5}",
+    "ja": "bpm {v0:.1f} · {v1}小節 · 本体{v2:.2f}秒 + 余韻{v3}秒 = {v4:.2f}秒 · seed {v5}",
+    "ko": "bpm {v0:.1f} · {v1}마디 · 본문 {v2:.2f}초 + 잔향 {v3}초 = {v4:.2f}초 · seed {v5}"
+  },
+  "duration 太短": {
+    "en": "duration is too short",
+    "ja": "durationが短すぎます",
+    "ko": "duration이 너무 짧습니다"
+  },
+  "fluidsynth 渲染失败:\n": {
+    "en": "fluidsynth render failed:\n",
+    "ja": "fluidsynthレンダリング失敗:\n",
+    "ko": "fluidsynth 렌더링 실패:\n"
+  },
+  "fluidsynth（采样音色渲染）": {
+    "en": "fluidsynth (sample rendering)",
+    "ja": "fluidsynth（サンプル音源レンダリング）",
+    "ko": "fluidsynth(샘플 음원 렌더링)"
+  },
+  "python >= 3.9（当前 {v0}，{v1}）": {
+    "en": "python >= 3.9 (current {v0}, {v1})",
+    "ja": "python >= 3.9（現在{v0}、{v1}）",
+    "ko": "python >= 3.9(현재 {v0}, {v1})"
+  },
+  "python: {v0}；用当前解释器 -m pip install {v1}": {
+    "en": "python: {v0}; install with current interpreter: -m pip install {v1}",
+    "ja": "python: {v0}。現在のPythonで -m pip install {v1}",
+    "ko": "python: {v0}; 현재 인터프리터로 -m pip install {v1}"
+  },
+  "{v0:.1f}s / 总长 {v1:.1f}s": {
+    "en": "{v0:.1f}s / total {v1:.1f}s",
+    "ja": "{v0:.1f}秒 / 合計{v1:.1f}秒",
+    "ko": "{v0:.1f}초 / 전체 {v1:.1f}초"
+  },
+  "{v0:<8}{v1:>3}~{v2:<3}({v3}音)   ": {
+    "en": "{v0:<8}{v1:>3}~{v2:<3}({v3} notes)   ",
+    "ja": "{v0:<8}{v1:>3}~{v2:<3}（{v3}音）   ",
+    "ko": "{v0:<8}{v1:>3}~{v2:<3}({v3}음)   "
+  },
+  "乐句发展依据": {
+    "en": "phrase-development rationale",
+    "ja": "楽句展開の根拠",
+    "ko": "악구 발전 근거"
+  },
+  "乐谱/检查注释错误: {v0}": {
+    "en": "Score/check-annotation error: {v0}",
+    "ja": "楽譜・検査注釈エラー: {v0}",
+    "ko": "악보·검사 주석 오류: {v0}"
+  },
+  "乐谱错误: {v0}": {
+    "en": "Score error: {v0}",
+    "ja": "楽譜エラー: {v0}",
+    "ko": "악보 오류: {v0}"
+  },
+  "倒影线索（同起音/时值关系）": {
+    "en": "inversion clue (same onset/duration relationships)",
+    "ja": "反行の手掛かり（同じ起音・音価関係）",
+    "ko": "전위 단서(같은 어택·음가 관계)"
+  },
+  "共 {v0} 小节\n": {
+    "en": "{v0} bars\n",
+    "ja": "{v0}小節\n",
+    "ko": "{v0}마디\n"
+  },
+  "共同节奏": {
+    "en": "shared rhythm",
+    "ja": "共通リズム",
+    "ko": "공통 리듬"
+  },
+  "其他": {
+    "en": "other",
+    "ja": "その他",
+    "ko": "기타 유형"
+  },
+  "削波采样数": {
+    "en": "Full-scale samples",
+    "ja": "フルスケールのサンプル数",
+    "ko": "풀스케일 샘플 수"
+  },
+  "原样": {
+    "en": "exact",
+    "ja": "同形",
+    "ko": "동일형"
+  },
+  "参照不认证预设身份；未核实的舒适区及统一极限仍待核。": {
+    "en": "References do not identify presets; unverified comfortable registers and universal endpoints remain pending.",
+    "ja": "参照は音源の正体を認証しません。未検証の快適音域と共通極限は引き続き未確認です。",
+    "ko": "참조는 프리셋 정체를 인증하지 않습니다. 미검증 편안한 음역과 통일된 끝음은 여전히 미확인입니다."
+  },
+  "合成器/打击/pad，音区不检查": {
+    "en": "Synth/percussion/pad: range not checked",
+    "ja": "シンセ・打楽器・padの音域は未検査",
+    "ko": "신스·타악·패드: 음역 미검사"
+  },
+  "同节奏": {
+    "en": "same rhythm",
+    "ja": "同じリズム",
+    "ko": "같은 리듬"
+  },
+  "同音程开头": {
+    "en": "same opening intervals",
+    "ja": "冒頭音程が同じ",
+    "ko": "같은 도입 음정"
+  },
+  "和声与声部连接": {
+    "en": "harmony and voice leading",
+    "ja": "和声と声部連結",
+    "ko": "화성과 성부 진행"
+  },
+  "和声未知": {
+    "en": "unknown harmony",
+    "ja": "和声不明",
+    "ko": "화성 미상"
+  },
+  "和弦来源": {
+    "en": "Harmony source",
+    "ja": "和声の出典",
+    "ko": "화성 출처"
+  },
+  "和弦来源: {v0} | 旋律声部: {v1} | 共 {v2} 小节\n": {
+    "en": "Harmony source: {v0} · melody tracks: {v1} · {v2} bars\n",
+    "ja": "和声の出典: {v0} · 旋律声部: {v1} · {v2}小節\n",
+    "ko": "화성 출처: {v0} · 선율 성부: {v1} · {v2}마디\n"
+  },
+  "和弦音": {
+    "en": "chord tone",
+    "ja": "和音構成音",
+    "ko": "화음 구성음"
+  },
+  "响度范围 LRA": {
+    "en": "Loudness range LRA",
+    "ja": "ラウドネス範囲LRA",
+    "ko": "라우드니스 범위 LRA"
+  },
+  "声部": {
+    "en": "Track",
+    "ja": "声部",
+    "ko": "성부"
+  },
+  "开头静音": {
+    "en": "Leading silence",
+    "ja": "冒頭の無音",
+    "ko": "도입 무음"
+  },
+  "待核": {
+    "en": "pending",
+    "ja": "未確認",
+    "ko": "미확인"
+  },
+  "必需依赖不全，先补齐再用。": {
+    "en": "Required dependencies missing; install them before use.",
+    "ja": "必須依存が不足しています。使用前に補ってください。",
+    "ko": "필수 의존성이 없습니다. 사용 전에 준비하세요."
+  },
+  "必需依赖齐全。": {
+    "en": "Required dependencies are available.",
+    "ja": "必須依存は揃っています。",
+    "ko": "필수 의존성이 준비되었습니다."
+  },
+  "必需（合成 / 混音 / 验收）": {
+    "en": "Required (synthesis / mixing / verification)",
+    "ja": "必須（合成 / ミックス / 検証）",
+    "ko": "필수(합성 / 믹싱 / 검증)"
+  },
+  "找不到声部指定的音色库 {v0}": {
+    "en": "Track soundfont not found: {v0}",
+    "ja": "声部の音源が見つかりません: {v0}",
+    "ko": "성부 음원을 찾을 수 없습니다: {v0}"
+  },
+  "找不到音色库 {v0}（见 references/dependencies.md）": {
+    "en": "Soundfont not found: {v0} (see references/dependencies.md)",
+    "ja": "音源が見つかりません: {v0}（references/dependencies.md参照）",
+    "ko": "음원을 찾을 수 없습니다: {v0}(references/dependencies.md 참조)"
+  },
+  "推断": {
+    "en": "inferred",
+    "ja": "推定",
+    "ko": "추정"
+  },
+  "提示: 以上只是数值。是否好听、对白是否清晰、结尾是否真正落定，必须实际播放核听。": {
+    "en": "Note: numbers only. Musical quality, dialogue clarity and ending need actual listening.",
+    "ja": "注意：数値のみです。音楽の良さ・台詞の明瞭さ・終結は実際に聴いて確認してください。",
+    "ko": "참고: 수치일 뿐입니다. 음악의 질·대사 명료도·마무리는 실제로 들어 확인해야 합니다."
+  },
+  "无": {
+    "en": "none",
+    "ja": "なし",
+    "ko": "없음"
+  },
+  "无法识别乐器": {
+    "en": "Instrument not identified",
+    "ja": "楽器を識別できません",
+    "ko": "악기 식별 불가"
+  },
+  "有效时长（电平在正文 -10 dB 内的最后时刻）": {
+    "en": "Effective duration (last point within body -10 dB)",
+    "ja": "有効長（本体-10 dB以内の最終時点）",
+    "ko": "유효 길이(본문 -10 dB 이내의 마지막 지점)"
+  },
+  "未注明": {
+    "en": "unspecified",
+    "ja": "未指定",
+    "ko": "미지정"
+  },
+  "条件": {
+    "en": "conditional",
+    "ja": "条件付き",
+    "ko": "조건부"
+  },
+  "此ID没有本次核查资料，请查instrument-performance.md与实际预设": {
+    "en": "No reviewed data for this ID; see instrument-performance.md and the actual preset.",
+    "ja": "このIDの確認資料はありません。instrument-performance.mdと実際の音源を参照してください。",
+    "ko": "이 ID의 검토 자료가 없습니다. instrument-performance.md와 실제 프리셋을 확인하세요."
+  },
+  "比最响层": {
+    "en": "vs loudest",
+    "ja": "最大声部比",
+    "ko": "최대 성부 대비"
+  },
+  "没有声部 {v0}": {
+    "en": "No track {v0}",
+    "ja": "声部{v0}がありません",
+    "ko": "성부 {v0}이 없습니다"
+  },
+  "没有找到旋律声部，用 --tracks 或 design.melody 指定": {
+    "en": "No melody track found; use --tracks or design.melody.",
+    "ja": "旋律声部がありません。--tracksまたはdesign.melodyで指定してください。",
+    "ko": "선율 성부를 찾지 못했습니다. --tracks 또는 design.melody로 지정하세요."
+  },
+  "注意": {
+    "en": "notice",
+    "ja": "注意",
+    "ko": "주의"
+  },
+  "混音失败: {v0}": {
+    "en": "Mix failed: {v0}",
+    "ja": "ミックス失敗: {v0}",
+    "ko": "믹싱 실패: {v0}"
+  },
+  "由和声声部推断（近似）": {
+    "en": "inferred from harmony tracks (approximate)",
+    "ja": "和声声部から推定（概算）",
+    "ko": "화성 성부에서 추정(근사)"
+  },
+  "真峰值": {
+    "en": "True peak",
+    "ja": "トゥルーピーク",
+    "ko": "트루 피크"
+  },
+  "移调": {
+    "en": "transposed",
+    "ja": "移調",
+    "ko": "이조"
+  },
+  "移调（同起音/时值关系）": {
+    "en": "transposed (same onset/duration relationships)",
+    "ja": "移調（同じ起音・音価関係）",
+    "ko": "이조(같은 어택·음가 관계)"
+  },
+  "素材职能": {
+    "en": "material function",
+    "ja": "素材の機能",
+    "ko": "소재 기능"
+  },
+  "结尾最后 1s 相对正文": {
+    "en": "Last 1s relative to body",
+    "ja": "末尾1秒と本体の差",
+    "ko": "마지막 1초와 본문 차이"
+  },
+  "结束意图": {
+    "en": "ending intent",
+    "ja": "終結意図",
+    "ko": "종결 의도"
+  },
+  "综合响度": {
+    "en": "Integrated loudness",
+    "ja": "統合ラウドネス",
+    "ko": "통합 라우드니스"
+  },
+  "缺少 fluidsynth：请安装并加入 PATH（见 references/dependencies.md）": {
+    "en": "fluidsynth is missing; install it on PATH (see references/dependencies.md)",
+    "ja": "fluidsynthがありません。PATHに追加してください（references/dependencies.md参照）",
+    "ko": "fluidsynth가 없습니다. PATH에 추가하세요(references/dependencies.md 참조)"
+  },
+  "节奏位移": {
+    "en": "rhythmic displacement",
+    "ja": "リズムの移動",
+    "ko": "리듬 이동"
+  },
+  "范围内": {
+    "en": "in range",
+    "ja": "範囲内",
+    "ko": "범위 내"
+  },
+  "说明：-inf dB表示零能量。这是整段差信号平均能量，包含共享母带处理的响应变化，不是独立分轨电平；稀疏/短音/鼓的贡献天然偏低。数值不替代听感。": {
+    "en": "Note: -inf dB is zero energy. This is whole-piece difference-signal energy including shared-mastering response changes, not isolated stem level. Sparse/short notes and drums average lower. Numbers do not replace listening.",
+    "ja": "注：-inf dBはエネルギー0。全体の差分信号平均で、共有マスタリングの応答変化を含みます。独立ステムの音量ではありません。疎な音・短音・ドラムは平均値が低くなります。数値は試聴の代わりではありません。",
+    "ko": "참고: -inf dB는 에너지 0입니다. 공유 마스터링의 응답 변화를 포함한 곡 전체 차분 신호의 평균이며 독립 스템 레벨이 아닙니다. 성긴 음·짧은 음·드럼의 평균값은 작습니다. 수치가 청취를 대체하지 않습니다."
+  },
+  "请提供乐谱路径，或使用--list-variants INSTRUMENT_ID": {
+    "en": "Provide a score path, or use --list-variants INSTRUMENT_ID.",
+    "ja": "楽譜パス、または--list-variants INSTRUMENT_IDを指定してください。",
+    "ko": "악보 경로 또는 --list-variants INSTRUMENT_ID를 지정하세요."
+  },
+  "贡献dB": {
+    "en": "Delta dB",
+    "ja": "寄与dB",
+    "ko": "기여dB"
+  },
+  "轻量音色库 {v0} 个 SF2": {
+    "en": "Light soundfonts: {v0} SF2 files",
+    "ja": "軽量音源: SF2 {v0}個",
+    "ko": "경량 음원: SF2 {v0}개"
+  },
+  "辨识点": {
+    "en": "identifying detail",
+    "ja": "識別の特徴",
+    "ko": "식별 특징"
+  },
+  "逐层报告失败: {v0}": {
+    "en": "Layer report failed: {v0}",
+    "ja": "声部別レポート失敗: {v0}",
+    "ko": "성부별 보고서 실패: {v0}"
+  },
+  "非和弦音": {
+    "en": "non-chord tone",
+    "ja": "非和音構成音",
+    "ko": "비화음음"
+  },
+  "音色库 GeneralUser-GS.sf2": {
+    "en": "GeneralUser-GS.sf2 soundfont",
+    "ja": "GeneralUser-GS.sf2音源",
+    "ko": "GeneralUser-GS.sf2 음원"
+  },
+  "音色错误: {v0}": {
+    "en": "Soundfont error: {v0}",
+    "ja": "音源エラー: {v0}",
+    "ko": "음원 오류: {v0}"
+  },
+  "鼓/采样器，不检查": {
+    "en": "Drum/sampler: not checked",
+    "ja": "ドラム・サンプラーは未検査",
+    "ko": "드럼·샘플러: 미검사"
+  },
+  "：请加入 PATH": {
+    "en": ": add to PATH",
+    "ja": "：PATHに追加してください",
+    "ko": ": PATH에 추가하세요"
+  },
+  "；另有 {v0} 小节首拍无起音。": {
+    "en": "; {v0} other bars have no first-beat attack.",
+    "ja": "。他に第1拍起音のない小節が{v0}個あります。",
+    "ko": "; 첫박 어택이 없는 다른 마디 {v0}개."
+  },
+  "；缺失 {v0}": {
+    "en": "; missing {v0}",
+    "ja": "、不足{v0}",
+    "ko": "; 누락 {v0}"
+  },
+  "；首拍非和弦音小节: {v0}，按倚音/延留等实际去向复核，不按比例判差。": {
+    "en": "; first-beat non-chord-tone bars: {v0}. Review actual resolutions such as appoggiaturas/suspensions; do not grade by ratio.",
+    "ja": "。第1拍が非和音構成音の小節: {v0}。倚音・掛留等の実際の解決先で確認し、比率で判定しません。",
+    "ko": "; 첫박 비화음음 마디: {v0}. 전타음·계류음 등의 실제 해결 방향을 검토하며 비율로 판정하지 않습니다."
+  },
+  "参考曲纯算法分析": {
+    "en": "Algorithmic reference-audio analysis",
+    "ja": "参照音源のアルゴリズム分析",
+    "ko": "참고 음원 알고리즘 분석"
+  },
+  "参考曲分析 · 候选证据": {
+    "en": "Reference analysis · candidate evidence",
+    "ja": "参照音源分析・候補の根拠",
+    "ko": "참고 음원 분석 · 후보 근거"
+  },
+  "来源": {
+    "en": "Source",
+    "ja": "出典",
+    "ko": "출처"
+  },
+  "分析范围": {
+    "en": "Analysis range",
+    "ja": "分析範囲",
+    "ko": "분석 범위"
+  },
+  "纯算法、无学习模型；未核听。": {
+    "en": "Algorithms only, no learned models; not listened to.",
+    "ja": "アルゴリズムのみ、学習モデルなし。未試聴。",
+    "ko": "순수 알고리즘, 학습 모델 없음. 청취 미확인."
+  },
+  "这份报告提供待复核的音高、节奏、和声和结构线索，不是原谱、乐器识别或审美评分。": {
+    "en": "This report offers pitch, rhythm, harmony and structure clues for review, not an original score, instrument identification or aesthetic rating.",
+    "ja": "音高・リズム・和声・構造の要確認な手掛かりを示します。原譜・楽器識別・美的評価ではありません。",
+    "ko": "음고·리듬·화성·구조의 검토용 단서이며 원보·악기 식별·미적 평가가 아닙니다."
+  },
+  "完整 JSON": {
+    "en": "Full JSON",
+    "ja": "完全なJSON",
+    "ko": "전체 JSON"
+  },
+  "音符候选 CSV": {
+    "en": "Note candidates CSV",
+    "ja": "音符候補CSV",
+    "ko": "음표 후보 CSV"
+  },
+  "音高轨迹 CSV": {
+    "en": "Pitch contour CSV",
+    "ja": "音高軌跡CSV",
+    "ko": "음고 궤적 CSV"
+  },
+  "多音高声部候选 CSV": {
+    "en": "Polyphonic line candidates CSV",
+    "ja": "多音高・声部候補CSV",
+    "ko": "다중 음고·성부 후보 CSV"
+  },
+  "图中文字使用本地字体；缺少所需字体时，图表回退为英文，正文保留所选语言。": {
+    "en": "Plots use local fonts. If required glyphs are unavailable, plot labels fall back to English; report text keeps the selected language.",
+    "ja": "図にはローカルフォントを使います。必要な文字がない場合、図のラベルのみ英語に戻り、本文は選択言語を保ちます。",
+    "ko": "차트는 로컬 글꼴을 사용합니다. 필요한 글리프가 없으면 차트 라벨만 영어로 표시하며 본문은 선택 언어를 유지합니다."
+  },
+  "音频、主线/多音高候选、色度、自相似和结构变化图": {
+    "en": "Audio, pitch/line candidates, chroma, self-similarity and structural-change plots",
+    "ja": "音声・音高/声部候補・クロマ・自己類似・構造変化の図",
+    "ko": "오디오·음고/성부 후보·크로마·자기 유사도·구조 변화 차트"
+  },
+  "节奏": {
+    "en": "Rhythm",
+    "ja": "リズム",
+    "ko": "리듬"
+  },
+  "立体声与声部候选（不是乐器分轨）": {
+    "en": "Stereo and line candidates (not instrument stems)",
+    "ja": "ステレオと声部候補（楽器別ステムではない）",
+    "ko": "스테레오·성부 후보(악기별 스템 아님)"
+  },
+  "调性候选": {
+    "en": "Key candidates",
+    "ja": "調性候補",
+    "ko": "조성 후보"
+  },
+  "结构候选": {
+    "en": "Structure candidates",
+    "ja": "構造候補",
+    "ko": "구조 후보"
+  },
+  "音符候选（页面最多显示200条，CSV/JSON包含全部）": {
+    "en": "Note candidates (first 200 shown; CSV/JSON contain all)",
+    "ja": "音符候補（ページは最大200件、CSV/JSONは全件）",
+    "ko": "음표 후보(페이지는 최대 200개, CSV/JSON은 전체)"
+  },
+  "和弦窗口 · 余音和扩展和弦可能歧义": {
+    "en": "Chord windows · decay and extended chords may be ambiguous",
+    "ja": "和音窓・余韻や拡張和音には曖昧さがあります",
+    "ko": "화음 창 · 잔향과 확장화음은 모호할 수 있음"
+  },
+  "原曲秒数": {
+    "en": "Source seconds",
+    "ja": "原曲の秒数",
+    "ko": "원곡 시간(초)"
+  },
+  "状态": {
+    "en": "Status",
+    "ja": "状態",
+    "ko": "상태"
+  },
+  "前三候选及非校准匹配分": {
+    "en": "Top three candidates and uncalibrated match scores",
+    "ja": "上位3候補と未校正の一致スコア",
+    "ko": "상위 3개 후보와 미보정 일치 점수"
+  },
+  "不确定性与限制": {
+    "en": "Uncertainty and limitations",
+    "ja": "不確実性と制約",
+    "ko": "불확실성과 한계"
+  },
+  "速度可能有半速/倍速及复合拍细分歧义；未自动推断拍号或小节起点。": {
+    "en": "Tempo can have half/double-time and compound-meter subdivision ambiguities; meter and bar starts are not inferred automatically.",
+    "ja": "テンポには半速・倍速・複合拍子の分割の曖昧さがあります。拍子や小節開始は自動推定しません。",
+    "ko": "템포에는 반속·배속·겹박자 세분의 모호성이 있습니다. 박자표와 마디 시작을 자동 추정하지 않습니다."
+  },
+  "脉冲网格是估计，不能证明实际重音或节奏质量。": {
+    "en": "The pulse grid is an estimate, not proof of accents or rhythmic quality.",
+    "ja": "パルス格子は推定であり、実際のアクセントやリズムの質を証明しません。",
+    "ko": "펄스 격자는 추정치이며 실제 강세나 리듬의 질을 증명하지 않습니다."
+  },
+  "--bpm表示分析脉冲BPM；6/8可指定附点四分脉冲，不自动当成四分音符。": {
+    "en": "--bpm specifies analysis pulses; in 6/8 it may refer to dotted quarters, not automatically quarter notes.",
+    "ja": "--bpmは分析パルスです。6/8では付点4分音符を指定でき、4分音符とは自動同一視しません。",
+    "ko": "--bpm은 분석 펄스입니다. 6/8에서 점4분음표일 수 있으며 자동으로 4분음표로 취급하지 않습니다."
+  },
+  "独奏路径用pYIN；混音路径用固定谐波字典NNLS与连续性，仍可能跟随伴奏或泛音，不自动认定主旋律。": {
+    "en": "Solo uses pYIN; mixes use fixed-harmonic NNLS and continuity. They may follow accompaniment or overtones and do not establish melody identity.",
+    "ja": "独奏はpYIN、混音は固定倍音辞書NNLSと連続性を使います。伴奏や倍音を追う可能性があり、主旋律とは自動認定しません。",
+    "ko": "독주는 pYIN, 믹스는 고정 배음 사전 NNLS와 연속성을 사용합니다. 반주나 배음을 따라갈 수 있으며 주선율로 자동 인정하지 않습니다."
+  },
+  "短于60ms的稳定段不生成音符；装饰音、重复音、滑音及起止点可能漏检或拆错。": {
+    "en": "Stable segments under 60ms do not become notes; ornaments, repeated notes, glissandi and boundaries may be missed or split incorrectly.",
+    "ja": "60ms未満の安定区間は音符化しません。装飾音・反復音・グリッサンド・境界は検出漏れや分割誤りがあり得ます。",
+    "ko": "60ms 미만의 안정 구간은 음표로 만들지 않습니다. 꾸밈음·반복음·글리산도·시작과 끝을 놓치거나 잘못 나눌 수 있습니다."
+  },
+  "周期性、相对显著度及spectral_support_score都不是正确率或旋律身份概率。": {
+    "en": "Periodicity, relative salience and spectral_support_score are not accuracy or melody-identity probabilities.",
+    "ja": "周期性・相対顕著度・spectral_support_scoreは正解率や主旋律の確率ではありません。",
+    "ko": "주기성·상대 현저도·spectral_support_score는 정확도나 주선율 정체 확률이 아닙니다."
+  },
+  "独奏搜索C2–C7；混音主线搜索C3–C7；区外旋律不会可靠转写。独奏文件也未被认证为单声部。": {
+    "en": "Solo searches C2–C7 and the mix line C3–C7; out-of-range melodies are unreliable. Solo files are not certified monophonic.",
+    "ja": "独奏はC2–C7、混音主線はC3–C7を検索します。範囲外の転写は不確かです。独奏ファイルも単声とは認証していません。",
+    "ko": "독주는 C2–C7, 믹스 주선은 C3–C7을 탐색합니다. 범위 밖 선율의 전사는 불확실하며 독주 파일도 단성으로 인증하지 않습니다."
+  },
+  "混音路径用半音格，不据其轨迹报告揉弦深度、音分抖动或自然感。": {
+    "en": "Mix analysis uses a semitone grid; it does not measure vibrato depth, cent jitter or naturalness from that contour.",
+    "ja": "混音は半音格子を使い、その軌跡からビブラート深度・セント変動・自然さを評価しません。",
+    "ko": "믹스 분석은 반음 격자를 쓰며 궤적으로 비브라토 깊이·센트 흔들림·자연스러움을 평가하지 않습니다."
+  },
+  "混音主旋律路径仍只搜索C3–C7；多音高候选覆盖C2–C7。不按高音优先认定旋律，弱主奏仍可能被伴奏盖住；多条稳定音并存时的变化软权重也可能压低持续主奏。": {
+    "en": "The mix melody path searches C3–C7; polyphonic candidates cover C2–C7. Higher pitch is not assumed to be melody. Weak solos can be masked, and change weighting among stable lines may suppress sustained leads.",
+    "ja": "混音主線はC3–C7、多音高候補はC2–C7です。高音を主旋律とは仮定しません。弱い主奏は伴奏に隠れ、安定音併存時の変化重みが持続主奏を弱める場合もあります。",
+    "ko": "믹스 주선은 C3–C7, 다중 음고 후보는 C2–C7입니다. 고음을 주선율로 간주하지 않습니다. 약한 독주가 반주에 가려지거나 안정음 공존 시 변화 가중치가 지속 주선을 낮출 수 있습니다."
+  },
+  "和弦是固定时间窗色度与人工音程模板的匹配候选，不假设四拍小节。": {
+    "en": "Chords match fixed-window chroma to hand-specified interval templates; four-beat bars are not assumed.",
+    "ja": "和音は固定時間窓クロマと手動音程テンプレートの一致候補です。4拍小節は仮定しません。",
+    "ko": "화음은 고정 시간 창 크로마와 수동 음정 템플릿의 일치 후보이며 4박 마디를 가정하지 않습니다."
+  },
+  "余音、旋律、泛音及多声部会改变色度；转位、低音和扩展和弦未被可靠识别。": {
+    "en": "Decay, melody, overtones and polyphony affect chroma; inversions, bass and extended chords are not reliably identified.",
+    "ja": "余韻・旋律・倍音・多声がクロマを変えます。転回形・低音・拡張和音は信頼できる識別ではありません。",
+    "ko": "잔향·선율·배음·다성이 크로마에 영향을 줍니다. 전위형·베이스·확장화음은 신뢰할 만하게 식별되지 않습니다."
+  },
+  "相似度、相关系数与候选间距未经正确率校准；单和弦或短片段不足以唯一确定调性。": {
+    "en": "Similarity, correlation and candidate margins are not calibrated to accuracy; a single chord or short clip cannot uniquely establish key.",
+    "ja": "類似度・相関・候補間隔は正解率に校正されていません。単一和音や短い断片で調性を一意に確定できません。",
+    "ko": "유사도·상관·후보 간격은 정확도로 보정되지 않았습니다. 단일 화음이나 짧은 구간으로 조성을 유일하게 확정할 수 없습니다."
+  },
+  "NNLS字典假设谐和泛音，音色不匹配与同音叠奏可误识别；平滑标签仍是候选，低音色度不认证转位。": {
+    "en": "NNLS assumes harmonic overtones; timbre mismatch and unisons can cause errors. Smoothed labels remain candidates; bass chroma does not certify inversions.",
+    "ja": "NNLSは調和倍音を仮定し、音色差や同音重奏で誤認し得ます。平滑化ラベルも候補であり低音クロマは転回形を認証しません。",
+    "ko": "NNLS는 조화 배음을 가정하여 음색 불일치와 동음 중첩에서 오인할 수 있습니다. 평활 라벨도 후보이며 베이스 크로마는 전위형을 인증하지 않습니다."
+  },
+  "PLP局部脉冲与全局动态规划是并列候选，变速、弱拍和半速歧义仍须复核。": {
+    "en": "Local PLP and global dynamic-programming pulses are parallel candidates; tempo changes, weak beats and half-time ambiguity need review.",
+    "ja": "局所PLPと大域動的計画法のパルスは並列候補です。テンポ変化・弱拍・半速の曖昧さは要確認です。",
+    "ko": "국소 PLP와 전역 동적 계획 펄스는 병렬 후보입니다. 변속·약박·반속 모호성은 검토가 필요합니다."
+  },
+  "边界来自色度/音色自相似的局部变化；不是已确认乐句、主歌、副歌或高潮。": {
+    "en": "Boundaries are local changes in chroma/timbre self-similarity, not verified phrases, verses, choruses or climaxes.",
+    "ja": "境界はクロマ・音色の自己類似の局所変化であり、楽句・ヴァース・サビ・クライマックスの確定ではありません。",
+    "ko": "경계는 크로마·음색 자기 유사도의 국소 변화이며 확정된 악구·벌스·후렴·절정이 아닙니다."
+  },
+  "未检出边界不等于没有结构；相似片段可能只共享和弦或音色，不保证同一主题。": {
+    "en": "No detected boundary does not mean no structure; similar sections may only share chords/timbre, not the same theme.",
+    "ja": "境界未検出でも構造なしとは限りません。類似区間は和音や音色だけを共有し、同じ主題とは限りません。",
+    "ko": "경계가 검출되지 않아도 구조가 없다는 뜻은 아닙니다. 유사 구간은 화음·음색만 같을 수 있으며 같은 주제를 보장하지 않습니다."
+  },
+  "0.5秒分辨率、对比窗口和阈值是项目分析参数，不是乐理质量门槛。": {
+    "en": "The 0.5s resolution, contrast window and thresholds are project analysis settings, not music-quality rules.",
+    "ja": "0.5秒分解能・比較窓・閾値はこの分析の設定であり、楽理上の品質基準ではありません。",
+    "ko": "0.5초 해상도·비교 창·임계값은 프로젝트 분석 설정이며 음악 품질 규칙이 아닙니다."
+  },
+  "固定谐波字典NNLS近似多音高，不是训练模型或原始分轨。": {
+    "en": "Fixed-harmonic NNLS approximates polyphonic pitches; it is not a trained model or original stems.",
+    "ja": "固定倍音辞書NNLSは多音高の近似であり、訓練モデルや原ステムではありません。",
+    "ko": "고정 배음 사전 NNLS는 다중 음고의 근사이며 훈련 모델이나 원본 스템이 아닙니다."
+  },
+  "短于90ms的音、弱内声、非谐和声与同音叠奏可能遗漏；分量数不是乐器数量。": {
+    "en": "Notes under 90ms, weak inner parts, inharmonic sounds and unisons may be missed; component count is not instrument count.",
+    "ja": "90ms未満の音・弱い内声・非調和音・同音重奏は漏れる場合があります。成分数は楽器数ではありません。",
+    "ko": "90ms 미만 음·약한 내성·비조화음·동음 중첩을 놓칠 수 있습니다. 성분 수는 악기 수가 아닙니다."
+  },
+  "声部ID按时间、音高距离及左右能量启发式连接；同音齐奏、交叉与混响可能串线。": {
+    "en": "Line IDs connect heuristically by time, pitch distance and stereo energy; unisons, crossings and reverb can mix lines.",
+    "ja": "声部IDは時間・音高距離・左右エネルギーによるヒューリスティックな連結です。同音・交差・残響で混線し得ます。",
+    "ko": "성부 ID는 시간·음고 거리·좌우 에너지로 휴리스틱하게 연결합니다. 동음·교차·리버브로 선이 섞일 수 있습니다."
+  },
+  "左右能量来自谐波频带混合，非精确声源声像；没有识别乐器或主旋律身份。": {
+    "en": "Stereo energy mixes harmonic bands, not precise source panning; no instrument or melody identity is established.",
+    "ja": "左右エネルギーは倍音帯域の混合であり、正確な音源定位ではありません。楽器や主旋律の正体は識別していません。",
+    "ko": "좌우 에너지는 배음 대역의 혼합으로 정확한 음원 패닝이 아닙니다. 악기나 주선율 정체를 식별하지 않습니다."
+  },
+  "保留左右谐波能量作为分组线索，不是源分离或乐器身份识别。": {
+    "en": "Left/right harmonic energy is a grouping clue, not source separation or instrument identification.",
+    "ja": "左右倍音エネルギーはグループ化の手掛かりであり、音源分離や楽器識別ではありません。",
+    "ko": "좌우 배음 에너지는 묶음 단서이며 음원 분리나 악기 식별이 아닙니다."
+  },
+  "所有识别结果是候选；未识别乐器身份、情绪、音色自然感或好听程度。": {
+    "en": "All recognition results are candidates; instrument identity, emotion, timbral naturalness and musical quality are not identified.",
+    "ja": "すべて候補です。楽器の正体・感情・音色の自然さ・音楽の良さは識別していません。",
+    "ko": "모든 인식 결과는 후보입니다. 악기 정체·감정·음색 자연스러움·음악의 질은 식별하지 않습니다."
+  },
+  "没有训练模型、权重下载或API调用；多音高分组不是原始分轨或原谱。": {
+    "en": "No trained models, weight downloads or API calls; polyphonic grouping is not original stems or a score.",
+    "ja": "訓練モデル・重みダウンロード・API呼び出しはありません。多音高グループは原ステムや原譜ではありません。",
+    "ko": "훈련 모델·가중치 다운로드·API 호출이 없습니다. 다중 음고 묶음은 원본 스템이나 원보가 아닙니다."
+  },
+  "没有按推测的调性吸附音符；不确定处保留候选或unknown。": {
+    "en": "Notes are not snapped to a guessed key; uncertainty remains candidates or unknown.",
+    "ja": "推測した調性へ音符を吸着させません。不確実な箇所は候補またはunknownを保持します。",
+    "ko": "추측한 조성에 음을 맞추지 않습니다. 불확실한 곳은 후보 또는 unknown으로 남깁니다."
+  },
+  "Waveform and estimated onsets": {
+    "en": "Waveform and estimated onsets",
+    "ja": "波形と推定起音",
+    "ko": "파형과 추정 어택",
+    "zh": "波形与起音估计"
+  },
+  "Amplitude": {
+    "en": "Amplitude",
+    "ja": "振幅",
+    "ko": "진폭",
+    "zh": "幅度"
+  },
+  "Candidate": {
+    "en": "Candidate",
+    "ja": "候補",
+    "ko": "후보",
+    "zh": "候选"
+  },
+  "Close alternatives / ambiguous": {
+    "en": "Close alternatives / ambiguous",
+    "ja": "近い代替候補・曖昧",
+    "ko": "비슷한 대안·모호함",
+    "zh": "相近候选／歧义"
+  },
+  "Pitch / note candidates (mixed audio is NOT a verified melody)": {
+    "en": "Pitch / note candidates (mixed audio is NOT a verified melody)",
+    "ja": "音高・音符候補（混音は確認済みの旋律ではない）",
+    "ko": "음고·음표 후보(믹스는 검증된 선율이 아님)",
+    "zh": "音高／音符候选（混音不等于已确认主旋律）"
+  },
+  "MIDI pitch": {
+    "en": "MIDI pitch",
+    "ja": "MIDI音高",
+    "ko": "MIDI 음고",
+    "zh": "MIDI音高"
+  },
+  "Simultaneous pitch candidates / provisional lines (NOT instrument stems)": {
+    "en": "Simultaneous pitch candidates / provisional lines (NOT instrument stems)",
+    "ja": "同時音高候補・仮の声部（楽器ステムではない）",
+    "ko": "동시 음고 후보·임시 성부(악기 스템 아님)",
+    "zh": "同时音高候选／暂定声部（非乐器分轨）"
+  },
+  "Harmonic pitch-class energy": {
+    "en": "Harmonic pitch-class energy",
+    "ja": "倍音の音級エネルギー",
+    "ko": "배음 음급 에너지",
+    "zh": "谐波音级能量"
+  },
+  "Local feature contrast and candidate boundaries": {
+    "en": "Local feature contrast and candidate boundaries",
+    "ja": "局所特徴の差と境界候補",
+    "ko": "국소 특징 대비와 경계 후보",
+    "zh": "局部特征差异与边界候选"
+  },
+  "Contrast": {
+    "en": "Contrast",
+    "ja": "差異",
+    "ko": "대비",
+    "zh": "差异"
+  },
+  "Feature self-similarity (not proof of thematic identity)": {
+    "en": "Feature self-similarity (not proof of thematic identity)",
+    "ja": "特徴の自己類似（同じ主題の証明ではない）",
+    "ko": "특징 자기 유사도(동일 주제의 증명 아님)",
+    "zh": "特征自相似（不证明同一主题）"
+  },
+  "Source time (s)": {
+    "en": "Source time (s)",
+    "ja": "原曲時刻（秒）",
+    "ko": "원곡 시간(초)",
+    "zh": "原曲时间（秒）"
+  },
+  "start_seconds": {
+    "en": "Start (s)",
+    "ja": "開始（秒）",
+    "ko": "시작(초)",
+    "zh": "起点（秒）"
+  },
+  "end_seconds": {
+    "en": "End (s)",
+    "ja": "終了（秒）",
+    "ko": "끝(초)",
+    "zh": "终点（秒）"
+  },
+  "midi": {
+    "en": "MIDI",
+    "ja": "MIDI",
+    "ko": "MIDI",
+    "zh": "MIDI"
+  },
+  "note": {
+    "en": "Note",
+    "ja": "音名",
+    "ko": "음이름",
+    "zh": "音名"
+  },
+  "median_frequency_hz": {
+    "en": "Median frequency (Hz)",
+    "ja": "周波数中央値（Hz）",
+    "ko": "주파수 중앙값(Hz)",
+    "zh": "频率中位数（Hz）"
+  },
+  "periodicity_score": {
+    "en": "Periodicity score",
+    "ja": "周期性スコア",
+    "ko": "주기성 점수",
+    "zh": "周期性分数"
+  },
+  "spectral_support_score": {
+    "en": "Spectral support score",
+    "ja": "スペクトル支持スコア",
+    "ko": "스펙트럼 지지 점수",
+    "zh": "频谱支持分数"
+  },
+  "pitch_spread_cents": {
+    "en": "Pitch spread (cents)",
+    "ja": "音高幅（セント）",
+    "ko": "음고 분산(센트)",
+    "zh": "音高分散（音分）"
+  },
+  "alternative_margin": {
+    "en": "Alternative margin",
+    "ja": "代替候補との差",
+    "ko": "대안 후보 차이",
+    "zh": "候选间距"
+  },
+  "status": {
+    "en": "Status",
+    "ja": "状態",
+    "ko": "상태",
+    "zh": "状态"
+  },
+  "melody_identity": {
+    "en": "Melody identity",
+    "ja": "旋律の正体",
+    "ko": "선율 정체",
+    "zh": "旋律身份"
+  },
+  "alternate_pitch_candidates": {
+    "en": "Alternative pitches",
+    "ja": "代替音高候補",
+    "ko": "대안 음고 후보",
+    "zh": "备选音高"
+  },
+  "candidate": {
+    "en": "candidate",
+    "ja": "候補",
+    "ko": "후보",
+    "zh": "候选"
+  },
+  "ambiguous": {
+    "en": "ambiguous",
+    "ja": "曖昧",
+    "ko": "모호함",
+    "zh": "有歧义"
+  },
+  "insufficient_evidence": {
+    "en": "insufficient evidence",
+    "ja": "根拠不足",
+    "ko": "근거 부족",
+    "zh": "证据不足"
+  },
+  "unknown": {
+    "en": "unknown",
+    "ja": "不明",
+    "ko": "미상",
+    "zh": "未知"
+  },
+  "not_listened": {
+    "en": "not listened to",
+    "ja": "未試聴",
+    "ko": "청취 미확인",
+    "zh": "未核听"
+  },
+  "乐句{v0}–{v1}（作者功能: {v2}；目标: {v3}）": {
+    "en": "Phrase {v0}–{v1} (author function: {v2}; destination: {v3})",
+    "ja": "楽句{v0}–{v1}（作者の機能: {v2}、到達点: {v3}）",
+    "ko": "악구 {v0}–{v1}(작가 기능: {v2}; 도착점: {v3})"
+  },
+  "段落边界{v0}，非乐句判定": {
+    "en": "Section boundary {v0}, not a phrase verdict",
+    "ja": "セクション境界{v0}、楽句の判定ではない",
+    "ko": "구간 경계 {v0}, 악구 판정 아님"
+  },
+  "；距主音音级 {v0} 半音": {
+    "en": "; {v0} semitones from tonic pitch class",
+    "ja": "、主音の音級から{v0}半音",
+    "ko": "; 으뜸 음급에서 {v0}반음"
+  },
+  "原始引用资料保留原文。": {
+    "en": "Reference material is preserved in its original language.",
+    "ja": "参照資料の本文は原文を保持します。",
+    "ko": "인용 자료의 본문은 원문 언어를 유지합니다."
+  }
+}

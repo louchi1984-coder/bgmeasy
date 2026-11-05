@@ -1,0 +1,42 @@
+{
+  "author": "irzirgpznj",
+  "title": "Erhu sample",
+  "page": "https://freesound.org/people/irzirgpznj/sounds/477169/",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_description": "Author states recorded during an erhu practice session.",
+  "download_url": "https://cdn.freesound.org/previews/477/477169_10194539-hq.mp3",
+  "download_requires_login": false,
+  "source_type": "public HQ MP3 preview; original listed as lossy Ogg 96kbps, not lossless",
+  "source_sha256": "d2826ba89e1c41df4cf0ea8ecb43e58a0e810e933fb30103b880f6f4e64c11eb",
+  "font": "erhu-practice.sf2",
+  "font_sha256": "0f3c2c5d971e29b6d89c6820dbdfc20aee54a247039e0d1bb6cf42dd119456bd",
+  "font_bytes": 541724,
+  "cuts": [
+    {
+      "midi_root_candidate": 69,
+      "source_start_seconds": 20.925,
+      "source_end_seconds": 21.94,
+      "duration_seconds": 1.0150113378684806,
+      "edge_window_seconds": 0.003
+    },
+    {
+      "midi_root_candidate": 72,
+      "source_start_seconds": 31.14,
+      "source_end_seconds": 33.19,
+      "duration_seconds": 2.05,
+      "edge_window_seconds": 0.003
+    }
+  ],
+  "processing": "Isolate single recorded pitches, 3ms edge windows, stereo PCM16 SF2; no denoise, EQ, looping, artificial vibrato or pitch correction.",
+  "limitations": "Two isolated performance excerpts only, not full multisamples or legato transitions; held notes cannot exceed recording length.",
+  "installed": true,
+  "listening_status": "not_listened",
+  "user_audition": {
+    "status": "user_accepted_timbre_trial",
+    "date": "2026-11-05",
+    "reply": "都可以",
+    "audition_file": "cc0-practice-erhu-trial-20261105.wav",
+    "scope": "用户认可A4/C5技术片段音色；不认证其他音高、无限延音或完整音源库。"
+  }
+}

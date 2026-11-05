@@ -1,0 +1,42 @@
+{
+  "title": "Western ride, 15s",
+  "bpm": 112,
+  "beats_per_bar": 4,
+  "key": "E minor",
+  "humanize_ms": 6,
+  "tracks": {
+    "pad":    {"inst": "strings", "gain": 0.45, "pan": 0.0,  "reverb": 0.35, "params": {"attack": 0.6, "release": 1.2}},
+    "gtr":    {"inst": "pluck",   "gain": 0.9,  "pan": -0.25, "reverb": 0.2,  "delay": 0.25, "delay_beats": 0.75, "params": {"decay": 0.35, "bright": 0.5}},
+    "bass":   {"inst": "bass",    "gain": 0.8,  "pan": 0.0,  "reverb": 0.02, "params": {"decay": 0.16}},
+    "whistle":{"inst": "whistle", "gain": 0.85, "pan": 0.15, "reverb": 0.4,  "delay": 0.3, "delay_beats": 0.75},
+    "perc":   {"inst": "drums",   "gain": 0.8,  "pan": 0.0,  "reverb": 0.08}
+  },
+  "sections": {
+    "intro": {
+      "pad":  ["E3+B3+E4:4"],
+      "gtr":  ["(E3:.5 B3:.25 E4:.25)*2 r:2"],
+      "perc": ["hoof: ..............xx; kick: x..............."]
+    },
+    "A": {
+      "pad":  ["E3+G3+B3:4", "D3+F#3+A3:4"],
+      "gtr":  ["(E3:.5 B3:.25 E4:.25)*4", "(D3:.5 A3:.25 D4:.25)*4"],
+      "bass": ["(E2:.5 E2:.25 B2:.25)*4", "(D2:.5 D2:.25 A2:.25)*4"],
+      "whistle": ["G5:1.5 A5:.5 B5:1 A5:1", "F#5:1 A5:1 F#5:.5 E5:1.5"],
+      "perc": ["kick: x.......x.......; hoof: x.xxx.xxx.xxx.xx"]
+    },
+    "B": {
+      "pad":  ["E3+G3+B3:4", "B2+D#3+F#3:4"],
+      "gtr":  ["(E3:.5 B3:.25 E4:.25)*4", "(B2:.5 F#3:.25 B3:.25)*4"],
+      "bass": ["(E2:.5 E2:.25 B2:.25)*4", "(B1:.5 B1:.25 F#2:.25)*4"],
+      "whistle": ["B5:1.5 A5:.5 G5:1 E5:1", "D#5:1 F#5:1 B5:2"],
+      "perc": ["kick: x.......x.......; hoof: x.xxx.xxx.xxx.xx; snare: ....X.......X..."]
+    },
+    "END": {
+      "pad":  ["E3+B3+E4:4"],
+      "gtr":  ["E3+B3+E4:4@0.7"],
+      "bass": ["E2:4"],
+      "whistle": ["E5:3.5 r:.5"]
+    }
+  },
+  "arrangement": ["intro", "A", "B", "END"]
+}

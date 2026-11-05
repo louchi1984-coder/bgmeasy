@@ -1,0 +1,5 @@
+Erhu sample by irzirgpznj, Freesound 477169 (2019). CC0-1.0.
+https://freesound.org/people/irzirgpznj/sounds/477169/
+https://creativecommons.org/publicdomain/zero/1.0/
+Trial derivative: two isolated single notes from the public MP3 preview, stereo PCM16 with 3ms edge windows.
+No learned model, noise reduction, EQ, looping or artificial vibrato. User accepted the audition timbre on 2026-11-05; installed as ethnic-light/erhu-practice:0:0. Acceptance is limited to the auditioned A4/C5 excerpt.

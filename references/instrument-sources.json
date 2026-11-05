@@ -1,0 +1,844 @@
+{
+  "vsl": {
+    "title": "VSL Academy Instrumentology",
+    "url": "https://www.vsl.co.at/academy/",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "retrieved_not_yet_verified",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "vsl-violin": {
+    "title": "VSL Academy: violin",
+    "url": "https://www.vsl.co.at/academy/strings/violin",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range、Sound characteristics；采用正确四弦定弦与附条件范围，页面其他段落存在复制笔误，未照单全收。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range、Sound characteristics；采用正确四弦定弦与附条件范围，页面其他段落存在复制笔误，未照单全收。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-viola": {
+    "title": "VSL Academy: viola",
+    "url": "https://www.vsl.co.at/academy/strings/viola",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range与演奏/音色相关已读段落；部分通过搜索索引正文阅读。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range与演奏/音色相关已读段落；部分通过搜索索引正文阅读。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-cello": {
+    "title": "VSL Academy: cello",
+    "url": "https://www.vsl.co.at/academy/strings/cello",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-double-bass": {
+    "title": "VSL Academy: double-bass",
+    "url": "https://www.vsl.co.at/academy/strings/double-bass",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range；四弦与五弦、实音与记谱音区分。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range；四弦与五弦、实音与记谱音区分。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-harp": {
+    "title": "VSL Academy: harp",
+    "url": "https://www.vsl.co.at/academy/strings/harp",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range及踏板机制；部分经索引正文阅读。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range及踏板机制；部分经索引正文阅读。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-trumpet": {
+    "title": "VSL Academy: trumpet",
+    "url": "https://www.vsl.co.at/academy/brass/trumpet-c",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range、Sound characteristics及所读发声段落；C调小号。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range、Sound characteristics及所读发声段落；C调小号。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-horn": {
+    "title": "VSL Academy：Viennese Horn in F（范围有限）",
+    "url": "https://www.vsl.co.at/academy/brass/horn-f",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Range与音区差别；页面对象是Viennese Horn，不是全部圆号型号。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Range与音区差别；页面对象是Viennese Horn，不是全部圆号型号。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-trombone": {
+    "title": "VSL Academy: trombone",
+    "url": "https://www.vsl.co.at/academy/brass/tenor-trombone",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；滑管改变管长，不含所有滑音的可行性。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；滑管改变管长，不含所有滑音的可行性。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-tuba": {
+    "title": "VSL Academy: tuba",
+    "url": "https://www.vsl.co.at/academy/brass/bass-tuba",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；F调低音大号、唇振与阀管结构，不含全套技巧。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；F调低音大号、唇振与阀管结构，不含全套技巧。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-flute": {
+    "title": "VSL Academy: flute",
+    "url": "https://www.vsl.co.at/academy/woodwinds/concert-flute",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Range、Sound characteristics；C脚/B脚条件。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Range、Sound characteristics；C脚/B脚条件。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-piccolo": {
+    "title": "VSL Academy: piccolo",
+    "url": "https://www.vsl.co.at/academy/woodwinds/piccolo",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range；按实音。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range；按实音。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-oboe": {
+    "title": "VSL Academy: oboe",
+    "url": "https://www.vsl.co.at/academy/woodwinds/oboe",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range及双簧发声段落。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range及双簧发声段落。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-english-horn": {
+    "title": "VSL Academy: english-horn",
+    "url": "https://www.vsl.co.at/academy/woodwinds/english-horn",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；双簧、F调英国管，不含全套技法。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；双簧、F调英国管，不含全套技法。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-clarinet": {
+    "title": "VSL Academy: clarinet",
+    "url": "https://www.vsl.co.at/academy/woodwinds/clarinet",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range及单簧结构。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range及单簧结构。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-bassoon": {
+    "title": "VSL Academy: bassoon",
+    "url": "https://www.vsl.co.at/academy/woodwinds/bassoon",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description、Range及双簧发声段落。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description、Range及双簧发声段落。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-timpani": {
+    "title": "VSL Academy: timpani",
+    "url": "https://www.vsl.co.at/academy/percussion/timpani",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；定音鼓膜、鼓槌，不沿用页面过度概括的职业/响度说法。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；定音鼓膜、鼓槌，不沿用页面过度概括的职业/响度说法。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-snare": {
+    "title": "VSL Academy: snare",
+    "url": "https://www.vsl.co.at/academy/percussion/snare-drum",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；鼓膜、响弦与鼓棒。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；鼓膜、响弦与鼓棒。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-bass-drum": {
+    "title": "VSL Academy: bass-drum",
+    "url": "https://www.vsl.co.at/academy/percussion/bass-drum",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；双鼓膜与击槌，未沿用页面Name栏误写的snare。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；双鼓膜与击槌，未沿用页面Name栏误写的snare。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-xylophone": {
+    "title": "VSL Academy: xylophone",
+    "url": "https://www.vsl.co.at/academy/percussion/xylophone",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；木条、击槌与不同文化的排列差异。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；木条、击槌与不同文化的排列差异。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-vibraphone": {
+    "title": "VSL Academy: vibraphone",
+    "url": "https://www.vsl.co.at/academy/percussion/vibraphone",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；金属条、共鸣管盖片、马达与制音踏板。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；金属条、共鸣管盖片、马达与制音踏板。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-marimba": {
+    "title": "VSL Academy: marimba",
+    "url": "https://www.vsl.co.at/academy/percussion/marimba",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；木条、共鸣管与击槌。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；木条、共鸣管与击槌。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-glockenspiel": {
+    "title": "VSL Academy: glockenspiel",
+    "url": "https://www.vsl.co.at/academy/percussion/glockenspiel",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；金属条与不同型号的制音配置。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；金属条与不同型号的制音配置。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-celesta": {
+    "title": "VSL Academy: celesta",
+    "url": "https://www.vsl.co.at/academy/percussion/celesta",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；键盘、金属条、毡槌和制音踏板结构。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；键盘、金属条、毡槌和制音踏板结构。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-gong": {
+    "title": "VSL Academy: gong",
+    "url": "https://www.vsl.co.at/academy/percussion/gong",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；该页专指有凸心定音gong；不代表所有中文“锣”的分类。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；该页专指有凸心定音gong；不代表所有中文“锣”的分类。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-tam-tam": {
+    "title": "VSL Academy: tam-tam",
+    "url": "https://www.vsl.co.at/academy/percussion/tam-tam",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "retrieved_not_yet_verified",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "vsl-tubular-bells": {
+    "title": "VSL Academy: tubular-bells",
+    "url": "https://www.vsl.co.at/academy/percussion/tubular-bells",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；金属管、敲击槌与制音踏板。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；金属管、敲击槌与制音踏板。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-piano": {
+    "title": "Yamaha Musical Instrument Guide: piano",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/piano/index.html",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍及章节入口；击弦身份，不含完整演奏手册。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍及章节入口；击弦身份，不含完整演奏手册。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-saxophone": {
+    "title": "Yamaha Musical Instrument Guide: saxophone",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/saxophone/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与章节入口；不作各型号全音域/全技巧认证。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与章节入口；不作各型号全音域/全技巧认证。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-recorder": {
+    "title": "Yamaha Musical Instrument Guide: recorder",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/recorder/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与章节入口；不是陶笛或锡笛专项资料。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与章节入口；不是陶笛或锡笛专项资料。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-classical-guitar": {
+    "title": "Yamaha Musical Instrument Guide: classical-guitar",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/classical_guitar/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与结构/弹奏章节入口；不足以验证所有指法、品数与技巧。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与结构/弹奏章节入口；不足以验证所有指法、品数与技巧。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-acoustic-guitar": {
+    "title": "Yamaha Musical Instrument Guide: acoustic-guitar",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与结构/弹奏章节入口；不足以验证所有指法、品数与技巧。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与结构/弹奏章节入口；不足以验证所有指法、品数与技巧。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-electric-guitar": {
+    "title": "Yamaha Musical Instrument Guide: electric-guitar",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/electric_guitar/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与章节入口；不作电贝斯专项证据。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与章节入口；不作电贝斯专项证据。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-drums": {
+    "title": "Yamaha Musical Instrument Guide: drums",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/drums/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与章节入口；不能证明所有世界打击乐的演奏方式。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与章节入口；不能证明所有世界打击乐的演奏方式。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-synth": {
+    "title": "Yamaha Synth Terminology 101",
+    "url": "https://hub.yamaha.com/keyboards/synthesizers/synth-terminology-101/",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "philharmonia": {
+    "title": "Philharmonia: Instruments",
+    "url": "https://philharmonia.co.uk/resources/instruments/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：乐器目录正文与入口；不是全套独唱、合唱或其他乐器专项证明。",
+    "review": {
+      "status": "directory_read_only",
+      "sections": [
+        "乐器目录正文与入口；不是全套独唱、合唱或其他乐器专项证明。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "tor": {
+    "title": "Timbre and Orchestration Resource",
+    "url": "https://timbreandorchestration.org/instruments",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "retrieved_not_yet_verified",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "tor-winds": {
+    "title": "TOR: Chinese Orchestra Winds",
+    "url": "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/wind-instruments",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：中国乐队管乐章节中dizi分类、吹口/笛膜及已读介绍；非所有管乐技法手册。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "中国乐队管乐章节中dizi分类、吹口/笛膜及已读介绍；非所有管乐技法手册。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "tor-huqin": {
+    "title": "TOR: Chinese Orchestra Bowed Strings",
+    "url": "https://timbreandorchestration.org/instruments/ensembles/chinese-orchestra/bowed-strings",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：胡琴介绍及弓法、揉弦/滑音相关段落；按具体胡琴种类使用。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "胡琴介绍及弓法、揉弦/滑音相关段落；按具体胡琴种类使用。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "tor-plucked": {
+    "title": "TOR: Chinese Plucked Strings Introduction",
+    "url": "https://timbreandorchestration.org/all-instruments/ensembles/chinese-orchestra/plucked-strings/introduction",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：介绍与分类；扬琴在此栏目不代表其发声为拨弦。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "介绍与分类；扬琴在此栏目不代表其发声为拨弦。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "hkco-winds": {
+    "title": "HKCO Chinese Wind Instruments",
+    "url": "https://www.hkco.org/en/Instrument-Rd/Chinese-Instruments/Wind-Instruments.html",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：管乐分类正文；包括排箫、笛箫、双簧和自由簧的分类，不是Shehnai专项证据。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "管乐分类正文；包括排箫、笛箫、双簧和自由簧的分类，不是Shehnai专项证据。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "hkco-plucked": {
+    "title": "HKCO Plucked-string Instruments",
+    "url": "https://www.hkco.org/en/Instrument-Rd/Chinese-Instruments/Plucked-String-Instruments.html",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：类别介绍，不能证明越南Dan Tranh专项技巧。",
+    "review": {
+      "status": "directory_read_only",
+      "sections": [
+        "类别介绍，不能证明越南Dan Tranh专项技巧。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "hkco-bowed": {
+    "title": "HKCO Bowed-string Instruments",
+    "url": "https://www.hkco.org/en/Instrument-Rd/Chinese-Instruments/Bowed-String-Instruments.html",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：类别介绍，不替代所有型号实音范围。",
+    "review": {
+      "status": "directory_read_only",
+      "sections": [
+        "类别介绍，不替代所有型号实音范围。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "met-shamisen": {
+    "title": "The Met: Shamisen",
+    "url": "https://www.metmuseum.org/art/collection/search/500666",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "museum-koto": {
+    "title": "Asian Art Museum: Koto",
+    "url": "https://searchcollection.asianart.org/objects/9857/koto",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "nmm-sitar": {
+    "title": "National Music Museum: Sitar",
+    "url": "https://emuseum.nmmusd.org/objects/5827/sitar",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "met-kalimba": {
+    "title": "The Met: Kalimba",
+    "url": "https://www.metmuseum.org/art/collection/search/504296",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "si-banjo": {
+    "title": "Smithsonian: Banjos",
+    "url": "https://www.si.edu/spotlight/banjos-smithsonian/default",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "case-bagpipe": {
+    "title": "CWRU Early Music: Bagpipe",
+    "url": "https://caslabs.case.edu/medren/medieval-instruments/bagpipe-medieval/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：中世纪bagpipe介绍；气袋、簧管及不同持续音管配置，不能推成所有风笛必有同一配置。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "中世纪bagpipe介绍；气袋、簧管及不同持续音管配置，不能推成所有风笛必有同一配置。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "culture-harmonica": {
+    "title": "Spain Ministry of Culture: Harmonica",
+    "url": "https://tesauros.cultura.gob.es/tesauros/bienesculturales/1011043.html",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "met-bagpipe": {
+    "title": "The Met: Hidden Bagpipes",
+    "url": "https://www.metmuseum.org/ja/perspectives/hidden-bagpipes",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "ni-east-asia": {
+    "title": "NI East Asia Manual",
+    "url": "https://www.native-instruments.com/fileadmin/ni_media/downloads/manuals/spotlight_collection/East_Asia_Manual_English_21_06_2024.pdf",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "downloaded_pdf_not_yet_read",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "fluid-generators": {
+    "title": "FluidSynth SoundFont Generators",
+    "url": "https://www.fluidsynth.org/api/group__generators.html",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "retrieved_not_yet_verified",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "fluid-midi": {
+    "title": "FluidSynth MIDI Channel Messages",
+    "url": "https://www.fluidsynth.org/api/group__midi__messages.html",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "retrieved_not_yet_verified",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "tor-plucked-practical": {
+    "title": "TOR: Chinese Plucked Strings Practicalities",
+    "url": "https://timbreandorchestration.org/all-instruments/ensembles/chinese-orchestra/plucked-strings/practicalities",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Lena Heng的Practicalities；已读琵琶、柳琴、阮、三弦、扬琴与筝的具体段落。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Lena Heng的Practicalities；已读琵琶、柳琴、阮、三弦、扬琴与筝的具体段落。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "suzuki-taisho": {
+    "title": "Suzuki: 大正琴",
+    "url": "https://www.suzuki-music.co.jp/product_category/taisho-harp/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：大正琴产品类别与键钮/多弦演奏介绍；配置按具体型号。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "大正琴产品类别与键钮/多弦演奏介绍；配置按具体型号。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "roland-accordion": {
+    "title": "Roland V-Accordion Guide",
+    "url": "https://cdn.roland.com/assets/media/pdf/v_accordion_brochure.pdf",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "downloaded_pdf_not_yet_read",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "yamaha-organ": {
+    "title": "Yamaha Pipe Organ Guide",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/pipeorgan/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：根页介绍与章节入口；不替代簧风琴或音轮风琴型号资料。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "根页介绍与章节入口；不替代簧风琴或音轮风琴型号资料。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-keyboards": {
+    "title": "Yamaha: Playing Electric Piano, Clavinet and Organ",
+    "url": "https://hub.yamaha.com/keyboards/k-how-to/how-to-play-electric-piano-clavinet-and-organ-sounds/",
+    "checked": "2026-11-03",
+    "scope": "待核入口；见review，不作为整卡主张的已验证证据。",
+    "review": {
+      "status": "not_verified",
+      "sections": [],
+      "retrieval_status": "unavailable",
+      "limitations": "仅保留资料入口；本次未逐项阅读验证内容。下载/抓取成功与旧checked日期都不等于已证实。"
+    }
+  },
+  "clavinet-study": {
+    "title": "Gabrielli等：Clavinet建模与分析",
+    "url": "https://link.springer.com/article/10.1186/1687-6180-2013-103",
+    "checked": "2026-11-03",
+    "scope": "本次核查机构段落；不认证全部演奏建议。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "论文的Clavinet动作机构段落及图1说明：橡胶tangent、金属anvil、弦与拾音器；不是全文技法核查。"
+      ],
+      "limitations": "不将该研究的建模/测试结论推广为本机SF2音色的真实感或控制能力。"
+    }
+  },
+  "local-renderers": {
+    "title": "本地渲染器与采样器",
+    "url": "local:scripts/render_score.py,scripts/render_score_sf2.py,scripts/sampler.py",
+    "checked": "2026-11-03",
+    "scope": "本机实现；不作为实物演奏证据。",
+    "review": {
+      "status": "local_implementation",
+      "sections": [
+        "当前渲染器与采样器代码、乐谱API；与乐器实物知识分开"
+      ],
+      "limitations": "不证明真实演奏、自然感或外部传统。"
+    }
+  },
+  "yamaha-celesta": {
+    "title": "Yamaha：Celesta",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/celesta/",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：结构与键盘演奏入口；与VSL Brief description交叉核对键控击打金属片。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "结构与键盘演奏入口；与VSL Brief description交叉核对键控击打金属片。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-piano-88": {
+    "title": "Yamaha：Why cannot a piano have more than 88 keys?",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/piano/trivia/trivia007.html",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：现代88键及27.5–4186Hz范围；A0–C8为本项目按C4=MIDI60换算。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "现代88键及27.5–4186Hz范围；A0–C8为本项目按C4=MIDI60换算。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "yamaha-guitar-tuning": {
+    "title": "Yamaha：How to tune a guitar",
+    "url": "https://www.yamaha.com/en/musical_instrument_guide/acoustic_guitar/play/play002.html",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：标准六弦定弦；不证明所有型号均为24品。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "标准六弦定弦；不证明所有型号均为24品。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "fender-bass": {
+    "title": "Fender：Bass debate—Pick vs fingers",
+    "url": "https://www.fender.com/articles/techniques/bass-debate-pick-vs-fingers",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：已读指弹与拨片的对比；不认定唯一正确方式，不验证全套技巧或24品上界。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "已读指弹与拨片的对比；不认定唯一正确方式，不验证全套技巧或24品上界。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  },
+  "vsl-cymbals": {
+    "title": "VSL Academy：Cymbals",
+    "url": "https://www.vsl.co.at/academy/percussion/cymbals",
+    "checked": "2026-11-03",
+    "scope": "本次核查范围：Brief description；对镲、悬镲、踩镲的发声方式，不含所有技巧。",
+    "review": {
+      "status": "selected_sections_read",
+      "sections": [
+        "Brief description；对镲、悬镲、踩镲的发声方式，不含所有技巧。"
+      ],
+      "limitations": "仅支持所列段落与匹配的字段；未声称全页、全部技巧或听过音频。"
+    }
+  }
+}

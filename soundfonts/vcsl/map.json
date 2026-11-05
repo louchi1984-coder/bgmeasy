@@ -1,0 +1,234 @@
+{
+ "Bass Drum 1__BDrumNew_hit_v2_rr1_Sum.wav": {},
+ "Bass Drum 1__BDrumNew_hit_v3_rr1_Sum.wav": {},
+ "Bass Drum 1__BDrumNew_hit_v5_rr1_Sum.wav": {},
+ "Bass Drum 2__bassdrum_hit_f.wav": {},
+ "Bass Drum 2__bassdrum_hit_ff.wav": {},
+ "Dan Tranh__Normal__B1_f_1.wav": {
+  "root": 47.0,
+  "est": 47.01,
+  "name_guess": 35,
+  "layer": "f",
+  "label": "B1_f"
+ },
+ "Dan Tranh__Normal__B1_mf_1.wav": {
+  "root": 47.0,
+  "est": 47.06,
+  "name_guess": 35,
+  "layer": "mf",
+  "label": "B1_mf"
+ },
+ "Dan Tranh__Normal__B2_f_1.wav": {
+  "root": 59.0,
+  "est": 59.45,
+  "name_guess": 47,
+  "layer": "f",
+  "label": "B2_f"
+ },
+ "Dan Tranh__Normal__B3_f_1.wav": {
+  "root": 71.0,
+  "est": 71.25,
+  "name_guess": 59,
+  "layer": "f",
+  "label": "B3_f"
+ },
+ "Dan Tranh__Normal__B3_mf_1.wav": {
+  "root": 71.0,
+  "est": 71.06,
+  "name_guess": 59,
+  "layer": "mf",
+  "label": "B3_mf"
+ },
+ "Dan Tranh__Normal__B4_f_1.wav": {
+  "root": 83.0,
+  "est": 82.86,
+  "name_guess": 71,
+  "layer": "f",
+  "label": "B4_f"
+ },
+ "Dan Tranh__Normal__B4_mf_1.wav": {
+  "root": 83.0,
+  "est": 82.86,
+  "name_guess": 71,
+  "layer": "mf",
+  "label": "B4_mf"
+ },
+ "Dan Tranh__Normal__C#2_f_1.wav": {
+  "root": 49.0,
+  "est": 49.4,
+  "name_guess": 37,
+  "layer": "f",
+  "label": "C##2_f"
+ },
+ "Dan Tranh__Normal__C#2_mf_1.wav": {
+  "root": 49.0,
+  "est": 49.23,
+  "name_guess": 37,
+  "layer": "mf",
+  "label": "C##2_mf"
+ },
+ "Dan Tranh__Normal__C#3_f_1.wav": {
+  "root": 62.0,
+  "est": 61.9,
+  "name_guess": 49,
+  "layer": "f",
+  "label": "C##3_f"
+ },
+ "Dan Tranh__Normal__C#3_mf_1.wav": {
+  "root": 61.0,
+  "est": 61.45,
+  "name_guess": 49,
+  "layer": "mf",
+  "label": "C##3_mf"
+ },
+ "Dan Tranh__Normal__C#4_f_1.wav": {
+  "root": 73.0,
+  "est": 73.12,
+  "name_guess": 61,
+  "layer": "f",
+  "label": "C##4_f"
+ },
+ "Dan Tranh__Normal__C#4_mf_1.wav": {
+  "root": 73.0,
+  "est": 72.9,
+  "name_guess": 61,
+  "layer": "mf",
+  "label": "C##4_mf"
+ },
+ "Dan Tranh__Normal__D#2_f_1.wav": {
+  "root": 52.0,
+  "est": 51.53,
+  "name_guess": 39,
+  "layer": "f",
+  "label": "D##2_f"
+ },
+ "Dan Tranh__Normal__D#2_mf_1.wav": {
+  "root": 51.0,
+  "est": 51.21,
+  "name_guess": 39,
+  "layer": "mf",
+  "label": "D##2_mf"
+ },
+ "Dan Tranh__Normal__D#3_f_1.wav": {
+  "root": 63.0,
+  "est": 63.34,
+  "name_guess": 51,
+  "layer": "f",
+  "label": "D##3_f"
+ },
+ "Dan Tranh__Normal__D#3_mf_1.wav": {
+  "root": 63.0,
+  "est": 63.09,
+  "name_guess": 51,
+  "layer": "mf",
+  "label": "D##3_mf"
+ },
+ "Dan Tranh__Normal__D#4_f_1.wav": {
+  "root": 75.0,
+  "est": 75.21,
+  "name_guess": 63,
+  "layer": "f",
+  "label": "D##4_f"
+ },
+ "Dan Tranh__Normal__D#4_mf_1.wav": {
+  "root": 75.0,
+  "est": 74.97,
+  "name_guess": 63,
+  "layer": "mf",
+  "label": "D##4_mf"
+ },
+ "Dan Tranh__Normal__F#2_f_1.wav": {
+  "root": 54.0,
+  "est": 54.32,
+  "name_guess": 42,
+  "layer": "f",
+  "label": "F##2_f"
+ },
+ "Dan Tranh__Normal__F#2_mf_1.wav": {
+  "root": 54.0,
+  "est": 54.1,
+  "name_guess": 42,
+  "layer": "mf",
+  "label": "F##2_mf"
+ },
+ "Dan Tranh__Normal__F#3_f_1.wav": {
+  "root": 66.0,
+  "est": 66.17,
+  "name_guess": 54,
+  "layer": "f",
+  "label": "F##3_f"
+ },
+ "Dan Tranh__Normal__F#3_mf_1.wav": {
+  "root": 66.0,
+  "est": 65.88,
+  "name_guess": 54,
+  "layer": "mf",
+  "label": "F##3_mf"
+ },
+ "Dan Tranh__Normal__F#4_f_1.wav": {
+  "root": 78.0,
+  "est": 77.88,
+  "name_guess": 66,
+  "layer": "f",
+  "label": "F##4_f"
+ },
+ "Dan Tranh__Normal__F#4_mf_1.wav": {
+  "root": 78.0,
+  "est": 78.17,
+  "name_guess": 66,
+  "layer": "mf",
+  "label": "F##4_mf"
+ },
+ "Dan Tranh__Normal__G#2_f_1.wav": {
+  "root": 56.0,
+  "est": 56.44,
+  "name_guess": 44,
+  "layer": "f",
+  "label": "G##2_f"
+ },
+ "Dan Tranh__Normal__G#2_mf_1.wav": {
+  "root": 56.0,
+  "est": 56.11,
+  "name_guess": 44,
+  "layer": "mf",
+  "label": "G##2_mf"
+ },
+ "Dan Tranh__Normal__G#3_f_1.wav": {
+  "root": 68.0,
+  "est": 68.03,
+  "name_guess": 56,
+  "layer": "f",
+  "label": "G##3_f"
+ },
+ "Dan Tranh__Normal__G#3_mf_1.wav": {
+  "root": 68.0,
+  "est": 68.03,
+  "name_guess": 56,
+  "layer": "mf",
+  "label": "G##3_mf"
+ },
+ "Dan Tranh__Normal__G#4_f_1.wav": {
+  "root": 80.0,
+  "est": 80.03,
+  "name_guess": 68,
+  "layer": "f",
+  "label": "G##4_f"
+ },
+ "Dan Tranh__Normal__G#4_mf_1.wav": {
+  "root": 80.0,
+  "est": 80.03,
+  "name_guess": 68,
+  "layer": "mf",
+  "label": "G##4_mf"
+ },
+ "Dan Tranh__Normal__b2_mf_1.wav": {
+  "root": 59.0,
+  "est": 59.06,
+  "name_guess": 47,
+  "layer": "mf",
+  "label": "B2_mf"
+ },
+ "Gong 1__gong_f.wav": {},
+ "Gong 1__gong_mf.wav": {},
+ "Gong 1__gong_p.wav": {}
+}

@@ -1,0 +1,51 @@
+{
+  "title": "成人向轻松诙谐 15s（选音示例）",
+  "bpm": 100,
+  "beats_per_bar": 4,
+  "key": "F major",
+  "swing": 0.3,
+  "humanize_ms": 8,
+  "dynamics": {"A": 0.9, "B": 1.0, "END": 1.0},
+  "design": {
+    "mood": "成人向的轻松、带一点调侃，不幼稚",
+    "progression": "1-6-2-5 变体：F Dm | Gm C F（爵士 1-6-2-5 的前半 + 2-5-1 收束）",
+    "motif": "r:.5 A4:.5 C5:.5 A4:.5 F4:1 r:1（落在弱拍上的短句，句尾留空）",
+    "variations": ["同节奏换音(Dm、Gm)", "换尾(C 和弦上抬到 E5/D5)", "拉长收束(B 段末小节 F5 长音)"],
+    "structure": "A 2 + B 3 + END 1，问答：小号问，钢琴点和弦答",
+    "melody": ["trumpet"],
+    "chords": {"A": ["F", "Dm"], "B": ["Gm", "C", "F"], "END": ["F"]},
+    "timbre_reason": {
+      "trumpet": "GM 59 加弱音器小号做主角：中音区、略带鼻音，有“耸肩调侃”的味道。没用木琴、钟琴，它们在高音区加均匀八分会被听成儿童节目。",
+      "piano": "GM 0 钢琴只在反拍点和弦，承担“接话”的职能。短促、干，凶狠或俏皮取决于节奏，这里靠切分和留白变成调侃。",
+      "bass": "GM 32 原声贝斯走根音加五度，音区在 F2~C3，给轻松感一个成人的重心；不用大号“嘣嚓”，那会变成滑稽进行曲。",
+      "perc": "GM 鼓组 40（刷子鼓）加 rim：音量小、颗粒细，不抢旁白。不用军鼓重击，免得变成进行曲。"
+    }
+  },
+  "tracks": {
+    "bass":    {"inst": "bass", "gain": 0.8, "pan": 0.0,  "reverb": 0.05, "gm": {"program": 32}},
+    "piano":   {"inst": "keys", "gain": 0.8, "pan": -0.3, "reverb": 0.15, "gm": {"program": 0}},
+    "trumpet": {"inst": "lead", "gain": 1.5, "pan": 0.15, "reverb": 0.2,  "gm": {"program": 59}},
+    "perc":    {"inst": "drums", "gain": 0.8, "pan": 0.0, "reverb": 0.1,  "gm": {"program": 40}}
+  },
+  "sections": {
+    "A": {
+      "bass": ["F2:1 A2:1 C3:1 A2:1", "D2:1 F2:1 A2:1 F2:1"],
+      "piano": ["r:1 F3+A3+C4:.5 r:.5 F3+A3+C4:.5 r:1.5", "r:1 D3+F3+A3:.5 r:.5 D3+F3+A3:.5 r:1.5"],
+      "trumpet": ["r:.5 A4:.5 C5:.5 A4:.5 F4:1 r:1", "r:.5 A4:.5 D5:.5 C5:.5 A4:1 r:1"],
+      "perc": ["kick: x.....x...x.....; rim: ....x.......x...; hat: x.x.x.x.x.x.x.x."]
+    },
+    "B": {
+      "bass": ["G2:1 Bb2:1 D3:1 Bb2:1", "C2:1 E2:1 G2:1 E2:1", "F2:1 A2:1 C3:1 A2:1"],
+      "piano": ["r:1 G3+Bb3+D4:.5 r:.5 G3+Bb3+D4:.5 r:1.5", "r:1 C3+E3+G3:.5 r:.5 C3+E3+G3:.5 r:1.5", "r:1 F3+A3+C4:.5 r:.5 F3+A3+C4:.5 r:1.5"],
+      "trumpet": ["r:.5 Bb4:.5 D5:.5 Bb4:.5 G4:1 r:1", "r:.5 G4:.5 C5:.5 E5:.5 D5:1 r:1", "A4:.5 C5:.5 F5:1.5 E5:.5 C5:1"],
+      "perc": ["kick: x.....x...x.....; rim: ....x.......x...; hat: x.x.x.x.x.x.x.x."]
+    },
+    "END": {
+      "bass": ["F2:4"],
+      "piano": ["F3+A3+C4+F4:4@0.9"],
+      "trumpet": ["F5:4@0.9"],
+      "perc": ["kick: x...............; rim: x..............."]
+    }
+  },
+  "arrangement": ["A", "B", "END"]
+}
