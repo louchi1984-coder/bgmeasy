@@ -40,7 +40,7 @@ MELODIC_DRUMS = dict(taiko=(116, 43, "Taiko Drum"), gong=(14, 48, "Tubular Bells
 # GM 音色库里持续音色（弦乐/垫音/管风琴）普遍比拨弦响得多，按乐器补偿音量，避免盖住旋律与层次
 GAIN_COMP = dict(dantranh=2.6, gong=0.55, bassdrum=1.0, pad=0.5, strings=0.5, organ=0.6, sub=0.8, whistle=0.4, dizi=0.6, erhu=0.7, lead=0.6)
 TPB = 480
-CALIBRATE = False  # 实验功能：按 soundfonts/loudness.json 折算 gain；默认关闭（实测未优于手填补偿系数），--calibrate 打开
+CALIBRATE = True  # 默认按 soundfonts/loudness.json 折算 gain；--no-calibrate 关闭
 CAL_FLOOR_DB = -3.0  # 比钢琴轻于此值的预设不再提升（避免 CC7 超上限），其 gain 按原值
 def _load_loudness():
     try: return json.load(open(os.path.join(HERE, "..", "soundfonts", "loudness.json"), encoding="utf-8"))["presets"]
@@ -48,9 +48,15 @@ def _load_loudness():
 LOUD = _load_loudness()
 def cal_factor(sf2, bank, prog):
     """返回 (系数, 预设id或None)。FluidSynth 的 CC7 衰减约为 40*log10(cc/127) dB，故系数=10^(-(rel-floor)/40)，且不大于 1。"""
-    stem = os.path.splitext(os.path.basename(sf2 or "GeneralUser-GS.sf2"))[0].lower()
-    pid = f"{stem}:{bank}:{prog}"
-    if not CALIBRATE or pid not in LOUD: return 1.0, None
+    if not CALIBRATE: return 1.0, None
+    root = SF.ROOT.resolve()
+    try:
+        relative = (root / (sf2 or "GeneralUser-GS.sf2")).resolve().relative_to(root)
+    except ValueError:  # 库外文件即使同名，也没有本库的测量记录。
+        return 1.0, None
+    source = relative.with_suffix("").as_posix().lower()
+    pid = f"{source}:{bank}:{prog}"
+    if pid not in LOUD: return 1.0, None
     return min(1.0, 10 ** (-(LOUD[pid] - CAL_FLOOR_DB) / 40)), pid
 COMP_RATIO = 2.0  # 母带压缩比；--comp-ratio 1.0 即几乎不压，保留段落动态
 CH_SF = {}  # MIDI 通道 -> 外部音色库文件名（声部写 "sf2" 时使用）
@@ -104,9 +110,10 @@ def build_midi(sc, bpb, tracks, arr, secs, bpm, total_beats, tail_beats, seed):
     ev[9] = []
     for tr, cfg in tracks.items():
         gain, pan = float(cfg.get("gain", 0.8)), float(cfg.get("pan", 0)); rev = float(cfg.get("reverb", 0.15))
+        font = cfg.get("_sf2_path", cfg.get("sf2"))
         if cfg["inst"] == "drums":
             for lane in ("__drums",):
-                gain *= cal_factor(cfg.get("sf2"), int(cfg.get("gm", {}).get("bank", 128)), int(cfg.get("gm", {}).get("program", 0)))[0]
+                gain *= cal_factor(font, int(cfg.get("gm", {}).get("bank", 128)), int(cfg.get("gm", {}).get("program", 0)))[0]
                 ev[9].append((0, -1, mido.Message("control_change", channel=9, control=7, value=int(min(127, gain * 127)))))
                 ev[9].append((0, -1, mido.Message("control_change", channel=9, control=10, value=int(64 + pan * 63))))
             kit = int(cfg.get("gm", {}).get("program", 0))  # 鼓组：GM 0 标准、8 房间、16 力量、24 电子、25 TR-808（GeneralUser GS）
@@ -123,7 +130,7 @@ def build_midi(sc, bpb, tracks, arr, secs, bpm, total_beats, tail_beats, seed):
             bank = int(cfg.get("gm", {}).get("bank", 0))
             ch = chan_for(("t", tr), prog, bank)
             if cfg.get("sf2"): CH_SF[ch] = cfg["sf2"]
-            cf, pid = cal_factor(cfg.get("sf2"), bank, prog)
+            cf, pid = cal_factor(font, bank, prog)
             gain *= cf if pid else GAIN_COMP.get(cfg["inst"], 1.0)
             for cc, v in ((7, int(min(127, gain * 127))), (10, int(64 + pan * 63)), (91, int(min(127, rev * 127 * 1.3)))):
                 ev[ch].append((0, -1, mido.Message("control_change", channel=ch, control=cc, value=v)))
@@ -232,7 +239,7 @@ def report_levels(a, tracks, secs, arr):
     for mt in a.mute.split(","):
         if mt:
             for section in original["sections"].values(): section.pop(mt, None)
-    common = ["--lang", I18N.CURRENT_LANGUAGE, "--raw-level", "--comp-ratio", str(a.comp_ratio), "--tail", str(a.tail), "--soundfont", a.soundfont] + (["--duration", str(a.duration)] if a.duration else []) + (["--calibrate"] if a.calibrate else []) + (["--seed", str(a.seed)] if a.seed is not None else [])
+    common = ["--lang", I18N.CURRENT_LANGUAGE, "--raw-level", "--comp-ratio", str(a.comp_ratio), "--tail", str(a.tail), "--soundfont", a.soundfont, "--calibrate" if a.calibrate else "--no-calibrate"] + (["--duration", str(a.duration)] if a.duration else []) + (["--seed", str(a.seed)] if a.seed is not None else [])
     def run(name, mute=None):
         out = os.path.join(td, name + ".wav")
         score = dict(original); score["tracks"] = {t: dict(cfg) for t, cfg in original["tracks"].items()}
@@ -275,7 +282,8 @@ def main():
     ap.add_argument("--comp-ratio", type=float, default=2.0)
     ap.add_argument("--report-levels", action="store_true", help="渲染后逐层静音相减，报告各层对整体的实际贡献（约多渲染 N 次）")
     ap.add_argument("--raw-level", action="store_true", help="不做最终峰值归一化（报告各层贡献时内部使用；不要用于交付）")
-    ap.add_argument("--calibrate", action="store_true", help="实验：按响度校准表折算 gain，替代手填补偿系数")
+    ap.add_argument("--calibrate", action=argparse.BooleanOptionalAction, default=True,
+                    help="按响度校准表折算 gain（默认开启）")
     I18N.add_argument(ap)
     ap.add_argument("--seed", type=int); ap.add_argument("--keep-mid", action="store_true"); a = ap.parse_args()
     I18N.use_language(a.lang)

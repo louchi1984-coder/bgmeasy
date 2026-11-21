@@ -179,6 +179,7 @@ def resolve_tracks(tracks, default_soundfont, root=ROOT, default_programs=None):
         path = Path(root) / cfg['sf2'] if cfg.get('sf2') else Path(default_soundfont)
         if not path.is_file():
             raise ValueError(f'{name}: 找不到音色库 {path}')
+        cfg['_sf2_path'] = str(path.resolve())
         if path not in inventories:
             inventories[path] = {(p['bank'], p['program']): p['name'] for p in read_presets(path)}
         if cfg['inst'] == 'drums':

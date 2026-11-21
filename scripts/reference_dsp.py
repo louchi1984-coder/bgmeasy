@@ -4,7 +4,7 @@ Project implementation using NumPy, SciPy (BSD) and librosa (ISC).
 Thresholds are signal-processing heuristics, not music-quality rules.
 """
 import numpy as np
-import librosa
+from librosa_runtime import librosa
 from scipy.ndimage import median_filter
 from scipy.optimize import nnls
 from scipy.signal import find_peaks

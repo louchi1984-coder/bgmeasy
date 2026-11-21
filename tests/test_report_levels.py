@@ -43,6 +43,33 @@ class ReportFailureTests(unittest.TestCase):
 
 @unittest.skipUnless(shutil.which('fluidsynth'), 'requires fluidsynth')
 class ReportLevelsTests(unittest.TestCase):
+    def test_calibration_defaults_on_and_report_respects_opt_out(self):
+        score = {'bpm': 120, 'humanize_ms': 0,
+                 'tracks': {'bed': {'inst': 'pad', 'preset': 'generaluser-gs:0:89', 'gain': 1}},
+                 'sections': {'A': {'bed': ['C4:4']}}, 'arrangement': ['A']}
+        volumes, reports = [], []
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = root / 'score.json'
+            path.write_text(json.dumps(score), encoding='utf-8')
+            for name, flags in [('default', []), ('on', ['--calibrate']), ('off', ['--no-calibrate'])]:
+                out = root / f'{name}.wav'
+                result = subprocess.run(
+                    [sys.executable, '-I', '-B', R.__file__, str(path), str(out),
+                     '--keep-mid', '--report-levels', *flags],
+                    capture_output=True, text=True, encoding='utf-8',
+                )
+                self.assertEqual(result.returncode, 0, result.stderr)
+                midi = mido.MidiFile(out.with_suffix('.mid'))
+                volumes.append([event.value for track in midi.tracks for event in track
+                                if event.type == 'control_change' and event.channel == 0 and event.control == 7])
+                reports.append(next(line for line in result.stdout.splitlines() if line.startswith('bed ')))
+        self.assertEqual(volumes[0], volumes[1])
+        self.assertNotEqual(volumes[0], volumes[2])
+        self.assertEqual(volumes[2], [63])
+        self.assertEqual(reports[0], reports[1])
+        self.assertNotEqual(reports[0], reports[2])
+
     def test_zero_gain_is_zero_and_other_note_times_survive_counterfactual(self):
         score = {'bpm': 120, 'seed': 7, 'humanize_ms': 6, 'tracks': {
             'silent': {'inst': 'keys', 'gain': 0, 'reverb': 0},

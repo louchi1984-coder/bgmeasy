@@ -1,6 +1,6 @@
 # 依赖
 
-运行 `python3 -I scripts/check_deps.py` 自动检查；退出码 1 表示必需项缺失。以下版本是本机已验证组合，不是下限保证。
+运行 `python3 -I scripts/check_deps.py` 自动检查。退出码 1 表示必需项缺失。参考音频分析另看两项功能检查：librosa (STFT) 计算短时傅里叶变换，matplotlib (Agg) 在内存中绘图。任一失败会显示 `[OPTIONAL-MISSING]` 和原因。下表列出本机验证过的版本。
 
 ## 必需
 
@@ -36,11 +36,11 @@
 - `mix.py`：Python 标准库、ffmpeg、ffprobe；参数、滤镜和两遍 loudnorm 沿用 mix.sh。旧 mix.sh 保留兼容。
 - `check_deps.py`：Python 标准库；检查当前解释器与 PATH 中的工具。旧 check-deps.sh 保留兼容。
 - `verify.py`：numpy, ffmpeg
-- 所有脚本离线运行；输出只写到你指定的路径（混音入口用系统临时目录并自动清理）。
+- 这些脚本可离线运行。渲染和分析成品写入指定路径。混音与依赖库也会使用临时目录或缓存。
 
 ## Windows 运行条件
 
-已在 Windows 10 x64、Python 3.10.10 的原生环境通过完整测试；采样渲染使用 FluidSynth 2.6.2，混音使用 FFmpeg 7.1（FFprobe 5.1.0）。其他 Windows 版本和 ARM 架构尚未实测。
+v0.1.0 已在 Windows 10 x64、Python 3.10.10 的原生环境运行完整测试；采样渲染使用 FluidSynth 2.6.2，混音使用 FFmpeg 7.1（FFprobe 5.1.0）。其他 Windows 版本和 ARM 架构尚未实测。
 
 使用原生 Windows Python 和虚拟环境；把 FFmpeg/FFprobe、FluidSynth 的可执行文件目录加入当前终端 PATH。Python 命令可能是 `python`，文档中的 `python3 -I` 在这种环境下改用 `python -I`，或指定虚拟环境解释器的完整路径。脚本的文本文件与命令行输出使用 UTF-8，不依赖 Windows 默认代码页，也不要求全局切换 UTF-8。
 
@@ -49,7 +49,7 @@
 ```text
 python -I scripts/check_deps.py
 python -I scripts/mix.py --video in.mp4 --bgm bgm.wav --out out.mp4
-python -I scripts/verify.py out.mp4
+python -I scripts/verify.py out.mp4 --lufs -14 --tp -2
 ```
 
 Windows agent 选择已装依赖的 Python 解释器；路径含空格时由当前终端正确引用，程序内部使用参数数组调用 FFmpeg，不启动 shell。`mix.py` 支持原 `mix.sh` 的全部参数，滤镜、默认响度和两遍 loudnorm 不变。旧 `mix.sh`、`check-deps.sh` 和兜底用 `imitate.sh` 保留给 Bash 用户；原有 `BGMEASY_PYTHON` 只用于这些旧脚本，Python 入口使用当前解释器。
@@ -58,11 +58,14 @@ FluidSynth 官方 Windows 包需保留同目录依赖 DLL；能力探测先查�
 
 ## 常见问题
 
+- 参考音频分析的 Numba 缓存：本机已用 Python 3.14.2、librosa 0.11.0、Numba 0.63.1 验证。未指定缓存且默认位置触发 `cannot cache function … no locator available` 时，`analyze_reference.py` 和依赖预检会改用进程私有的临时缓存，退出时清理。若已设置 `NUMBA_CACHE_DIR`，请确保该目录可写；指向可写的持久目录也可让多次分析复用编译结果。
 - `sidechaincompress` 缺失：ffmpeg 构建过于精简，换完整构建。
 - `pip install` 报 externally-managed-environment：用虚拟环境 `python3 -m venv ~/.venvs/bgm && source ~/.venvs/bgm/bin/activate` 后再装，并用该环境的 python3 运行脚本。
 - 分析很慢：新参考前端用`--start/--seconds`选片段，并核对报告实际覆盖范围；旧`analyze.py --max-seconds 120`只取前120秒。
 
-## 已下载的音色库
+## 安装公开音源包
+
+按 [README 的安装步骤](../README.zh-CN.md#开始使用) 运行 `python -I scripts/download_soundfonts.py`。它会校验发布包，并将下列可分发音源安装到 `soundfonts/`。
 
 `soundfonts/GeneralUser-GS.sf2`（32,319,396 字节，读取本机 SF2 头部：274 个非鼓组预设、13 套鼓组；含银行变体）。许可证全文见 `soundfonts/LICENSE-GeneralUser-GS.txt`：个人或商用音乐创作无限制、不要求署名，作者提示无法完全保证每个采样的来源。
 
@@ -83,7 +86,7 @@ FluidSynth 官方 Windows 包需保留同目录依赖 DLL；能力探测先查�
 注意：VCSL 文件名的八度比标准 MIDI 低一个八度，采样器以自相关估计的音高为准。
 没有的：二胡、琵琶、竹笛（VCSL 无这些乐器）。Dizi 的 SF2 来源（Musical Artifacts / Freesound）许可证无法核实，未采用。
 
-## DSK Asian DreamZ（SF2）
+## 可选 DSK Asian DreamZ（公开音源包未提供）
 
 位置 `soundfonts/DSK-Asian-DreamZ.sf2`（11.5 MB，2008），来自 rekkerd.org 镜像。预设：PIPA、PIPA TREM、LUAN、GUZHEN、ERHU、BAN-DI、Chinese Percussion；LUAN与BAN-DI的具体身份待核，不沿用旧“柳琴/竹笛”翻译作为事实。DSK 官网声明其虚拟乐器可免费用于私人和商业用途，但没有再分发条款，所以只在本机使用，不要打包分发。rekkerd 下载需带 Referer 头：`curl -e https://rekkerd.org/dsk-soundfonts/ -A 'Mozilla/5.0' -o x.zip https://rekkerd.org/samples/DSK_Asian_DreamZ_sf2.zip`。
 

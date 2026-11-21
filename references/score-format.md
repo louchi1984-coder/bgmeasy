@@ -5,6 +5,12 @@
 渲染命令：`python3 -I scripts/render_score.py score.json out.wav --duration 15`
 范例：`examples/western-15s.score.json`。出错时渲染器会指出 段落 / 声部 / 第几小节。
 
+## MIDI 与 WAV 交付
+
+原创成品默认同时交付 WAV、标准 MIDI（SMF Type 1）和原 `score.json`。采样版用 `python3 -I scripts/render_score_sf2.py score.json bgm.wav --duration 30 --keep-mid`，会同时写出 `bgm.wav` 和 `bgm.mid`。按成品使用的时长、尾音、种子及其他渲染参数生成，便于用 WAV 对照编辑 MIDI。
+
+MIDI 保存速度和演奏事件。DAW 需为各轨配置音源。WAV 中的混响、压缩等音频处理和 VCSL 采样器独立渲染的声部由音频保留，后者的演奏安排见 `score.json`。如果使用内置合成版 WAV，采样后端生成的 MIDI 供编辑对照，奏法与事件细节可能有差异。
+
 ## 顶层字段
 
 | 字段 | 含义 |
@@ -29,7 +35,7 @@
 写作品音符前按 [instrument-performance.md](instrument-performance.md) 查询拟用乐器与实际预设。写完用 `python3 -I scripts/instruments.py score score.json --backend sf2` 检查适配。不能把SF2未读取的 `params.attack/decay/breath` 等当作已生效，也不能把设计文字当作已经实现的演奏。
 `design.performance.<声部>.instrument` 要填库内乐器 ID（如 `guzheng`、`erhu`、`flute`、`electric-bass`、`drum-kit`），可用 `python3 -I scripts/instruments.py search 关键词` 查；写中文名或自造名会被报“不在资料库”。
 
-创作先按 [music-design.md 第0节](music-design.md#0-确定时长后先规划全曲) 建立全曲方案（用户约定 G06），复用现有 `design` 字段简记。主题、和声、节奏或音色短素材可用于试探方案（G01）；正式写谱应贯通覆盖全长的核心草图，再细化声部。此流程不新增字段验证或改变渲染格式；设计记录须能在谱面核对，旧谱缺少记录仍可渲染，字段齐全不等于音乐或听感合格。
+创作先按 [music-design.md 第0节](music-design.md#0-确定时长后先规划全曲) 建立全曲方案（用户约定 G06），复用现有 `design` 字段简记。主题、和声、节奏或音色短素材可用于试探方案（G01）；正式写谱时让核心材料与配器相互校验，贯通全长并细化声部。此流程不新增字段验证或改变渲染格式；设计记录须能在谱面核对，旧谱缺少记录仍可渲染，字段齐全不等于音乐或听感合格。
 
 ### 检查注释：节奏、乐句与和声时间
 
@@ -96,7 +102,7 @@
 - `E4:1.5` 音名+八度（C4=中央 C，`F#3`、`Bb2`），冒号后是拍数，支持 `.5`、`1/3`。
 - `E3+G3+B3:4` 和弦（同时发声）。
 - `r:1` 休止。
-- `E4:1@0.6` 力度 0~1，默认 0.8。
+- `E4:1@0.6` 音符力度，范围0~1，默认0.8；省略就使用默认值，不会自动形成重音或乐句表情。SF2后端把它换成MIDI NoteOn velocity，响应由实际音源决定，可能涉及音量、音色或采样区域；不保证线性音量或真实录音分层。
 - `(E3:.5 B3:.25 E4:.25)*4` 重复组，不能嵌套。
 - **每小节总拍数必须等于 `beats_per_bar`**，否则报错。
 - 小节列表比段落小节数短时会循环使用。
@@ -119,7 +125,7 @@
 
 顶层字段 `"dynamics": {"A": 0.55, "B": 1.0}`：段落名 → 0~1。SF2声部发送CC11；VCSL声部将该值乘到传入velocity，响应取决于选层和幅度实现，尤其大鼓不保证连续缩放响度。没写的段落为1.0。实现细节见 [instrument-performance.md](instrument-performance.md)。
 音符力度影响多大取决于预设的力度响应；母带处理可能改变动态，但不能断言一定抹平差距。CC11是现有表情控制选项，不自动形成高潮；需结合节奏、音区、和声、奏法与织体检查（A03/G04）。内置合成器 render_score.py 不读这个字段。
-渲染采样版时可加 `--comp-ratio 1.3` 放宽母带压缩（默认 2.0，1.0 为几乎不压）。
+写谱时按[力度设计](music-design.md#力度设计)安排逐音强弱；声部`gain`负责基础平衡，`dynamics`不替代句内力度。沿用标准渲染和默认母带，不把改变`--comp-ratio`、另做归一化或增加音色模拟作为力度设计的默认补救。
 
 ## 采样后端的音色与鼓组选择（render_score_sf2.py）
 

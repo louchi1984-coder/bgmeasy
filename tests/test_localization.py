@@ -42,6 +42,18 @@ class LocalizationDataTests(unittest.TestCase):
                 self.assertEqual(set(entry['names']), set(L.LANGUAGES))
                 self.assertTrue(all(v.strip() for v in entry['names'].values()))
 
+    def test_preset_cli_uses_the_localized_instrument_name(self):
+        preset = 'generaluser-gs:0:0'
+        for lang in L.LANGUAGES:
+            with self.subTest(language=lang):
+                result = cli('instruments.py', 'preset', preset, '--lang', lang)
+                self.assertEqual(result.returncode, 0, result.stderr)
+                report = json.loads(result.stdout)
+                self.assertEqual(report['capability']['id'], preset)
+                self.assertEqual(report['capability']['profile_id'], 'piano')
+                self.assertEqual(report['instrument_name'], L.instrument_name('piano', lang))
+                self.assertEqual(report['report_language'], lang)
+
     def test_four_language_search_returns_identical_presets(self):
         groups = [('钢琴', 'piano', 'ピアノ', '피아노'), ('吉他', 'guitar', 'ギター', '기타'),
                   ('小提琴', 'violin', 'バイオリン', '바이올린'), ('二胡', 'erhu', '二胡', '얼후'),

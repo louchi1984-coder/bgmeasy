@@ -4,11 +4,11 @@
 
 ### Compose background music with your coding agent.
 
-Describe the scene, mood and duration. bgmeasy guides your agent through planning the piece, writing an editable score and rendering the audio locally. Melody, rhythm, instrumentation and structure stay in the score, ready for the next round of changes.
+Describe the scene or mood. Your agent writes an editable score and renders the audio locally, so you can change the melody, rhythm or arrangement after listening.
 
 Built for background music in short videos, narrated content, games and animation. Use it with a coding agent that can read files and run commands. Rendering and reference analysis need no separate music-generation service.
 
-[Get started](#get-started) · [Sound pack](https://github.com/louchi1984-coder/bgmeasy/releases/latest) · [Composition workflow (中文)](SKILL.md) · [Score format (中文)](references/score-format.md)
+[Get started](#get-started) · [v0.1.0 sound pack](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) · [Composition workflow (中文)](SKILL.md) · [Score format (中文)](references/score-format.md)
 
 ## Start with the scene
 
@@ -20,23 +20,23 @@ After listening, keep shaping the same piece:
 
 > Keep the main theme. Thin out the accompaniment in the first half, then gradually build the second half without reaching full intensity too early.
 
-The workflow starts with a destination for the whole piece, then develops its phrases, harmony, shared rhythm and instrumental roles. The agent composes and revises; local programs turn the score into sound.
+In reference mode the agent studies passages from existing scores before composing. In direct mode it writes from your brief. In both modes you hear three original sketches and choose one. The agent then asks for the final duration and how full the arrangement should sound, using any details you have already given.
 
 ```text
-Scene and brief → Whole-piece plan → Editable score → Local render → Listen and revise
+Describe the scene → Choose a mode → Hear three sketches and pick one → Set duration and arrangement → Develop the full cue
 ```
 
 ## Compose, revise, and mix with video
 
 | Your task | How bgmeasy helps |
 |---|---|
-| Score a scene | Plan the complete cue before developing melody, harmony, rhythm and orchestration |
+| Score a scene | Choose a sketch, then develop its melody, harmony, rhythm and orchestration into a complete cue |
 | Revise after listening | Adjust the same score while keeping the structure, settings and reasons for changes |
 | Work from a reference | Examine pitch, rhythm, harmony and structural clues to inform a new composition |
 | Support narration or dialogue | Leave room in the arrangement, then use foreground-driven ducking during mixing |
 | Deliver music with a video | Render a WAV, or mix it into video with loudness normalization and video stream copy |
 
-The working files are an agent-authored JSON score and a rendered WAV. Video mixing is a separate step when needed. Keeping the score and settings makes later revisions, comparisons and reproduction easier.
+An original cue normally comes with a WAV for listening, a MIDI file for editing, and the JSON score used to render it. Separate sampler parts and audio effects are preserved in the WAV. You can mix the cue into a video when needed.
 
 ## Get started
 
@@ -57,7 +57,7 @@ You need **Python 3.10+, FFmpeg/FFprobe and FluidSynth**. The full sampled workf
 
 Point your coding agent at the project directory and ask:
 
-> Read this project's SKILL.md and check the environment. Use bgmeasy to make 30 seconds of warm, calming instrumental background music, with no dialogue. Plan the whole piece before writing and rendering the score. Keep the score and explain the arrangement and output files in English.
+> Read this project’s SKILL.md and check the environment. Write some warm instrumental music for a reunion scene with no dialogue. Use direct mode and give me three sketches to listen to. Explain the differences in English.
 
 Listen to the result, then give the agent specific changes. You can describe duration, purpose, mood, dialogue, instrument preferences and reference audio without filling in every arrangement parameter yourself.
 
@@ -94,7 +94,7 @@ python -I scripts/verify.py outputs/western.wav --lang en
 
 The raw WAV check may flag loudness. Final two-pass loudness normalization happens during video mixing.
 
-The sound pack installer verifies SHA-256. If direct downloading is inconvenient, get the ZIP from [Releases](https://github.com/louchi1984-coder/bgmeasy/releases/latest) and install it with `--archive path/to/bgmeasy-soundfonts.zip`.
+The sound pack installer verifies SHA-256. If direct downloading is inconvenient, get the ZIP from [Releases](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) and install it with `--archive path/to/bgmeasy-soundfonts.zip`.
 
 </details>
 
@@ -107,7 +107,9 @@ The sound pack installer verifies SHA-256. If direct downloading is inconvenient
 
 ## Compatibility and licensing
 
-Validated on macOS and native Windows 10 x64; Linux has not yet been tested on a real machine. The public package has 121 tests: 118 pass and 3 explicitly skip the DSK font, which is not redistributed.
+This revision ran 127 tests on macOS with Python 3.14.2 and the v0.1.0 sound pack. 124 passed, and three were skipped because they require the optional DSK soundfont. A native Windows run for this revision is pending.
+
+The v0.1.0 public release was tested on macOS and native Windows 10 x64. Each ran 121 tests with 118 passes and three skips for the separately installed DSK soundfont. Linux has not yet been tested on a native host.
 
 Project source is [MIT licensed](LICENSE). Sound assets retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md). DSK Asian DreamZ is not distributed with the project.
 

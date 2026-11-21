@@ -19,12 +19,12 @@ if __name__ == "__main__" and sys.platform == "win32":
         if hasattr(stream, "reconfigure"):
             stream.reconfigure(encoding="utf-8", errors="backslashreplace")
 
-import librosa
 import numpy as np
 from scipy.ndimage import median_filter
 from scipy.signal import correlate, find_peaks
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from librosa_runtime import librosa
 import reference_dsp as DSP
 import localization as I18N
 

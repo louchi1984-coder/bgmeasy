@@ -42,13 +42,26 @@ def main():
     supported = sys.version_info >= (3, 9)
     line(supported, translate_text('python >= 3.9（当前 {v0}，{v1}）', v0=sys.version.split()[0], v1=sys.executable))
     failed |= not supported
-    for name in ('numpy', 'scipy', 'soundfile', 'librosa', 'pedalboard', 'mido'):
-        optional = name in ('librosa', 'pedalboard', 'mido')
+    for name in ('numpy', 'scipy', 'soundfile', 'librosa', 'matplotlib', 'pedalboard', 'mido'):
+        optional = name in ('librosa', 'matplotlib', 'pedalboard', 'mido')
+        probe = {'librosa': ' (STFT)', 'matplotlib': ' (Agg)'}.get(name, '')
         try:
             module = importlib.import_module(name)
-            line(True, f'python: {name} {getattr(module, "__version__", "")}')
-        except Exception:
-            line(False, translate_text('python: {v0}；用当前解释器 -m pip install {v1}', v0=name, v1=name), optional)
+            if name == 'librosa':
+                import numpy as np
+                from librosa_runtime import librosa
+                librosa.stft(np.ones(128, dtype=np.float32), n_fft=64)
+            elif name == 'matplotlib':
+                from matplotlib.backends.backend_agg import FigureCanvasAgg
+                from matplotlib.figure import Figure
+                FigureCanvasAgg(Figure(figsize=(1, 1), dpi=8)).draw()
+            line(True, f'python: {name} {getattr(module, "__version__", "")}{probe}')
+        except Exception as exc:
+            if isinstance(exc, ModuleNotFoundError):
+                detail = translate_text('python: {v0}；用当前解释器 -m pip install {v1}', v0=name, v1=name)
+            else:
+                detail = f'python: {name}{probe}'
+            line(False, f'{detail} ({exc})', optional)
             failed |= not optional
     line(bool(shutil.which('fluidsynth')), translate_text('fluidsynth（采样音色渲染）'), optional=True)
     line((ROOT/'soundfonts/GeneralUser-GS.sf2').is_file(), translate_text('音色库 GeneralUser-GS.sf2'), optional=True)

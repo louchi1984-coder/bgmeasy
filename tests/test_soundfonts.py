@@ -1,10 +1,14 @@
 import ctypes as C
 import json
+import os
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
 import unittest
+
+import mido
 
 SCRIPTS = Path(__file__).resolve().parents[1] / 'scripts'
 sys.path.insert(0, str(SCRIPTS))
@@ -52,6 +56,51 @@ class SoundFontTests(unittest.TestCase):
         self.assertEqual(result['voice']['gm'], {'bank': 0, 'program': 0})
         self.assertEqual(result['voice']['sf2'], 'freepats-light/guitar-clean.sf2')
         self.assertNotIn('gm', original['voice'])
+
+    def test_all_measured_presets_resolve_to_their_catalog_keys(self):
+        catalog = {e['id']: e for e in F.build_catalog()['entries']}
+        measured = set(R.LOUD)
+        if not (F.ROOT / 'DSK-Asian-DreamZ.sf2').is_file():
+            measured = {ident for ident in measured if not ident.startswith('dsk-asian-dreamz:')}
+        self.assertIn('freepats-light/piano-kw:0:0', measured)
+        for ident in sorted(measured):
+            with self.subTest(ident=ident):
+                entry = catalog[ident]
+                self.assertEqual(R.cal_factor(entry['file'], entry['bank'], entry['program'])[1], ident)
+
+    def test_calibrated_midi_uses_the_rendered_font(self):
+        piano = 'freepats-light/piano-kw.sf2'
+        kit = 'freepats-light/electronic-drums.sf2'
+        with tempfile.TemporaryDirectory() as directory:
+            work = Path(directory)
+            # An unrelated font can have exactly the same filename as the reference piano.
+            shutil.copyfile(F.ROOT / piano, work / DEFAULT.name)
+            cases = [
+                ('catalog ID', {'preset': 'freepats-light/piano-kw:0:0'}, [], 67),
+                ('explicit sf2', {'sf2': piano}, [], 67),
+                ('default', {}, [], 90),
+                ('soundfont override', {}, ['--soundfont', str(F.ROOT / piano)], 67),
+                ('outside library', {}, ['--soundfont', DEFAULT.name], 107),
+                ('explicit outside library', {'sf2': str(work / DEFAULT.name)}, [], 107),
+                ('calibration off', {'sf2': piano}, ['--no-calibrate'], 107),
+                ('bank zero drum kit', {'inst': 'drums'}, ['--soundfont', str(F.ROOT / kit)], 107),
+            ]
+            for label, selection, flags, expected in cases:
+                with self.subTest(label=label):
+                    track = {'inst': 'keys', 'gm': {'bank': 0, 'program': 0}, 'gain': .85, **selection}
+                    drums = track['inst'] == 'drums'
+                    bar = 'kick: x...............' if drums else 'C4:4'
+                    score = {'bpm': 240, 'tracks': {'voice': track},
+                             'sections': {'A': {'voice': [bar]}}, 'arrangement': ['A']}
+                    (work / 'score.json').write_text(json.dumps(score), encoding='utf-8')
+                    result = subprocess.run([sys.executable, '-I', '-B', R.__file__, 'score.json',
+                                             'out.wav', '--keep-mid', *flags], cwd=work, capture_output=True,
+                                            env={**os.environ, 'TMPDIR': directory}, text=True, encoding='utf-8')
+                    self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                    midi = mido.MidiFile(work / 'out.mid')
+                    volumes = [m.value for t in midi.tracks for m in t if m.type == 'control_change'
+                               and m.channel == (9 if drums else 0) and m.control == 7]
+                    self.assertEqual(volumes, [expected])
 
     def test_invalid_selection_fails_instead_of_falling_back(self):
         with self.assertRaisesRegex(ValueError, '不会静默回退'):

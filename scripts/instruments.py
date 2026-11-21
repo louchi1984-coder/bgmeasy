@@ -417,7 +417,7 @@ def main():
             result={'profile':profile,'instrument_name':I18N.instrument_name(args.id,args.lang),'family_guidance':family,'sources':{s:sources[s] for s in sorted(set(profile['sources']+family['sources']))}}
         elif args.command=='preset':
             result=lookup(args.id,args.zones)
-            result['instrument_name']=I18N.instrument_name(result['profile_id'],args.lang)
+            result['instrument_name']=I18N.instrument_name(result['capability']['profile_id'],args.lang)
         elif args.command=='score':result=audit_score(args.path,args.backend)
         elif args.command=='probe-all':result=probe_all(args.out)
         elif args.command=='audition':result=audition(args.id,args.out)
