@@ -1,7 +1,7 @@
 # 响度校准表与各层贡献报告
 
 ## 它们是什么
-- `soundfonts/loudness.json`：307 个预设相对 GeneralUser GS 三角钢琴的响度偏差（dB）。公开音源包覆盖其中 300 个；另外 7 个对应可选的 DSK 音色。测量条件：CC7=127、力度 90、预设自身音域内单音、取 1 秒 RMS 的中位数。测量脚本和原始数据在 `references/loudness-calibration/`（`measure2.py`、`preset_loudness_v2.csv`），脚本只读、不改 skill。
+- `soundfonts/loudness.json`：307 个预设相对 GeneralUser GS 三角钢琴的响度偏差（dB）。v0.2.0 标准音源包覆盖全部 307 个已测预设，其中 7 个来自 DSK Asian DreamZ。测量条件：CC7=127、力度 90、预设自身音域内单音、取 1 秒 RMS 的中位数。测量脚本和原始数据在 `references/loudness-calibration/`（`measure2.py`、`preset_loudness_v2.csv`），脚本只读、不改 skill。
 - `render_score_sf2.py` **默认按响度校准表折算 gain**。`--calibrate` 可显式开启，`--no-calibrate` 使用固定补偿。逐层贡献报告的子渲染继承同一设置。
 - `render_score_sf2.py --report-levels`：渲染后逐层静音相减，打印每层对整体的实际贡献（未做峰值归一化），比最响层低 12 dB 以上标“可能听不清”。
 

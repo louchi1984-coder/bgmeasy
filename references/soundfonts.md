@@ -28,7 +28,7 @@
 | `freepats-light/world-percussion` | 卡洪、邦戈、铃鼓、康加、沙锤、达布卡等 | [FreePats World Percussion](https://freepats.zenvoid.org/Percussion/world-and-rare-percussion.html) |
 | `freepats-light/electronic-drums` | 模拟合成电子鼓组 | [FreePats Electronic Percussion](https://freepats.zenvoid.org/Percussion/electric-percussion.html) |
 
-原有 GeneralUser GS、DSK 和 VCSL 保留。GeneralUser 的钢琴、弦乐、铜管、木管、电子等音色及其变体全部进入目录；DSK 的署名预设不计作乐器。DSK 音色文件仍按本机许可说明处理，不随作品或 skill 分发。
+原有 GeneralUser GS、DSK 和 VCSL 保留。GeneralUser 的钢琴、弦乐、铜管、木管、电子等音色及其变体全部进入目录；DSK 的署名预设不计作乐器。v0.2.0 标准音源包包含 DSK Asian DreamZ 的原版 SF2 和作者说明，安装后可直接使用这 7 个音色。上游完整 ZIP 也随 [v0.2.0 发布](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0)提供。许可与出处见 [第三方音源说明](../THIRD_PARTY.md)。
 
 ## 民族轻量替换候选（2026-11-05）
 

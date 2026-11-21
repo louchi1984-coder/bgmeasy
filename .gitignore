@@ -13,5 +13,6 @@ outputs/
 *.mid
 soundfonts/**/*.sf2
 soundfonts/*.sf2
+/soundfonts/licenses/DSK/DSK Music - Readme.txt
 soundfonts/capability-probes.json
 *.zip

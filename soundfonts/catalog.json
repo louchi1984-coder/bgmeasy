@@ -2,6 +2,193 @@
   "schema_version": 1,
   "entries": [
     {
+      "id": "dsk-asian-dreamz:0:0",
+      "name": "PIPA",
+      "kind": "melodic",
+      "preset_name": "PIPA",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 0,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "琵琶",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 0
+        }
+      }
+    },
+    {
+      "id": "dsk-asian-dreamz:0:1",
+      "name": "PIPA TREM",
+      "kind": "melodic",
+      "preset_name": "PIPA TREM",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 1,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "琵琶",
+        "轮指",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 1
+        }
+      }
+    },
+    {
+      "id": "dsk-asian-dreamz:0:2",
+      "name": "LUAN",
+      "kind": "melodic",
+      "preset_name": "LUAN",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 2,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "LUAN",
+        "弹拨",
+        "身份待核实",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 2
+        }
+      }
+    },
+    {
+      "id": "dsk-asian-dreamz:0:3",
+      "name": "GUZHEN",
+      "kind": "melodic",
+      "preset_name": "GUZHEN",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 3,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "古筝",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 3
+        }
+      }
+    },
+    {
+      "id": "dsk-asian-dreamz:0:4",
+      "name": "ERHU",
+      "kind": "melodic",
+      "preset_name": "ERHU",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 4,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "二胡",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 4
+        }
+      }
+    },
+    {
+      "id": "dsk-asian-dreamz:0:5",
+      "name": "BAN-DI",
+      "kind": "melodic",
+      "preset_name": "BAN-DI",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 5,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "BAN-DI",
+        "吹管",
+        "身份待核实",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 5
+        }
+      }
+    },
+    {
+      "id": "dsk-asian-dreamz:0:6",
+      "name": "Chinese Percussion",
+      "kind": "melodic",
+      "preset_name": "Chinese Percussion",
+      "source": "dsk-asian-dreamz",
+      "file": "DSK-Asian-DreamZ.sf2",
+      "bank": 0,
+      "program": 6,
+      "family": "ethnic",
+      "tags": [
+        "民族",
+        "中国打击",
+        "ethnic"
+      ],
+      "license": "DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)",
+      "source_url": "",
+      "track": {
+        "inst": "pluck",
+        "sf2": "DSK-Asian-DreamZ.sf2",
+        "gm": {
+          "bank": 0,
+          "program": 6
+        }
+      }
+    },
+    {
       "id": "generaluser-gs:0:0",
       "name": "Grand Piano",
       "kind": "melodic",
@@ -8609,9 +8796,9 @@
     }
   ],
   "counts": {
-    "soundfonts": 16,
-    "presets": 312,
-    "melodic": 294,
+    "soundfonts": 17,
+    "presets": 319,
+    "melodic": 301,
     "drums": 15,
     "variants": 146,
     "samples": 3

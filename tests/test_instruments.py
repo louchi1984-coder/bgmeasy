@@ -72,7 +72,7 @@ class CapabilityTests(unittest.TestCase):
                               ('generaluser-gs:13:48','woodwind-ensemble'),('generaluser-gs:8:107','taisho-koto')]:
             self.assertEqual(K.profile_for(catalog[ident],d),expected)
 
-    @unittest.skipUnless((F.ROOT/'DSK-Asian-DreamZ.sf2').is_file(), 'optional local DSK font is not redistributed')
+    @unittest.skipUnless((F.ROOT/'DSK-Asian-DreamZ.sf2').is_file(), 'requires DSK Asian DreamZ from the soundfont bundle')
     def test_uncertain_dsk_identity_is_not_asserted_by_chinese_tags(self):
         d=K.knowledge();catalog=F.build_catalog()
         entry=next(e for e in catalog['entries'] if e['id']=='dsk-asian-dreamz:0:2')
@@ -81,7 +81,7 @@ class CapabilityTests(unittest.TestCase):
         entry=next(e for e in catalog['entries'] if e['id']=='dsk-asian-dreamz:0:5')
         self.assertNotIn('竹笛',entry['tags'])
 
-    @unittest.skipUnless((F.ROOT/'DSK-Asian-DreamZ.sf2').is_file(), 'optional local DSK font is not redistributed')
+    @unittest.skipUnless((F.ROOT/'DSK-Asian-DreamZ.sf2').is_file(), 'requires DSK Asian DreamZ from the soundfont bundle')
     def test_real_pipa_structure_is_not_a_round_robin_claim(self):
         entry=next(e for e in F.build_catalog()['entries'] if e['id']=='dsk-asian-dreamz:0:0')
         c=K.capability(entry,K.knowledge(),True)
@@ -100,7 +100,7 @@ class CapabilityTests(unittest.TestCase):
         a=self.score(cfg);self.assertEqual(a['tracks']['v']['ignored_params'],['bend','breath','vibrato'])
         b=self.score(cfg,backend='synth');self.assertEqual(b['tracks']['v']['ignored_params'],[])
 
-    @unittest.skipUnless((F.ROOT/'DSK-Asian-DreamZ.sf2').is_file(), 'optional local DSK font is not redistributed')
+    @unittest.skipUnless((F.ROOT/'DSK-Asian-DreamZ.sf2').is_file(), 'requires DSK Asian DreamZ from the soundfont bundle')
     def test_erhu_pitch_support_depends_on_score_inst_not_catalog_default(self):
         a=self.score({'inst':'erhu','preset':'dsk-asian-dreamz:0:4','params':{'bend':.2,'vibrato':.003}},
                      performance={'instrument':'erhu','implementation':'MIDI弯音'})

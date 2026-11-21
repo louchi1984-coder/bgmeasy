@@ -106,7 +106,7 @@ python3 -I scripts/render_score_sf2.py score.json bgm-sf2.wav --duration 30 --ke
 - **乐器音区与技法**：写谱后跑 `check_ranges.py`；二胡的揉弦、滑入是真实弯音但同一声部共用参数，竹笛等技法只能用音符模拟，见 [technique-notes.md](references/technique-notes.md)。
 - 先渲染合成版和采样版，对比后选更合适的；两者用同一份乐谱，时长与小节数一致。
 - **VCSL 采样器**（`scripts/sampler.py`，CC0）：声部里写 `"engine": "sampler:dantranh"`，该声部改用 Dan Tranh（越南十六弦筝，接近古筝）真实采样，按音高选最近采样并变调（±5 半音）、按力度选层。鼓组里的 `taiko` 自动改用 Bass Drum 采样、`gong` 改用 Gong 采样（声部加 `"gm_drums": true` 可改回 GM 音色）。范例：`examples/wuxia-15s-vcsl.score.json`。
-- **外部 SF2 音色库**：仅在自行安装相应音源后使用；DSK Asian DreamZ 未随公开音源包分发。声部写 `"sf2": "DSK-Asian-DreamZ.sf2", "gm": {"program": 4}`，改用指定音色库预设（DSK原名：0 PIPA、1 PIPA TREM、2 LUAN、3 GUZHEN、4 ERHU、5 BAN-DI、6 Chinese Percussion）。LUAN与BAN-DI的具体乐器身份待核实，不能沿用旧目录“柳琴/竹笛”的翻译作事实。按音色库分开渲染再混合；换库后用 `--mute` 逐个核对贡献。范例：`examples/wuxia-15s-dsk.score.json`。
+- **外部 SF2 音色库**：安装 v0.2.0 标准音源包后即可使用 DSK Asian DreamZ。声部写 `"sf2": "DSK-Asian-DreamZ.sf2", "gm": {"program": 4}`，改用指定音色库预设（DSK原名：0 PIPA、1 PIPA TREM、2 LUAN、3 GUZHEN、4 ERHU、5 BAN-DI、6 Chinese Percussion）。LUAN与BAN-DI的具体乐器身份待核实，不能沿用旧目录“柳琴/竹笛”的翻译作事实。按音色库分开渲染再混合；换库后用 `--mute` 逐个核对贡献。范例：`examples/wuxia-15s-dsk.score.json`。
 - 采样长于乐谱总长时会在结尾淡出，避免硬切；换采样后仍要看有效时长。
 
 **5. 按需混入视频**

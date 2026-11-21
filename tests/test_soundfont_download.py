@@ -1,5 +1,6 @@
 import hashlib
 import importlib.util
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -11,6 +12,13 @@ D = importlib.util.module_from_spec(spec);spec.loader.exec_module(D)
 
 
 class SoundfontDownloadTests(unittest.TestCase):
+    def test_release_manifest_pins_original_dsk_font_and_readme(self):
+        manifest = json.loads((D.ROOT/'references/soundfont-bundle.json').read_text(encoding='utf-8'))
+        self.assertEqual(manifest['files']['soundfonts/DSK-Asian-DreamZ.sf2'],
+                         'e61d0f590db00434fa1a904ab210fdf4439fef13617d89d33eacc8edfc403e5e')
+        self.assertEqual(manifest['files']['soundfonts/licenses/DSK/DSK Music - Readme.txt'],
+                         '800793dbfd397ff9c418c8c5dc057702a1dab01cbaa21201a6960719020b7326')
+
     def make_bundle(self, root, name='soundfonts/test.sf2'):
         archive = root/'test.zip'
         with zipfile.ZipFile(archive, 'w') as z:

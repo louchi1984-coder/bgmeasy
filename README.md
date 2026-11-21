@@ -8,7 +8,7 @@ Describe the scene or mood. Your agent writes an editable score and renders the 
 
 Built for background music in short videos, narrated content, games and animation. Use it with a coding agent that can read files and run commands. Rendering and reference analysis need no separate music-generation service.
 
-[Get started](#get-started) · [v0.1.0 sound pack](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) · [Composition workflow (中文)](SKILL.md) · [Score format (中文)](references/score-format.md)
+[Get started](#get-started) · [v0.2.0 sound pack](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) · [Composition workflow (中文)](SKILL.md) · [Score format (中文)](references/score-format.md)
 
 ## Start with the scene
 
@@ -51,7 +51,7 @@ You can also download the source ZIP from GitHub.
 
 ### 2. Prepare the environment
 
-You need **Python 3.10+, FFmpeg/FFprobe and FluidSynth**. The full sampled workflow also uses a **169 MB** sound pack. Expand the commands below for setup. Windows runs with native Python and PowerShell; Git Bash and WSL are not required.
+You need **Python 3.10+, FFmpeg/FFprobe and FluidSynth**. The full sampled workflow also uses a **179 MB** sound pack. Expand the commands below for setup. Windows runs with native Python and PowerShell; Git Bash and WSL are not required.
 
 ### 3. Give the skill to your agent
 
@@ -94,23 +94,25 @@ python -I scripts/verify.py outputs/western.wav --lang en
 
 The raw WAV check may flag loudness. Final two-pass loudness normalization happens during video mixing.
 
-The sound pack installer verifies SHA-256. If direct downloading is inconvenient, get the ZIP from [Releases](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) and install it with `--archive path/to/bgmeasy-soundfonts.zip`.
+The sound pack installer verifies SHA-256. If direct downloading is inconvenient, get the ZIP from [Releases](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) and install it with `--archive path/to/bgmeasy-soundfonts.zip`.
 
 </details>
 
 ## Documentation
 
-- **Choose instruments and check their capabilities:** [performance and backend guide](references/instrument-performance.md), [sound catalog](references/soundfonts.md). The knowledge base covers 96 instrument profiles; the release sound pack provides 16 SF2 files and 312 catalog entries, including variants and sampled percussion.
+- **Choose instruments and check their capabilities:** [performance and backend guide](references/instrument-performance.md), [sound catalog](references/soundfonts.md). The knowledge base covers 96 instrument profiles; the release sound pack provides 17 SF2 files and 319 catalog entries, including variants and sampled percussion.
 - **Study a reference:** [analysis methods and outputs](references/reference-analysis.md). Pitch, chord and structure estimates remain clues to review, rather than a verified score.
 - **Mix with video:** use `scripts/mix.py`; `--vo` adds narration and `--keep-audio` retains the original audio. Mixing defaults to two-pass normalization at −14 LUFS and −2 dBTP.
 - **Choose a report language:** [Chinese, English, Japanese and Korean support](references/languages.md), via `--lang zh|en|ja|ko`. The main skill and detailed reference material are currently written primarily in Chinese.
 
 ## Compatibility and licensing
 
-This revision ran 127 tests on macOS with Python 3.14.2 and the v0.1.0 sound pack. 124 passed, and three were skipped because they require the optional DSK soundfont. A native Windows run for this revision is pending.
+On macOS with Python 3.14.2 and the v0.2.0 standard sound pack, all 128 tests passed with no skips, including the DSK tests. A native Windows run for v0.2.0 is pending.
+
+Commit `124d698` was tested on macOS with Python 3.14.2 and the v0.1.0 sound pack. Of 127 tests, 124 passed and three skipped because that pack omitted DSK.
 
 The v0.1.0 public release was tested on macOS and native Windows 10 x64. Each ran 121 tests with 118 passes and three skips for the separately installed DSK soundfont. Linux has not yet been tested on a native host.
 
-Project source is [MIT licensed](LICENSE). Sound assets retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md). DSK Asian DreamZ is not distributed with the project.
+Project source is [MIT licensed](LICENSE). Sound assets retain their own licenses; see [THIRD_PARTY.md](THIRD_PARTY.md). The v0.2.0 standard sound pack includes the original DSK Asian DreamZ SF2 and the author’s README. The [complete upstream ZIP](https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.2.0/DSK_Asian_DreamZ_sf2.zip) is also available. See [DSK Music’s license terms](https://www.dskmusic.com/license-info/) and [the release announcement](https://rekkerd.org/dsk-music-releases-dsk-asian-dreamz-vol-1/).
 
 The final musical result still needs listening. Instrument techniques and reference-analysis estimates should be checked against the actual sources and sound.

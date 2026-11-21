@@ -106,8 +106,8 @@ def build_catalog(root=ROOT):
                                32: '爵士', 40: '刷子 爵士', 48: '管弦', 56: '特效'}.get(program, '')
             if 'generaluser' in source:
                 license_name = 'GeneralUser GS license (see LICENSE-GeneralUser-GS.txt)'
-            elif 'dsk' in source:
-                license_name = 'Local use; see LICENSE-DSK-NOTE.txt; do not redistribute font'
+            elif relative == 'DSK-Asian-DreamZ.sf2':
+                license_name = 'DSK Music Freeware License Agreement (see LICENSE-DSK-NOTE.txt)'
             else:
                 license_name = meta.get('license', 'Check source license')
             track = {'inst': meta.get('inst', inst), 'sf2': relative, 'gm': {'bank': bank, 'program': program}}

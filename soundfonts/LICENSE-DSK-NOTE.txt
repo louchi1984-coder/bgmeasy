@@ -1,3 +1,16 @@
-来源: https://rekkerd.org/dsk-soundfonts/ (DSK Asian DreamZ Vol.1 SF2, 2008)
-官网 https://www.dskmusic.com 声明: "DSK Music Virtual Instruments are 100% free for private and commercial use."
-未找到再分发条款: 仅本机使用，不要把本文件打包分发。
+DSK Asian DreamZ Vol. 1 (SoundFont), © 2008 DSK Music
+
+DSK Music's Freeware License Agreement permits free copies of the verified
+original freeware and its documentation. Copies must remain unmodified.
+Do not charge for copies or solicit donations for them. DSK retains its rights.
+https://www.dskmusic.com/license-info/
+
+The original release announcement identifies the SoundFont as freeware.
+https://rekkerd.org/dsk-music-releases-dsk-asian-dreamz-vol-1/
+https://rekkerd.org/dsk-soundfonts/
+
+The BGMEasy sound pack includes the original SoundFont bytes under the
+project's established filename DSK-Asian-DreamZ.sf2 and the author's original
+README at licenses/DSK/DSK Music - Readme.txt. BGMEasy also provides the
+unchanged upstream ZIP. Its SHA-256 is
+f0b8a7943e8d7368b0c5ec492d1803088a6ce2210ec1528ec7b1301c4fa1a9d2.

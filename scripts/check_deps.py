@@ -65,6 +65,7 @@ def main():
             failed |= not optional
     line(bool(shutil.which('fluidsynth')), translate_text('fluidsynth（采样音色渲染）'), optional=True)
     line((ROOT/'soundfonts/GeneralUser-GS.sf2').is_file(), translate_text('音色库 GeneralUser-GS.sf2'), optional=True)
+    line((ROOT/'soundfonts/DSK-Asian-DreamZ.sf2').is_file(), 'DSK Asian DreamZ (SF2)', optional=True)
     manifest = ROOT/'soundfonts/freepats-light/manifest.json'
     if manifest.is_file():
         data = json.loads(manifest.read_text(encoding='utf-8'))

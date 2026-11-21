@@ -65,7 +65,7 @@ FluidSynth 官方 Windows 包需保留同目录依赖 DLL；能力探测先查�
 
 ## 安装公开音源包
 
-按 [README 的安装步骤](../README.zh-CN.md#开始使用) 运行 `python -I scripts/download_soundfonts.py`。它会校验发布包，并将下列可分发音源安装到 `soundfonts/`。
+按 [README 的安装步骤](../README.zh-CN.md#开始使用) 运行 `python -I scripts/download_soundfonts.py`。安装器会校验 v0.2.0 标准包 `bgmeasy-soundfonts.zip`（178,815,593 字节，约 179 MB），并将其中的音源安装到 `soundfonts/`。
 
 `soundfonts/GeneralUser-GS.sf2`（32,319,396 字节，读取本机 SF2 头部：274 个非鼓组预设、13 套鼓组；含银行变体）。许可证全文见 `soundfonts/LICENSE-GeneralUser-GS.txt`：个人或商用音乐创作无限制、不要求署名，作者提示无法完全保证每个采样的来源。
 
@@ -86,8 +86,10 @@ FluidSynth 官方 Windows 包需保留同目录依赖 DLL；能力探测先查�
 注意：VCSL 文件名的八度比标准 MIDI 低一个八度，采样器以自相关估计的音高为准。
 没有的：二胡、琵琶、竹笛（VCSL 无这些乐器）。Dizi 的 SF2 来源（Musical Artifacts / Freesound）许可证无法核实，未采用。
 
-## 可选 DSK Asian DreamZ（公开音源包未提供）
+## DSK Asian DreamZ（v0.2.0 标准音源包）
 
-位置 `soundfonts/DSK-Asian-DreamZ.sf2`（11.5 MB，2008），来自 rekkerd.org 镜像。预设：PIPA、PIPA TREM、LUAN、GUZHEN、ERHU、BAN-DI、Chinese Percussion；LUAN与BAN-DI的具体身份待核，不沿用旧“柳琴/竹笛”翻译作为事实。DSK 官网声明其虚拟乐器可免费用于私人和商业用途，但没有再分发条款，所以只在本机使用，不要打包分发。rekkerd 下载需带 Referer 头：`curl -e https://rekkerd.org/dsk-soundfonts/ -A 'Mozilla/5.0' -o x.zip https://rekkerd.org/samples/DSK_Asian_DreamZ_sf2.zip`。
+安装器将原版音源（11,548,250 字节）放在 `soundfonts/DSK-Asian-DreamZ.sf2`，作者说明在 `soundfonts/licenses/DSK/DSK Music - Readme.txt`。这 7 个预设在目录中的名称为 PIPA、PIPA TREM、LUAN、GUZHEN、ERHU、BAN-DI 和 Chinese Percussion。LUAN 与 BAN-DI 保留原名，具体乐器身份待核。
+
+标准包保留 SF2 和作者说明的原始内容。另需上游完整 ZIP 时，可从 [v0.2.0 下载页](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0)获取。DSK 原版免费软件的复制和分发条件见 [DSK Music 许可](https://www.dskmusic.com/license-info/)；音源出处见 [发布公告](https://rekkerd.org/dsk-music-releases-dsk-asian-dreamz-vol-1/)。
 
 中英日韩检索及报告语言仅使用 Python 标准库新增的 Unicode 归一化与本地 JSON 资源，无新增第三方包、模型或下载。图表需要相应本地字体，缺字时回退英文坐标；见 [languages.md](languages.md)。

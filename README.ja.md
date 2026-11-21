@@ -8,7 +8,7 @@
 
 短い動画、ナレーション、ゲーム、アニメーションの背景音楽に。ファイル操作とコマンド実行ができるコーディングエージェントと組み合わせて使います。レンダリングと参考音源の分析に、別の音楽生成サービスを接続する必要はありません。
 
-[使い始める](#使い始める) · [v0.1.0 音源パック](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) · [制作フロー（中国語）](SKILL.md) · [楽譜形式（中国語）](references/score-format.md)
+[使い始める](#使い始める) · [v0.2.0 音源パック](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) · [制作フロー（中国語）](SKILL.md) · [楽譜形式（中国語）](references/score-format.md)
 
 ## まず、場面を伝える
 
@@ -51,7 +51,7 @@ GitHubからソースZIPをダウンロードすることもできます。
 
 ### 2. 実行環境を用意
 
-**Python 3.10以上、FFmpeg/FFprobe、FluidSynth**が必要です。サンプル音源を使う完全な手順では、約**169 MB**の音源パックも利用します。具体的なコマンドは下の折りたたみ欄にあります。WindowsはネイティブPythonとPowerShellで実行でき、Git BashやWSLは不要です。
+**Python 3.10以上、FFmpeg/FFprobe、FluidSynth**が必要です。サンプル音源を使う完全な手順では、約**179 MB**の音源パックも利用します。具体的なコマンドは下の折りたたみ欄にあります。WindowsはネイティブPythonとPowerShellで実行でき、Git BashやWSLは不要です。
 
 ### 3. エージェントにスキルを読ませる
 
@@ -94,23 +94,25 @@ python -I scripts/verify.py outputs/western.wav --lang ja
 
 未ミックスWAVのラウドネス検査にCHECKが出る場合があります。最終的な2パス正規化は動画ミックス時に行います。
 
-音源パックのインストーラーはSHA-256を検証します。直接取得しにくい場合は、[Release](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0)からZIPをダウンロードし、`--archive path/to/bgmeasy-soundfonts.zip` を指定できます。
+音源パックのインストーラーはSHA-256を検証します。直接取得しにくい場合は、[Release](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0)からZIPをダウンロードし、`--archive path/to/bgmeasy-soundfonts.zip` を指定できます。
 
 </details>
 
 ## ドキュメント
 
-- **楽器選びと演奏能力の確認**：[演奏・バックエンド資料](references/instrument-performance.md)、[音源カタログ](references/soundfonts.md)。96項目の楽器資料を収録し、公開音源パックは16個のSF2、バリエーションやサンプル打楽器を含む312件の項目を提供します。
+- **楽器選びと演奏能力の確認**：[演奏・バックエンド資料](references/instrument-performance.md)、[音源カタログ](references/soundfonts.md)。96項目の楽器資料を収録し、公開音源パックは17個のSF2、バリエーションやサンプル打楽器を含む319件の項目を提供します。
 - **参考音源の分析**：[手法と出力](references/reference-analysis.md)。音高・和音・構造は要確認の手掛かりであり、確認済みの原譜とは扱いません。
 - **動画へのミックス**：`scripts/mix.py` を使います。`--vo` はナレーション、`--keep-audio` は元音声の保持に対応。既定値は2パス正規化、−14 LUFS、−2 dBTPです。
 - **レポート言語の選択**：[中国語・英語・日本語・韓国語の対応](references/languages.md)。`--lang zh|en|ja|ko` で指定します。主スキルと詳細資料は現在も主に中国語です。
 
 ## 動作環境とライセンス
 
-今回の更新では、macOS上でPython 3.14.2と公開音源パックv0.1.0を使い、127件のテストを実行しました。124件が成功し、オプションのDSK音源を必要とする3件はスキップしました。今回の更新版はWindows実機での再検証を待っている段階です。
+v0.2.0はmacOS、Python 3.14.2、標準音源パックで、DSK関連を含む全128件のテストに合格しました。スキップは0件です。このバージョンはWindows実機での再検証を待っています。
+
+コミット `124d698` では、macOS、Python 3.14.2、v0.1.0音源パックで127件のテストを実行しました。124件が成功し、当時のパックにDSKが含まれていなかったため3件をスキップしました。
 
 公開版v0.1.0では、macOSとネイティブWindows 10 x64でそれぞれ121件のテストを実行し、118件が成功しました。別途インストールが必要なDSK音源を使う3件はスキップしています。Linuxは実機で未検証です。
 
-ソースは[MITライセンス](LICENSE)。音源はそれぞれのライセンスに従います。[THIRD_PARTY.md](THIRD_PARTY.md)を参照してください。DSK Asian DreamZは配布しません。
+ソースは[MITライセンス](LICENSE)。音源はそれぞれのライセンスに従います。[THIRD_PARTY.md](THIRD_PARTY.md)を参照してください。v0.2.0の標準音源パックには、DSK Asian DreamZのオリジナルSF2と作者のREADMEが含まれます。[配布元のZIP一式](https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.2.0/DSK_Asian_DreamZ_sf2.zip)も別途ダウンロードできます。複製・配布の条件は[DSK Musicのライセンス](https://www.dskmusic.com/license-info/)、音源の出典は[リリース告知](https://rekkerd.org/dsk-music-releases-dsk-asian-dreamz-vol-1/)をご覧ください。
 
 音楽の仕上がりは実際の試聴で確認してください。音源の奏法対応や参考分析の確かさも、資料と実際の音に照らして判断する必要があります。

@@ -2,9 +2,9 @@
   "schema_version": 1,
   "scope": "安装的所有SF2预设、VCSL入口、基础合成类型和鼓件；不是世界乐器全集。",
   "counts": {
-    "soundfonts": 16,
-    "presets": 312,
-    "melodic": 294,
+    "soundfonts": 17,
+    "presets": 319,
+    "melodic": 301,
     "drums": 15,
     "variants": 146,
     "samples": 3,
@@ -13,6 +13,7 @@
     "drum_aliases": 15
   },
   "file_sha256": {
+    "soundfonts/DSK-Asian-DreamZ.sf2": "e61d0f590db00434fa1a904ab210fdf4439fef13617d89d33eacc8edfc403e5e",
     "soundfonts/GeneralUser-GS.sf2": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe",
     "soundfonts/ethnic-light/erhu-practice.sf2": "0f3c2c5d971e29b6d89c6820dbdfc20aee54a247039e0d1bb6cf42dd119456bd",
     "soundfonts/ethnic-light/erhu.sf2": "3d1fdc5022401d4955b40c140dc450bbb34c862245e84777106946e739d761d9",
@@ -32,13 +33,610 @@
     "references/instruments.json": "a3d562997f94481a9869e512bfb103abb96c1b699738e22cb98a5b952f08f46c",
     "references/instrument-sources.json": "ea96c9c8da215071dabce6857cf71918a1c596c2542d5ae881e86701fa9550c0",
     "scripts/render_score.py": "3c78196127ae3dce0db4718fc547167f59e408b3033943318f8afe908d3c4afb",
-    "scripts/render_score_sf2.py": "06d90054c24eb19a8c50d807fa4156e7c22bc1a9460da02b90b090323bc317ed",
+    "scripts/render_score_sf2.py": "93b1a0eff7c5b464baaf6344c5cbd351c38745f930962d49a71f98ad79614c4e",
     "scripts/sampler.py": "22e4b0151ca2d28dae3fb15ac152a2f1aa6f883929653322a88166193f71cce3",
-    "scripts/instruments.py": "ea08ac4b7be2b4d625f343ad4ab50682dd50481cd61a8f5275bfd92916834a4d",
+    "scripts/instruments.py": "3e83fc0de6f9396109d445f227424a69ca4347e528c6271b8d7fce6b44a37b53",
     "scripts/sf2_capabilities.py": "d5cf98939f9ae67ed14d93e678bd9d9ec6d61f9e9601e0612aa05564346385f5",
-    "scripts/soundfonts.py": "6bb6879a552b734fb0b1758357e19f89463f3e6872bee44e118d4a32eae60b08"
+    "scripts/soundfonts.py": "9185d73b7dd1258e65ac342b4d4b02c021f88919800604da967854692b7c553b"
   },
   "presets": [
+    {
+      "id": "dsk-asian-dreamz:0:0",
+      "name": "PIPA",
+      "profile_id": "pipa",
+      "profile_evidence": "partial_field_review",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "pipa",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "decay",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "PIPA",
+        "zone_count": 10,
+        "unique_sample_headers": 10,
+        "root_midi_notes": [
+          57,
+          61,
+          64,
+          67,
+          71,
+          76,
+          79,
+          83,
+          86,
+          91
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          0
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            21,
+            108
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
+    {
+      "id": "dsk-asian-dreamz:0:1",
+      "name": "PIPA TREM",
+      "profile_id": "pipa",
+      "profile_evidence": "partial_field_review",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "pipa",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "decay",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "PIPA TREM",
+        "zone_count": 10,
+        "unique_sample_headers": 10,
+        "root_midi_notes": [
+          59,
+          64,
+          67,
+          71,
+          74,
+          76,
+          81,
+          83,
+          88,
+          91
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          1
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            21,
+            108
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
+    {
+      "id": "dsk-asian-dreamz:0:2",
+      "name": "LUAN",
+      "profile_id": "unverified-lute",
+      "profile_evidence": "identity_unverified",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "pluck",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "bright",
+            "decay",
+            "release",
+            "sustain",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "LUAN",
+        "zone_count": 8,
+        "unique_sample_headers": 8,
+        "root_midi_notes": [
+          50,
+          52,
+          55,
+          62,
+          66,
+          69,
+          72,
+          79
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          0
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            21,
+            108
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
+    {
+      "id": "dsk-asian-dreamz:0:3",
+      "name": "GUZHEN",
+      "profile_id": "guzheng",
+      "profile_evidence": "partial_field_review",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "guzheng",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "bend",
+            "decay",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "GUZHEN",
+        "zone_count": 5,
+        "unique_sample_headers": 5,
+        "root_midi_notes": [
+          58,
+          63,
+          68,
+          73,
+          77
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          1
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            21,
+            127
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
+    {
+      "id": "dsk-asian-dreamz:0:4",
+      "name": "ERHU",
+      "profile_id": "erhu",
+      "profile_evidence": "partial_field_review",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "erhu",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "bend",
+            "rosin",
+            "vibrato",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum",
+            "bend",
+            "vibrato"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "ERHU",
+        "zone_count": 6,
+        "unique_sample_headers": 6,
+        "root_midi_notes": [
+          65,
+          67,
+          71,
+          77,
+          81,
+          84
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          1
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            21,
+            108
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
+    {
+      "id": "dsk-asian-dreamz:0:5",
+      "name": "BAN-DI",
+      "profile_id": "unverified-wind",
+      "profile_evidence": "identity_unverified",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "pluck",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "bright",
+            "decay",
+            "release",
+            "sustain",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "BAN-DI",
+        "zone_count": 5,
+        "unique_sample_headers": 5,
+        "root_midi_notes": [
+          71,
+          73,
+          80,
+          83,
+          88
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          1
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            21,
+            108
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
+    {
+      "id": "dsk-asian-dreamz:0:6",
+      "name": "Chinese Percussion",
+      "profile_id": "hand-percussion",
+      "profile_evidence": "project_or_local_category",
+      "listening_status": "not_listened",
+      "naturalness": "未验证；结构扫描/出声测试不等于适合主奏。",
+      "inst_context": "pluck",
+      "backend": {
+        "builtin_synth": {
+          "params_read": [
+            "bright",
+            "decay",
+            "release",
+            "sustain",
+            "strum"
+          ],
+          "identity": "基础合成近似；preset/gm/sf2/engine不决定此后端的声音。",
+          "expression": "音符力度、时值、humanize、swing及声部gain/pan/reverb/delay；参数支持见params_read。"
+        },
+        "sf2": {
+          "params_read": [
+            "strum"
+          ],
+          "controls_sent": [
+            "note_on velocity",
+            "note_off",
+            "CC7 gain",
+            "CC10 pan",
+            "CC91 reverb",
+            "CC11 section dynamics"
+          ],
+          "erhu_pitch": "仅inst=erhu且显式bend/vibrato时发送单声部±2半音弯音。",
+          "not_exposed": [
+            "任意CC时间曲线",
+            "延音踏板CC64",
+            "自动奏法切换/keyswitch",
+            "独立的真实连奏/换弓/吐音控制",
+            "轮替采样选择"
+          ],
+          "ignored_track_fields": [
+            "delay",
+            "delay_beats"
+          ],
+          "ignored_global_fields": [
+            "reverb_level"
+          ],
+          "caveat": "SF2内部可能自带包络/调制；这不等于乐谱API暴露了这些控制。音符力度可改变音量/滤波等，不能仅由区域数推断实际听感。"
+        }
+      },
+      "sf2": {
+        "preset_name": "Chinese Percussion",
+        "zone_count": 13,
+        "unique_sample_headers": 9,
+        "root_midi_notes": [
+          55,
+          57,
+          59,
+          60,
+          62,
+          64,
+          65,
+          67,
+          68,
+          69,
+          70
+        ],
+        "velocity_ranges": [
+          [
+            0,
+            127
+          ]
+        ],
+        "loop_modes": [
+          0,
+          1
+        ],
+        "interpretation": "采样头/区域统计；立体声链接、叠层不能算作独立奏法或轮替采样。音域是映射范围，不是真实乐器音域。",
+        "covered_midi_key_ranges": [
+          [
+            54,
+            55
+          ],
+          [
+            57,
+            60
+          ],
+          [
+            62,
+            62
+          ],
+          [
+            64,
+            65
+          ],
+          [
+            67,
+            70
+          ]
+        ]
+      },
+      "file": "DSK-Asian-DreamZ.sf2",
+      "patch_notes": []
+    },
     {
       "id": "generaluser-gs:0:0",
       "name": "Grand Piano",

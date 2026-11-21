@@ -67,7 +67,7 @@ def main():
                 with urllib.request.urlopen(spec['url'], timeout=120) as source, archive.open('wb') as output:
                     shutil.copyfileobj(source, output)
             count = install(archive, ROOT, spec)
-        print(f'Verified {count} soundfont files. DSK is not included.')
+        print(f'Verified {count} files from the soundfont bundle.')
     except (OSError, ValueError, zipfile.BadZipFile) as error:
         parser.exit(1, f'Soundfont setup failed: {error}\n')
 

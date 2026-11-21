@@ -1,15 +1,16 @@
 {
-  "version": "v0.1.0",
-  "url": "https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.1.0/bgmeasy-soundfonts.zip",
-  "sha256": "0396b29bc1f97c6f1b343347a6dba9678cb53c120ea1733d7ed5cd51f28e1e72",
-  "bytes": 169126567,
+  "version": "v0.2.0",
+  "url": "https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.2.0/bgmeasy-soundfonts.zip",
+  "sha256": "8c59377f8653123492362be5c8d8a9be6488d6472b65b266474d80651cc5dccf",
+  "bytes": 178815593,
   "files": {
+    "soundfonts/DSK-Asian-DreamZ.sf2": "e61d0f590db00434fa1a904ab210fdf4439fef13617d89d33eacc8edfc403e5e",
     "soundfonts/GeneralUser-GS.sf2": "9575028c7a1f589f5770fccc8cff2734566af40cd26ed836944e9a5152688cfe",
-    "soundfonts/LICENSE-DSK-NOTE.txt": "7b5a81fcbd9532a40901780cb70c14b1604e8c21c456333b023eb0d347450614",
+    "soundfonts/LICENSE-DSK-NOTE.txt": "98adee0e0e6e4f81cb72750e612982beeb2bbbf1b057b115bfdf8e575dae7715",
     "soundfonts/LICENSE-GeneralUser-GS.txt": "88726e4b018fb66050054b6633a2996335b0f8fd4186251c20d0546fa0ab44fc",
     "soundfonts/README-DSK.txt": "1be93e342387bb6fb3ef5b8d0f19a42006e22fd7005c14da3f9f898dbad9e36e",
-    "soundfonts/capabilities.json": "df9da54fb2fac4232d1957233a6237498bf515a19c00b689cb441d06e66831df",
-    "soundfonts/catalog.json": "d21eb8a5ebee5d815384e0495b9d96af90d7fa47f7b7810866d742957634c08d",
+    "soundfonts/capabilities.json": "0bed2c8d8a24d7637cc410b8f0787e69a4492e5313a53d6a3e381598863296a5",
+    "soundfonts/catalog.json": "6e279460305f9edf10c6b2e2a114cc728724166732d5ea2d76df723f4c465bed",
     "soundfonts/ethnic-light/ATTRIBUTION-erhu-practice.txt": "b5fb918b8ef1bd4ae5752bf0ff321a6d8aa3ebeb01949d7d4b830fdca0ccffdd",
     "soundfonts/ethnic-light/LICENSE-erhu.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
     "soundfonts/ethnic-light/README.md": "a3ee7ec02701f0bd4632788184a26a0f4b5f5bc4f09a86af6dfc709e78cb62e5",
@@ -58,6 +59,7 @@
     "soundfonts/freepats-light/piano-kw.sf2": "cf2a98eb38a32c4954b4b6e2caae4112d62dd8e892eceefdd7942b0e7d01ac2f",
     "soundfonts/freepats-light/timpani.sf2": "f4f133d63bca297c98143e95c1f3fe5418a2a51d7b1f4d5470971eec7885d87b",
     "soundfonts/freepats-light/world-percussion.sf2": "0a848e8cb3df5ba9f2720093267fdc4edf9d8512a1a367f7a0365440cb629103",
+    "soundfonts/licenses/DSK/DSK Music - Readme.txt": "800793dbfd397ff9c418c8c5dc057702a1dab01cbaa21201a6960719020b7326",
     "soundfonts/loudness.json": "a2308d73c0372fc0434fb940abf45cd7a63fa500e2f31d66fe654908dccccf0f",
     "soundfonts/vcsl/Bass Drum 1__BDrumNew_hit_v2_rr1_Sum.wav": "56827fe9b55f282a0db851e242bc24660d339a0e358b182966aea047240c1136",
     "soundfonts/vcsl/Bass Drum 1__BDrumNew_hit_v3_rr1_Sum.wav": "a2d8829e8b2b59e8afb12fa396b01758827059339c2a84ad066d17b36c82d1ff",
@@ -102,11 +104,10 @@
     "soundfonts/vcsl/LICENSE-VCSL.txt": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
     "soundfonts/vcsl/map.json": "c0c6ce242a03010a4b0503fe1b28e21b9d1b930a3877d8b4f687ebdaecbb5d7a"
   },
-  "excluded": [
-    "DSK-Asian-DreamZ.sf2 (no redistribution grant established)"
-  ],
+  "excluded": [],
   "licenses": [
     "GeneralUser GS License v2.0",
-    "CC0-1.0 (FreePats, VCSL, ethnic-light)"
+    "CC0-1.0 (FreePats, VCSL, ethnic-light)",
+    "DSK Music Freeware License Agreement (DSK Asian DreamZ Vol. 1)"
   ]
 }

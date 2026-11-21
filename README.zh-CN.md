@@ -8,7 +8,7 @@
 
 适合短视频、解说、游戏和动画中的背景音乐制作。搭配具备文件操作与命令执行能力的编程 agent 使用，渲染和参考曲分析无需另接音乐生成服务。
 
-[开始使用](#开始使用) · [v0.1.0 音源包](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) · [创作流程](SKILL.md) · [乐谱格式](references/score-format.md)
+[开始使用](#开始使用) · [v0.2.0 音源包](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) · [创作流程](SKILL.md) · [乐谱格式](references/score-format.md)
 
 ## 先描述你的场景
 
@@ -51,7 +51,7 @@ cd bgmeasy
 
 ### 2. 准备运行环境
 
-需要 **Python 3.10+、FFmpeg/FFprobe、FluidSynth**。完整采样流程另需约 **169 MB** 的音源包；安装命令见下方展开内容。Windows 使用原生 Python 和 PowerShell 即可，无需 Git Bash 或 WSL。
+需要 **Python 3.10+、FFmpeg/FFprobe、FluidSynth**。完整采样流程另需约 **179 MB** 的音源包；安装命令见下方展开内容。Windows 使用原生 Python 和 PowerShell 即可，无需 Git Bash 或 WSL。
 
 ### 3. 让 agent 读取 skill
 
@@ -94,23 +94,25 @@ python -I scripts/verify.py outputs/western.wav --lang zh
 
 原始 WAV 的响度检查可能出现 CHECK；视频混音步骤才执行最终的两遍响度归一。
 
-音源包安装器会校验 SHA-256。下载不便时，可从 [Release](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) 手动下载音源 ZIP，再使用 `--archive path/to/bgmeasy-soundfonts.zip` 安装。
+音源包安装器会校验 SHA-256。下载不便时，可从 [Release](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) 手动下载音源 ZIP，再使用 `--archive path/to/bgmeasy-soundfonts.zip` 安装。
 
 </details>
 
 ## 使用文档
 
-- **选乐器、查演奏能力**：[乐器资料与后端能力](references/instrument-performance.md)、[音源目录](references/soundfonts.md)。现有资料覆盖 96 项乐器演奏资料；发布音源包提供 16 个 SF2 和 312 个目录条目，包含音色变体与采样打击。
+- **选乐器、查演奏能力**：[乐器资料与后端能力](references/instrument-performance.md)、[音源目录](references/soundfonts.md)。现有资料覆盖 96 项乐器演奏资料；发布音源包提供 17 个 SF2 和 319 个目录条目，包含音色变体与采样打击。
 - **分析参考曲**：[分析方法与输出](references/reference-analysis.md)。音高、和弦和结构均作为待复核线索，不把估计值当作原谱。
 - **混入视频**：使用 `scripts/mix.py`；`--vo` 接入旁白，`--keep-audio` 保留原声。默认两遍响度归一到 −14 LUFS、−2 dBTP。
 - **切换语言**：[中英日韩检索与报告](references/languages.md)。使用 `--lang zh|en|ja|ko`；主 skill 和详细参考资料目前仍以中文为主。
 
 ## 运行与许可
 
-当前源码在 macOS、Python 3.14.2 下使用 v0.1.0 公开音源包运行了 127 项测试，124 项通过，3 项因需要可选 DSK 音源而跳过。本次更新尚待 Windows 实机复测。
+v0.2.0 在 macOS 和 Python 3.14.2 上使用标准音源包运行了全部 128 项测试，含 DSK 相关测试，全部通过，零跳过。此版本尚待 Windows 实机复测。
+
+提交 `124d698` 在 macOS、Python 3.14.2 下使用 v0.1.0 音源包运行了 127 项测试，124 项通过，3 项因当时的音源包未含 DSK 而跳过。
 
 v0.1.0 公开版在 macOS 和原生 Windows 10 x64 上各运行了 121 项测试，118 项通过，3 项因需单独安装 DSK 音源而跳过。Linux 尚未实机验证。
 
-源码采用 [MIT](LICENSE)，音源遵循各自许可，详见 [THIRD_PARTY.md](THIRD_PARTY.md)。DSK Asian DreamZ 不随项目分发。
+源码采用 [MIT](LICENSE)，音源遵循各自许可，详见 [THIRD_PARTY.md](THIRD_PARTY.md)。v0.2.0 标准音源包内含 DSK Asian DreamZ 原版 SF2 和作者 README。也可单独下载[上游完整 ZIP](https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.2.0/DSK_Asian_DreamZ_sf2.zip)。复制与分发条件见 [DSK Music 许可](https://www.dskmusic.com/license-info/)，音源出处见[发布公告](https://rekkerd.org/dsk-music-releases-dsk-asian-dreamz-vol-1/)。
 
 音乐效果仍需实际试听。音源是否支持某种奏法、参考分析是否可信，都要结合具体资料和声音判断。

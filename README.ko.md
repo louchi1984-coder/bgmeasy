@@ -8,7 +8,7 @@
 
 짧은 영상, 내레이션, 게임, 애니메이션의 배경음악 제작에 사용할 수 있습니다. 파일 작업과 명령 실행이 가능한 코딩 에이전트와 함께 사용하며, 렌더링과 참고 음원 분석에 별도 음악 생성 서비스를 연결할 필요는 없습니다.
 
-[시작하기](#시작하기) · [v0.1.0 음원 팩](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0) · [작곡 절차(중국어)](SKILL.md) · [악보 형식(중국어)](references/score-format.md)
+[시작하기](#시작하기) · [v0.2.0 음원 팩](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) · [작곡 절차(중국어)](SKILL.md) · [악보 형식(중국어)](references/score-format.md)
 
 ## 먼저 장면을 설명하세요
 
@@ -51,7 +51,7 @@ GitHub에서 소스 ZIP을 다운로드해도 됩니다.
 
 ### 2. 실행 환경 준비하기
 
-**Python 3.10 이상, FFmpeg/FFprobe, FluidSynth**가 필요합니다. 전체 샘플 음원 경로는 약 **169 MB**의 음원 팩도 사용합니다. 설치 명령은 아래 펼침 항목에서 확인할 수 있습니다. Windows에서는 네이티브 Python과 PowerShell로 실행하며 Git Bash나 WSL은 필요하지 않습니다.
+**Python 3.10 이상, FFmpeg/FFprobe, FluidSynth**가 필요합니다. 전체 샘플 음원 경로는 약 **179 MB**의 음원 팩도 사용합니다. 설치 명령은 아래 펼침 항목에서 확인할 수 있습니다. Windows에서는 네이티브 Python과 PowerShell로 실행하며 Git Bash나 WSL은 필요하지 않습니다.
 
 ### 3. 에이전트에게 스킬 읽히기
 
@@ -94,23 +94,25 @@ python -I scripts/verify.py outputs/western.wav --lang ko
 
 원본 WAV 라우드니스 검사에 CHECK가 표시될 수 있습니다. 최종 2패스 정규화는 영상 믹싱 단계에서 수행합니다.
 
-음원 팩 설치기는 SHA-256을 검증합니다. 직접 다운로드가 어려우면 [Release](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.1.0)에서 ZIP을 받은 뒤 `--archive path/to/bgmeasy-soundfonts.zip`으로 설치할 수 있습니다.
+음원 팩 설치기는 SHA-256을 검증합니다. 직접 다운로드가 어려우면 [Release](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0)에서 ZIP을 받은 뒤 `--archive path/to/bgmeasy-soundfonts.zip`으로 설치할 수 있습니다.
 
 </details>
 
 ## 문서 안내
 
-- **악기 선택과 연주 능력 확인**: [연주·백엔드 자료](references/instrument-performance.md), [음원 카탈로그](references/soundfonts.md). 96개 항목의 악기 자료를 제공하며 공개 음원 팩은 16개 SF2와 변형 음색·샘플 타악기를 포함한 312개 항목을 제공합니다.
+- **악기 선택과 연주 능력 확인**: [연주·백엔드 자료](references/instrument-performance.md), [음원 카탈로그](references/soundfonts.md). 96개 항목의 악기 자료를 제공하며 공개 음원 팩은 17개 SF2와 변형 음색·샘플 타악기를 포함한 319개 항목을 제공합니다.
 - **참고 음원 분석**: [분석 방법과 출력](references/reference-analysis.md). 음고·화음·구조는 검토할 단서이며 검증된 원보로 취급하지 않습니다.
 - **영상 믹싱**: `scripts/mix.py`를 사용합니다. `--vo`는 내레이션을 추가하고 `--keep-audio`는 원본 오디오를 유지합니다. 기본값은 2패스 정규화, −14 LUFS, −2 dBTP입니다.
 - **보고서 언어 선택**: [중국어·영어·일본어·한국어 지원](references/languages.md). `--lang zh|en|ja|ko`로 지정합니다. 메인 스킬과 상세 자료는 현재 주로 중국어입니다.
 
 ## 실행 환경과 라이선스
 
-이번 개정판은 macOS에서 Python 3.14.2와 v0.1.0 공개 음원 팩으로 127개 테스트를 실행했습니다. 124개가 통과했고, 선택 사항인 DSK 음원이 필요한 3개는 건너뛰었습니다. 이번 개정판은 Windows 실기기에서 아직 다시 검증하지 않았습니다.
+v0.2.0은 macOS, Python 3.14.2, 표준 음원 팩으로 DSK 관련 테스트를 포함한 128개 테스트를 모두 통과했습니다. 건너뛴 테스트는 없습니다. 이 버전은 Windows 실기기에서 아직 다시 검증하지 않았습니다.
+
+커밋 `124d698`은 macOS와 Python 3.14.2에서 v0.1.0 음원 팩으로 127개 테스트를 실행했습니다. 124개가 통과했고 당시 팩에 DSK 음원이 없어 3개는 건너뛰었습니다.
 
 공개판 v0.1.0은 macOS와 네이티브 Windows 10 x64에서 각각 121개 테스트를 실행해 118개가 통과했습니다. 별도로 설치해야 하는 DSK 음원 관련 테스트 3개는 건너뛰었습니다. Linux는 실기기에서 아직 검증하지 않았습니다.
 
-소스는 [MIT 라이선스](LICENSE)입니다. 음원은 각자의 라이선스를 따르며 [THIRD_PARTY.md](THIRD_PARTY.md)에서 확인할 수 있습니다. DSK Asian DreamZ는 배포하지 않습니다.
+소스는 [MIT 라이선스](LICENSE)입니다. 음원은 각자의 라이선스를 따르며 [THIRD_PARTY.md](THIRD_PARTY.md)에서 확인할 수 있습니다. v0.2.0 표준 음원 팩에는 DSK Asian DreamZ 원본 SF2와 제작자의 README가 들어 있습니다. [제작자가 배포한 원본 ZIP 전체](https://github.com/louchi1984-coder/bgmeasy/releases/download/v0.2.0/DSK_Asian_DreamZ_sf2.zip)도 따로 받을 수 있습니다. 복제·배포 조건은 [DSK Music 라이선스](https://www.dskmusic.com/license-info/)에서, 음원의 출처는 [출시 공지](https://rekkerd.org/dsk-music-releases-dsk-asian-dreamz-vol-1/)에서 확인할 수 있습니다.
 
 최종 음악은 실제로 들어 확인해야 합니다. 음원의 주법 지원과 참고 분석의 신뢰도 역시 자료 및 실제 소리와 대조해 판단하세요.
