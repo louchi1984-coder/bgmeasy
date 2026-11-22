@@ -4,27 +4,29 @@
 
 ### Compose background music with your coding agent.
 
-Describe the scene or mood. Your agent writes an editable score and renders the audio locally, so you can change the melody, rhythm or arrangement after listening.
+Describe a scene, share a reference recording or video, or send a recording of yourself humming. You hear three 15-second sketches first. Pick one and your agent develops it into a full cue with an editable score and locally rendered audio.
 
 Built for background music in short videos, narrated content, games and animation. Use it with a coding agent that can read files and run commands. Rendering and reference analysis need no separate music-generation service.
 
 [Get started](#get-started) · [v0.2.0 sound pack](https://github.com/louchi1984-coder/bgmeasy/releases/tag/v0.2.0) · [Composition workflow (中文)](SKILL.md) · [Score format (中文)](references/score-format.md)
 
-## Start with the scene
+## Choose a starting point
 
-A brief can be as simple as:
+> Write a warm, stately march for a wedding entrance. The couple meet 12 seconds in. Let the music brighten as they reach each other.
 
-> Write 30 seconds of warm, quiet music for two people meeting again. There is no dialogue, so the melody can stand out. Give it a settled ending.
+A scene or a mood is enough to start. Include a time cue if the music should land on a particular action. With a written brief, you can name a mode or let the agent explain the three options and wait for your choice.
 
-After listening, keep shaping the same piece:
+| Mode | What you bring | What the agent does |
+|---|---|---|
+| **Direct composition** | A purpose, scene or mood | Writes from the brief, exploring different grooves, harmonies or melodic shapes. |
+| **Reference** | A sound you have in mind, optionally a piece by name | Finds relevant works and studies passages in their scores. It might borrow how the bass builds momentum or how one part answers another, then write an original theme. |
+| **Analysis** | An audio or video file, or a recording of you humming | Starts analysis as soon as you supply a readable file. With a reference recording it looks for rhythmic, harmonic and structural clues. With your own tune it keeps the pitches and rhythm and varies the arrangement. |
 
-> Keep the main theme. Thin out the accompaniment in the first half, then gradually build the second half without reaching full intensity too early.
+A title alone or a link the agent cannot open leads to reference mode. In all three modes you get **three playable 15-second sketches**, each with a sentence on what to listen for. Listen for the pulse, how the chords change, and who takes over when the lead pauses. If none fits, tell the agent why and it will make three new sketches.
 
-In reference mode the agent studies passages from existing scores before composing. In direct mode it writes from your brief. In both modes you hear three original sketches and choose one. The agent then asks for the final duration and how full the arrangement should sound, using any details you have already given.
+Once you pick a sketch, the agent asks how long the finished cue should run and how full you want the arrangement. It carries forward any details you already gave. One reply can cover all three decisions.
 
-```text
-Describe the scene → Choose a mode → Hear three sketches and pick one → Set duration and arrangement → Develop the full cue
-```
+> Sketch 2, 60 seconds. Keep that walking pace and add a cello answering the melody in the second half.
 
 ## Compose, revise, and mix with video
 
@@ -32,7 +34,7 @@ Describe the scene → Choose a mode → Hear three sketches and pick one → Se
 |---|---|
 | Score a scene | Choose a sketch, then develop its melody, harmony, rhythm and orchestration into a complete cue |
 | Revise after listening | Adjust the same score while keeping the structure, settings and reasons for changes |
-| Work from a reference | Examine pitch, rhythm, harmony and structural clues to inform a new composition |
+| Develop a hummed tune | Keep your melody, hear it with different accompaniments, and develop the arrangement you choose |
 | Support narration or dialogue | Leave room in the arrangement, then use foreground-driven ducking during mixing |
 | Deliver music with a video | Render a WAV, or mix it into video with loudness normalization and video stream copy |
 
@@ -101,7 +103,8 @@ The sound pack installer verifies SHA-256. If direct downloading is inconvenient
 ## Documentation
 
 - **Choose instruments and check their capabilities:** [performance and backend guide](references/instrument-performance.md), [sound catalog](references/soundfonts.md). The knowledge base covers 96 instrument profiles; the release sound pack provides 17 SF2 files and 319 catalog entries, including variants and sampled percussion.
-- **Study a reference:** [analysis methods and outputs](references/reference-analysis.md). Pitch, chord and structure estimates remain clues to review, rather than a verified score.
+- **Find a score or analyze a recording.** Pitch, chord and structure estimates are clues to review. [Reference study and audio analysis](references/reference-analysis.md)
+- **Develop a hummed tune.** [Transcription and arrangement workflow](references/hum-workflow.md)
 - **Mix with video:** use `scripts/mix.py`; `--vo` adds narration and `--keep-audio` retains the original audio. Mixing defaults to two-pass normalization at −14 LUFS and −2 dBTP.
 - **Choose a report language:** [Chinese, English, Japanese and Korean support](references/languages.md), via `--lang zh|en|ja|ko`. The main skill and detailed reference material are currently written primarily in Chinese.
 
