@@ -48,7 +48,7 @@ description: 为视频、动画、演示设计并制作背景音乐（BGM）。�
 
 **小样阶段最低要求**（完整规划和全套检查留到选定之后）：
 - 必读：[common-failures.md](references/common-failures.md)、[music-design.md 的小样试听](references/music-design.md#0a-代表性小样与试听)与[共同节奏](references/music-design.md#1a-全曲方案中的共同节奏)两节、[score-format.md](references/score-format.md)。
-- 必做：每个小样先做一两小节的节奏草图，确定从什么声音开始跟拍；写完用 `instruments.py score score.json --backend sf2` 查能力适配（只处理它报的能力错误，缺 `design.performance` 等字段的提示小样阶段可忽略）；渲染后用 `verify.py` 看时长、削波和响度；发出前核对主奏、关键伴奏和拍感，没听过就写“未核听”。
+- 必做：每个小样先想清拍感设计（谁带拍、哪几个声部在同一拍点一起起音、旋律停住时靠谁延续），一句话写进 `design.rhythm`，不需要另做文件；写完用 `instruments.py score score.json --backend sf2` 查能力适配（只处理它报的能力错误，缺 `design.performance` 等字段的提示小样阶段可忽略）；渲染后用 `verify.py` 看时长、削波和响度；发出前核对主奏、关键伴奏和拍感，没听过就写“未核听”。
 - 可以留到选定之后：`check_melody.py`、`check_ranges.py`、完整的 `design` 字段和 3b 复核。
 
 制作完整版时，简记速度、调式、配器、段落和结尾的设计理由。需要为人声让位时按 vocal-space.md 处理；没有指定高潮且画面没有明显高潮点时，沿用平稳型设计。
@@ -73,13 +73,13 @@ description: 为视频、动画、演示设计并制作背景音乐（BGM）。�
 
 **2a. 确定时长后，先规划全曲**：按 [music-design.md 第 0 节](references/music-design.md#0-确定时长后先规划全曲)建立覆盖正文与结尾的方案（起点和终点、各部分职能与长度、核心材料如何贯穿、乐句为何相接，以及和声/低音、共同节奏、声部职能怎样配合），用 `design.arc/structure/ending/phrases/chords/rhythm/harmony/layers` 简记。用速度、拍号与小节数核对总长。允许重复、停留、悬置、循环和开放结尾。设计合奏时，在 `design.layers` 里按段写清听众除了主旋律，还应能跟住哪条节奏、低音、和声变化或答句。若设有高潮，默认在高潮合奏处安排至少 5 层（见[配器层次](references/music-design.md#8b-多层先设计再写谱不是越多越好)）。
 
-BGM 默认要有能跟住的基本拍感。先做一到两小节合在一起的节奏草图，确定听众从什么声音开始跟拍、怎样辨认每组重心，以及旋律切分或停顿时拍感靠什么延续，并带入每个乐句。旋律与伴奏共同强调一个落点时，优先一起起音。改动任一声部后，合起来复听受影响的乐句及其再现处，检查同一个重音有没有意外响成两下。采用自由节奏或刻意模糊拍点时，在全曲方案里交代用途和时间组织。详见[共同节奏](references/music-design.md#1a-全曲方案中的共同节奏)。
+BGM 默认要有能跟住的基本拍感。先做拍感设计：想清一到两小节里合在一起的关系，确定听众从什么声音开始跟拍、怎样辨认每组重心，以及旋律切分或停顿时拍感靠什么延续，用一句话记进 `design.rhythm`，并带入每个乐句。旋律与伴奏共同强调一个落点时，优先一起起音。改动任一声部后，合起来复听受影响的乐句及其再现处，检查同一个重音有没有意外响成两下。采用自由节奏或刻意模糊拍点时，在全曲方案里交代用途和时间组织。详见[共同节奏](references/music-design.md#1a-全曲方案中的共同节奏)。
 
-**2b. 核心材料与乐器相互校验**：在全曲方案内，从主题、律动、纹理或乐器动作切入，按需往返试写。结合声部职能，用 `python3 -I scripts/instruments.py instrument <乐器ID>` 查典型写法，用 `preset <实际preset ID>` 查实际音源和后端能力，把演奏构想落实到音符、节奏、音区、连断与声部配合。主旋律默认优先考虑钢琴等起音清楚、自然衰减的乐器；中国风作品默认将中国民族乐器与其他乐器搭配；用户指定编制时按其要求。用 `design.performance` 和 `design.timbre_reason` 简记依据。详见[配器与主奏偏好](references/music-design.md#8-配器材料乐器和奏法相互校验)和 [instrument-performance.md](references/instrument-performance.md)。
+**2b. 核心材料与乐器相互校验**：在全曲方案内，从主题、律动、纹理或乐器动作切入，按需往返试写。结合声部职能，用 `python3 -I scripts/instruments.py instrument <乐器ID>` 查典型写法，用 `preset <实际preset ID>` 查实际音源和后端能力，把演奏构想落实到音符、节奏、音区、连断与声部配合。主旋律默认优先考虑钢琴等起音清楚、自然衰减的乐器；中国风作品以中国民族乐器为主奏，可搭配其他乐器，民族乐器采样不足时用其他乐器补并在 `design.timbre_reason` 说明；用户指定编制时按其要求。用 `design.performance` 和 `design.timbre_reason` 简记依据。详见[配器与主奏偏好](references/music-design.md#8-配器材料乐器和奏法相互校验)和 [instrument-performance.md](references/instrument-performance.md)。
 
 **3. 展开乐谱**：写 `score.json`（格式见 [score-format.md](references/score-format.md)）。把核心材料、配器和共同节奏贯通全长，和弦、旋律和鼓型围绕同一去向调整，不套模板拼接。按 [melody-patterns.md](references/melody-patterns.md) 简记 `design.motif/motif_review/phrases`；局部改动影响句长、落点或衔接时，同时更新全曲方案与有关声部。把重音、乐句走向和演奏语气落实到音符的 `@力度` 与鼓格强弱中，按[力度设计](references/music-design.md#力度设计)处理，优先使用所选音源的原生力度响应。主奏、律动或整体听感明显改变时，用成品音源渲染受影响的乐句，按小样试听标准核对后再请用户听。
 
-**3b. 用实际乐谱复核全曲关系**：逐个主要连接检查“前句留下什么、此句为何承接、下一步和全曲末端去哪里”，再核对旋律、低音、和声、重音与声部进出是否落实；把合奏的实际起音、重音与留白对照节奏草图，尤其检查拍感初次建立处、切分和句末。关系缺失时调整音符或全曲方案；字段齐全与技术检查通过都不能证明好听。运行 `python3 -I scripts/instruments.py score score.json --backend sf2` 检查能力适配；内置合成版用 `--backend synth`。
+**3b. 用实际乐谱复核全曲关系**：逐个主要连接检查“前句留下什么、此句为何承接、下一步和全曲末端去哪里”，再核对旋律、低音、和声、重音与声部进出是否落实；把合奏的实际起音、重音与留白对照 `design.rhythm` 里的拍感设计，尤其检查拍感初次建立处、切分和句末。关系缺失时调整音符或全曲方案；字段齐全与技术检查通过都不能证明好听。运行 `python3 -I scripts/instruments.py score score.json --backend sf2` 检查能力适配；内置合成版用 `--backend synth`。
 
 **4. 渲染并读报告**
 ```bash
