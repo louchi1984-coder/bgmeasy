@@ -50,7 +50,8 @@ description: 为视频、动画、演示设计并制作背景音乐（BGM）。�
 - **想方向**：从需求的不同解读各列一个候选（情绪侧重、叙事视角、时间点、与画面的呼应或反差、想让观众感到什么），至少 5 个；先剔除不符合场景基本属性的（追逐不写慢板，安静的重逢不写强节奏）；再选三个彼此最不像的。差异来自同一属性内的不同处理，不靠违背场景来拉开。逐个自检：“这个速度和律动放到画面上成立吗？”不成立就换；速度或拍感、调式或和声进行、旋律走向与主奏角色三类中，至少两类在三个小样之间明显不同，只换音色或乐器不算；不套固定组合，与最先想到的那一组相比至少换掉一个。描述不出区别就重做。
 - **必读**：[common-failures.md](references/common-failures.md)、[music-design.md 的小样试听](references/music-design.md#0a-代表性小样与试听)与[共同节奏](references/music-design.md#1a-全曲方案中的共同节奏)两节、[score-format.md](references/score-format.md)，以及五个基础的细则：[melody-patterns.md](references/melody-patterns.md)（动机、完整乐句与自检清单）、[chord-progressions.md](references/chord-progressions.md)（第 1、2 节）、[rhythm-patterns.md](references/rhythm-patterns.md)、[instrument-performance.md](references/instrument-performance.md)（写谱前一节与查询命令）。
 - **防重复**：写小样前先浏览音源目录（`soundfonts.py search --kind drums`、`search "合唱"`、`search "pad"` 等，不只检索钢琴、吉他、长笛、大提琴、弦乐）。三个小样的主奏不要是同一件乐器（风格限定下如古风，允许都用民族乐器，但演奏角色和织体要不同）。可用手段包括声部混响（`reverb`；SF2 后端不读 `delay`，只有内置合成器有）、人声元音类音色（如 `generaluser-gs:0:53` Voice Oohs、`0:52` Concert Choir，不能像真人那样唱词）、打击乐和合成铺底，只要符合需求。
-- **时长与速度**：每个小样 15 秒（`--duration 15`），只表现核心旋律、拍感和主奏角色。渲染器会把速度微调（可达 5% 以上），实际速度以渲染输出为准。
+- **时长与速度**：每个小样 15 秒（`--duration 15`），表现核心旋律、和声、拍感和主奏角色。渲染器会把速度微调（可达 5% 以上），实际速度以渲染输出为准。
+- **和声**：每个小样要有贯穿全 15 秒、听得到的和声支撑，由和弦垫、分解和弦、扫弦或低音加和弦承担；不能只有旋律加鼓或单音琶音。把逐小节和弦写进 `design.chords`，和弦换在哪一拍要和拍感一致。
 - **拍感与记录**：每个小样用一句话说清拍感（谁带拍、哪几个声部在同一拍点一起起音、旋律停住时靠谁延续）和主奏角色，写进 `design.rhythm`，不另做文件。小样阶段 design 只必写 `design.rhythm`。
 - **检查**：用 `instruments.py score score.json --backend sf2` 查能力适配，只处理它报的能力错误，缺 `design.performance` 等字段的提示可忽略。渲染时加 `--report-levels`：`render_score_sf2.py score.json out.wav --duration 15 --report-levels`。每个声部都必须听得到，被标“可能听不清”（比最响层低 12 dB 以上）的声部，要么加大、加长、挪到更突出的位置，要么删掉；`--mute 声部名` 可静音某声部做对比。再用 `verify.py` 看时长、削波和响度。发出前核对主奏、关键伴奏和拍感，没听过就写“未核听”。
 - **留到选定之后**：`check_melody.py`、`check_ranges.py`、完整的 `design` 字段和步骤 3 的关系复核。
