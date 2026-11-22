@@ -48,9 +48,9 @@ description: 为视频、动画、演示设计并制作背景音乐（BGM）。�
 
 **小样阶段最低要求**（完整规划和全套检查留到选定之后）：
 - 必读：[common-failures.md](references/common-failures.md)、[music-design.md 的小样试听](references/music-design.md#0a-代表性小样与试听)与[共同节奏](references/music-design.md#1a-全曲方案中的共同节奏)两节、[score-format.md](references/score-format.md)，以及五个基础的细则：[melody-patterns.md](references/melody-patterns.md)（动机、完整乐句与自检清单）、[chord-progressions.md](references/chord-progressions.md)（第 1、2 节：级数与进行候选）、[rhythm-patterns.md](references/rhythm-patterns.md)、[instrument-performance.md](references/instrument-performance.md)（写谱前一节与查询命令）。
-- 防重复：写小样前先浏览音源目录（`soundfonts.py search --kind drums`、`search "合唱"`、`search "pad"` 等，不只检索钢琴、吉他、长笛、大提琴、弦乐），三个小样的主奏或核心音色不要全落在同一类；可用的手段包括声部混响（`reverb`；SF2 后端不读取 `delay` 回声，只有内置合成器有）、人声类音色（如 `generaluser-gs:0:53` Voice Oohs、`generaluser-gs:0:52` Concert Choir，作元音铺底或旋律，不能像真人那样唱词）、打击乐和合成铺底，只要符合需求。
+- 防重复：写小样前先浏览音源目录（`soundfonts.py search --kind drums`、`search "合唱"`、`search "pad"` 等，不只检索钢琴、吉他、长笛、大提琴、弦乐），三个小样的主奏不要是同一件乐器（风格限定下，如古风，允许都用民族乐器，但演奏角色和织体要不同）；可用的手段包括声部混响（`reverb`；SF2 后端不读取 `delay` 回声，只有内置合成器有）、人声类音色（如 `generaluser-gs:0:53` Voice Oohs、`generaluser-gs:0:52` Concert Choir，作元音铺底或旋律，不能像真人那样唱词）、打击乐和合成铺底，只要符合需求。
 - 小样时长：每个小样 15 秒（`--duration 15`），只表现核心旋律、拍感和主奏角色；交付小样时说明“小样 15 秒，成品按你要的时长”；成品时长选定后再按步骤 3 展开。渲染器会把速度微调（可达 5% 以上），小样实际速度以渲染输出为准。
-- 必做：每个小样用一句话说清拍感（谁带拍、哪几个声部在同一拍点一起起音、旋律停住时靠谁延续）和主奏角色，写进 `design.rhythm`，不需要另做文件；写完用 `instruments.py score score.json --backend sf2` 查能力适配（只处理它报的能力错误，缺 `design.performance` 等字段的提示小样阶段可忽略；小样阶段 design 只必写 `design.rhythm`）；渲染时加 `--report-levels`，每个声部都必须听得到：被标“可能听不清”（比最响层低 12 dB 以上）的声部，要么加大、加长、挪到更突出的位置，要么删掉，不保留听不见的声部；再用 `verify.py` 看时长、削波和响度；发出前核对主奏、关键伴奏和拍感，没听过就写“未核听”。
+- 必做：每个小样用一句话说清拍感（谁带拍、哪几个声部在同一拍点一起起音、旋律停住时靠谁延续）和主奏角色，写进 `design.rhythm`，不需要另做文件；写完用 `instruments.py score score.json --backend sf2` 查能力适配（只处理它报的能力错误，缺 `design.performance` 等字段的提示小样阶段可忽略；小样阶段 design 只必写 `design.rhythm`）；渲染时加 `--report-levels`，每个声部都必须听得到：被标“可能听不清”（比最响层低 12 dB 以上）的声部，要么加大、加长、挪到更突出的位置，要么删掉，不保留听不见的声部；用法：`render_score_sf2.py score.json out.wav --duration 15 --report-levels` 打印各层贡献；`--mute 声部名` 渲染时静音该声部，用来对比它是否听得到；再用 `verify.py` 看时长、削波和响度；发出前核对主奏、关键伴奏和拍感，没听过就写“未核听”。
 - 可以留到选定之后：`check_melody.py`、`check_ranges.py`、完整的 `design` 字段和步骤 3 的关系复核。
 
 制作完整版时，简记速度、调式、配器、段落和结尾的设计理由。需要为人声让位时按 vocal-space.md 处理；没有指定高潮且画面没有明显高潮点时，沿用平稳型设计。
